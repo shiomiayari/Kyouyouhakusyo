@@ -1,5 +1,5 @@
 import { Link, useLocation } from 'react-router';
-import { BookOpen, Palette, TrendingUp, Music, History, ChevronRight, Menu, X, Info } from 'lucide-react';
+import { BookOpen, Palette, TrendingUp, Music, History, ChevronRight, Menu, X, User, Info } from 'lucide-react';
 import { useState } from 'react';
 
 interface Category {
@@ -23,7 +23,7 @@ export function Sidebar() {
       color: '#FFC2D1',
       articles: [
         { id: 'genji', title: '源氏物語' },
-        { id: 'makuranososhi', title: '枕草子' },
+        { id: 'makura', title: '枕草子' },
         { id: 'heike', title: '平家物語' },
         { id: 'taketori', title: '竹取物語' },
       ],
@@ -150,13 +150,20 @@ export function Sidebar() {
         </div>
       </nav>
 
-      <div className="p-4 border-t border-white/15">
+      <div className="p-4 border-t border-white/15 space-y-3">
         <Link
           to="/about"
-          className="flex items-center justify-center gap-2 px-4 py-3 bg-gradient-to-r from-[#FFC2D1] to-[#C3B7F5] text-[#1B2B44] rounded-xl hover:shadow-lg transition-all font-bold border-2 border-white"
+          className="flex items-center justify-center gap-2 px-4 py-3 bg-gradient-to-r from-[#B8F3D8] to-[#B3E5FC] text-[#1B2B44] rounded-xl hover:shadow-lg transition-all font-bold border-2 border-white"
         >
           <Info className="w-4 h-4" />
-          サイトについて
+          このサイトについて
+        </Link>
+        <Link
+          to="/author"
+          className="flex items-center justify-center gap-2 px-4 py-3 bg-gradient-to-r from-[#FFC2D1] to-[#C3B7F5] text-[#1B2B44] rounded-xl hover:shadow-lg transition-all font-bold border-2 border-white"
+        >
+          <User className="w-4 h-4" />
+          作者について
         </Link>
       </div>
     </div>

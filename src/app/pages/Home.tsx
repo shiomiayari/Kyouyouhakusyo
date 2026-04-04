@@ -1,7 +1,7 @@
 import { BookOpen, Palette, TrendingUp, Music, History, Sparkles, Star } from 'lucide-react';
 import { Link } from 'react-router';
-
-const logoImage = '/logo.png';
+import { ImageWithFallback } from '../components/figma/ImageWithFallback';
+import logoImage from 'figma:asset/f41b38a4f2dc36d110cbbbd667f3ac8152a96b03.png';
 
 export function Home() {
   const categories = [
@@ -199,31 +199,31 @@ export function Home() {
 
             {/* Article 2 */}
             <Link
-              to="/article/art/monalisa"
+              to="/article/literature/makura"
               className="group relative"
             >
-              <div className="bg-[#D4B8FF] rounded-3xl p-8 border-4 border-white hover:scale-105 transition-all hover:shadow-2xl">
+              <div className="bg-[#FFE5A0] rounded-3xl p-8 border-4 border-white hover:scale-105 transition-all hover:shadow-2xl">
                 <div className="flex items-center gap-3 mb-4">
-                  <div className="w-12 h-12 bg-[#1a2744] rounded-2xl flex items-center justify-center text-[#D4B8FF] border-4 border-white shadow-lg">
-                    <Palette className="w-6 h-6" />
+                  <div className="w-12 h-12 bg-[#1a2744] rounded-2xl flex items-center justify-center text-[#FFE5A0] border-4 border-white shadow-lg">
+                    <BookOpen className="w-6 h-6" />
                   </div>
                   <div>
-                    <div className="text-sm font-bold text-[#1a2744]/70">西洋絵画</div>
-                    <h3 className="text-2xl font-bold text-[#1a2744]">モナ・リザ</h3>
+                    <div className="text-sm font-bold text-[#1a2744]/70">日本の古典文学</div>
+                    <h3 className="text-2xl font-bold text-[#1a2744]">枕草子</h3>
                   </div>
                 </div>
                 <p className="text-[#1a2744]/80 mb-4 leading-relaxed">
-                  世界で最も有名な微笑み。レオナルド・ダ・ヴィンチが描いた謎多き女性の正体とは？
+                  1000年前のインフルエンサー・清少納言の日常エッセイ。「春はあけぼの」に込められた感性の秘密。
                 </p>
                 <div className="flex flex-wrap gap-2">
                   <span className="px-3 py-1 bg-white rounded-full text-sm text-[#1a2744] font-medium">
-                    ルネサンス
+                    日常
                   </span>
                   <span className="px-3 py-1 bg-white rounded-full text-sm text-[#1a2744] font-medium">
-                    肖像画
+                    エッセイ
                   </span>
                   <span className="px-3 py-1 bg-white rounded-full text-sm text-[#1a2744] font-medium">
-                    ダ・ヴィンチ
+                    清少納言
                   </span>
                 </div>
                 <div className="absolute top-4 right-4 text-white/50">
