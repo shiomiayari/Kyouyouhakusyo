@@ -199,7 +199,7 @@ export function Home() {
 
             {/* Article 2 */}
             <Link
-              to="/article/literature/makura"
+              to="/article/literature/makuranososhi"
               className="group relative"
             >
               <div className="bg-[#FFE5A0] rounded-3xl p-8 border-4 border-white hover:scale-105 transition-all hover:shadow-2xl">

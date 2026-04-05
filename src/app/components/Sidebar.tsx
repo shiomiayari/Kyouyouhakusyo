@@ -23,7 +23,7 @@ export function Sidebar() {
       color: '#FFC2D1',
       articles: [
         { id: 'genji', title: '源氏物語' },
-        { id: 'makura', title: '枕草子' },
+        { id: 'makuranososhi', title: '枕草子' },
         { id: 'heike', title: '平家物語' },
         { id: 'taketori', title: '竹取物語' },
       ],
