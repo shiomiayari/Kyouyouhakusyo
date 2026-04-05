@@ -1,7 +1,7 @@
 import { BookOpen, Palette, TrendingUp, Music, History, Sparkles, Star } from 'lucide-react';
 import { Link } from 'react-router';
 import { ImageWithFallback } from '../components/figma/ImageWithFallback';
-import logoImage from 'figma:asset/f41b38a4f2dc36d110cbbbd667f3ac8152a96b03.png';
+const logoImage = '/logo.png';
 
 export function Home() {
   const categories = [

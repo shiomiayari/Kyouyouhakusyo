@@ -1,11 +1,11 @@
 import { Star, Sparkles, BookOpen, Users, Brain, Heart, Clock, ChevronDown, ChevronUp } from 'lucide-react';
 import { RadarChart, PolarGrid, PolarAngleAxis, PolarRadiusAxis, Radar, ResponsiveContainer, Legend } from 'recharts';
 import { useState } from 'react';
-import authorImage from 'figma:asset/ac141cb85ee871748afff514e82b945ae0215f7b.png';
-import relationshipImage from 'figma:asset/ff2b6147f94c1738285db8d52061b6fa21fc9939.png';
-import book1Image from 'figma:asset/fd6d7d9e5ee85f5ebbff5553fb6257281fcfc255.png';
-import book2Image from 'figma:asset/71c638f4cf5647c648b3b44ec6781c845121b7d6.png';
-import book3Image from 'figma:asset/3874ebb5a4ccf49d6ee49ab0740b36586449dcca.png';
+const authorImage = '/murasaki-shikibu.jpg';
+const relationshipImage = '/genji-relationship.jpg';
+const book1Image = '/genji-book1.jpg';
+const book2Image = '/genji-book2.jpg';
+const book3Image = '/genji-book3.jpg';
 
 export function GenjiMonogatari() {
   const [expandedPart, setExpandedPart] = useState<number | null>(1);
