@@ -5,10 +5,7 @@ import { About } from './pages/About';
 import { Author } from './pages/Author';
 import { GenjiMonogatari } from './pages/articles/GenjiMonogatari';
 import { MakuraNoSoshi } from './pages/articles/MakuraNoSoshi';
-import { Dan1 } from './pages/articles/makura/Dan1';
-import { Dan2 } from './pages/articles/makura/Dan2';
-import { Dan41 } from './pages/articles/makura/Dan41';
-import { Dan42 } from './pages/articles/makura/Dan42';
+import { MakuraDanDetail } from './pages/articles/MakuraDanDetail';
 
 export const router = createBrowserRouter([
   {
@@ -19,11 +16,8 @@ export const router = createBrowserRouter([
       { path: 'about', Component: About },
       { path: 'author', Component: Author },
       { path: 'article/literature/genji', Component: GenjiMonogatari },
-      { path: 'article/literature/makura', Component: MakuraNoSoshi },
-      { path: 'article/literature/makura/dan-1', Component: Dan1 },
-      { path: 'article/literature/makura/dan-2', Component: Dan2 },
-      { path: 'article/literature/makura/dan-41', Component: Dan41 },
-      { path: 'article/literature/makura/dan-42', Component: Dan42 },
+      { path: 'article/literature/makuranososhi', Component: MakuraNoSoshi },
+      { path: 'article/literature/makura/:danId', Component: MakuraDanDetail },
       {
         path: '*',
         Component: () => (
