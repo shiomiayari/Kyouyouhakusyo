@@ -1,18 +1,38 @@
 import { useParams, Link } from 'react-router';
 import { Star, Sparkles, ChevronLeft } from 'lucide-react';
 import { allMakuraDans } from '../../data/makura-dan-data';
-import { Dan1 } from './Dan1';
-import { Dan2 } from './Dan2';
-import { Dan41 } from './Dan41';
-import { Dan42 } from './Dan42';
+import { Dan1 } from './makura/Dan1';
+import { Dan2 } from './makura/Dan2';
+import { Dan41 } from './makura/Dan41';
+import { Dan42 } from './makura/Dan42';
+import { Dan37 } from './makura/Dan37';
+import { Dan38 } from './makura/Dan38';
+import { Dan22 } from './makura/Dan22';
+import { Dan28 } from './makura/Dan28';
+import { Dan75 } from './makura/Dan75';
+import { Dan84 } from './makura/Dan84';
+import { Dan143 } from './makura/Dan143';
+import { Dan145 } from './makura/Dan145';
+import { Dan146 } from './makura/Dan146';
+import { Dan150 } from './makura/Dan150';
 
 export function MakuraDanDetail() {
   const { danId } = useParams();
 
   if (danId === 'dan-1') return <Dan1 />;
   if (danId === 'dan-2') return <Dan2 />;
+  if (danId === 'dan-22') return <Dan22 />;
+  if (danId === 'dan-28') return <Dan28 />;
+  if (danId === 'dan-37') return <Dan37 />;
+  if (danId === 'dan-38') return <Dan38 />;
   if (danId === 'dan-41') return <Dan41 />;
   if (danId === 'dan-42') return <Dan42 />;
+  if (danId === 'dan-75') return <Dan75 />;
+  if (danId === 'dan-84') return <Dan84 />;
+  if (danId === 'dan-143') return <Dan143 />;
+  if (danId === 'dan-145') return <Dan145 />;
+  if (danId === 'dan-146') return <Dan146 />;
+  if (danId === 'dan-150') return <Dan150 />;
   
   const danData = allMakuraDans.find(d => d.id === danId);
 

@@ -1,7 +1,7 @@
 import { Star, Sparkles, ArrowLeft, BookOpen, Brain } from 'lucide-react';
 import { Link } from 'react-router';
 
-export function Dan41() {
+export function Dan38() {
     return (
         <div className="min-h-screen relative overflow-hidden pb-16">
             {/* Sparkle decorations */}
@@ -32,13 +32,13 @@ export function Dan41() {
             <section className="py-8 px-6 sm:px-8 lg:px-12">
                 <div className="max-w-5xl mx-auto">
                     <div className="inline-block px-4 py-2 bg-[#B8F3D8] text-[#1B2B44] rounded-full mb-6 font-bold border-2 border-white text-sm">
-                        第41段
+                        第38段
                     </div>
                     <h1 className="text-4xl md:text-6xl font-black mb-6 text-white leading-tight">
-                        鳥は
+                        草は
                     </h1>
                     <p className="text-xl text-white/80">
-                        推し鳥はホトトギス！鳥の格付けランキング
+                        「卑しい場所×美しい花」のエモさ。ギャップ萌えの元祖！
                     </p>
                 </div>
             </section>
@@ -52,22 +52,26 @@ export function Dan41() {
                     </h2>
                     <div className="bg-[#2A3B5A] p-8 rounded-3xl border-2 border-white/20 space-y-4">
                         <p className="text-white text-lg leading-relaxed">
-                            鳥は、ほととぎす。特定（とて）もさらなり。明けはつるほど、かすかに鳴きて行く、いとあはれなり。
+                            草は、菖蒲（あやめ）。葵。おもだか、名もいとをかし。<br/>
+                            しのぶ、いとをかし。蓬（よもぎ）、いとをかし。
                         </p>
                         <p className="text-white text-lg leading-relaxed">
-                            明けゆくまに、ものの声々聞こゆるなかに、また、ただ一つ二つなど、ほのかにうち光りて行くもをかし。
+                            草の庵（いほ）などは、いとあはれなり。
                         </p>
                         <p className="text-white text-lg leading-relaxed">
-                            五月雨（さみだれ）の短き夜に、寝覚（ねざめ）をして、いかで先に聞かむと待たれて、明けゆく空のけしきも、いとをかし。
+                            なづな、なまえだに、いとおかしき。
                         </p>
                         <p className="text-white text-lg leading-relaxed">
-                            山鳥。特定（とて）もさらなり。友を恋ひて、己（おの）が尾の重きをも忘れて、夜を明かすらむ。
+                            夕顔、花のかたちはいとをかしう、実のなりたるもいとをかし。<br/>
+                            いかなれば、あやしき家にのみ生ひかかるらむと、いとあやし。<br/>
+                            はふ（這う）めるも、いとあはれなり。
                         </p>
                         <p className="text-white text-lg leading-relaxed">
-                            鷺（さぎ）はいと見苦し。眼（まなこ）の居所（ゐどころ）など。いとよき人の、いみじう腹立ちたる顔に似て、いと見苦し。
+                            秋の野の、女郎花（をみなへし）、萩（はぎ）、桔梗（きちかう）、菊、かるかや。<br/>
+                            露の降りたる、いふべきにもあらず。
                         </p>
                         <p className="text-white text-lg leading-relaxed">
-                            うぐひすは、鳴く声のいみじうめでたきを、なほそのことと思ふに、いとわろし。九重（ここのへ）のうららかなるに、鳴きたるこそ、いみじうめでたけれ。
+                            なでしこ、唐（から）のはさらなり、大和のも、いとめでたし。
                         </p>
                     </div>
                 </div>
@@ -83,22 +87,29 @@ export function Dan41() {
                     <div className="bg-gradient-to-br from-[#FFE5A0] to-[#B8F3D8] p-8 rounded-3xl border-4 border-white">
                         <div className="text-[#1B2B44]/90 leading-relaxed space-y-4">
                             <p>
-                                鳥といえば、なんといっても<strong>ホトトギス</strong>。あらためて言うまでもないけれど、夜が明けるころに、かすかに鳴きながら飛び去っていく様子は、本当にかっこよくて、しみじみと心に染みるわ。
+                                草といえば、まずは菖蒲（あやめ）。葵（あおい）も本当に素晴らしい。神代の昔から特別なご利益があると言われているのも、とても興味深くて素敵（をかし）。
                             </p>
                             <p>
-                                だんだん夜が明けていくにつれて、いろんな鳥の声が聞こえてくる中で、ただ一つ二つ、まだ残っている蛍がぼんやり光って飛んでいくのも素敵。
+                                オモダカは、名前からしてとても面白いわね。<br/>
+                                シノブも、とても素敵。ヨモギも、とても素敵。
                             </p>
                             <p>
-                                梅雨（五月雨）の短い夜に、ふと目が覚めて「誰よりも先にホトトギスの初鳴きを聞いてやろう」と待ち構えている、その明け方の空の気配も最高にエモい。
+                                ヨモギに覆われた「草の庵（あばら家）」なんて、なんともしみじみとした風情があるわ。
                             </p>
                             <p>
-                                <strong>山鳥</strong>も、もちろんいい。パートナー（友）を恋しがって、自分の重い尾っぽのことさえ忘れて、夜を明かしているなんて健気じゃない。
+                                ペンペン草（なづな）。これなんて、名前からして最高に面白いわね。
                             </p>
                             <p>
-                                一方で、<strong>サギ（鷺）は本当に見苦しいわ</strong>。目の位置とかが最悪。育ちの良い立派な人が、ものすごく怒っている時の顔にそっくりで、見ていられないわね。
+                                夕顔は、花の形がとても可愛らしくて、実がなっている様子もすごくいい。<br/>
+                                どうしてあんなに、ボロボロの見苦しい家（あやしき家）にばかり這いかかって生えているのかしら、本当に不思議。<br/>
+                                でも、そのツルが這っている様子は、なんとも情緒があって素敵だわ。
                             </p>
                             <p>
-                                <strong>ウグイス</strong>は、鳴き声が素晴らしいから、やっぱり「春といえばこれよね」と思うのだけど、場所によって評価が変わるの。宮中のうららかな庭で鳴いているのは最高に素晴らしいけれど、秋の終わりや冬の初めになると、声が枯れてしまうのが、なんとも残念（わろし）だわ。
+                                秋の野に咲く女郎花、萩、桔梗、菊、カルカヤ。<br/>
+                                これらに露が降りている様子は、もう言うまでもない（最高！）。
+                            </p>
+                            <p>
+                                ナデシコは、唐（中国）のものは言うまでもなく、日本のものでも、本当に素晴らしいわ。
                             </p>
                         </div>
                     </div>
@@ -114,23 +125,23 @@ export function Dan41() {
                     </h2>
                     <div className="space-y-6">
                         <div className="bg-[#2A3B5A] p-8 rounded-3xl border-2 border-white/20">
-                            <h3 className="text-2xl font-bold text-[#FFE5A0] mb-4">🎤 「ライブ感」を重視する耳</h3>
+                            <h3 className="text-2xl font-bold text-[#FFE5A0] mb-4">👀 「ギャップ」を愛でる視点</h3>
                             <p className="text-lg text-white/90 leading-relaxed">
-                                清少納言にとって、ホトトギスは「ただ鳴いている鳥」ではなく、五月雨の夜に耳を澄ませて<strong className="text-[#FFE5A0]">「誰よりも早く聴きたい」と願う、期間限定のアーティスト</strong>のような存在です。その「待機時間」すらも楽しむ姿勢は、現代の「推し活」に通じるものがあります。
+                                夕顔について、「あんなボロい家に咲くなんて不思議」と毒を吐きつつも、その這い上がる生命力に「エモさ（あはれ）」を感じています。この<strong className="text-[#FFE5A0]">「卑しい場所 × 美しい花」というコントラスト</strong>を楽しむのが、清少納言流の美学です。
                             </p>
                         </div>
 
                         <div className="bg-[#2A3B5A] p-8 rounded-3xl border-2 border-white/20">
-                            <h3 className="text-2xl font-bold text-[#FFC2D1] mb-4">😤 サギへの辛辣すぎる例え</h3>
+                            <h3 className="text-2xl font-bold text-[#FFC2D1] mb-4">💧 「露」というフィルター</h3>
                             <p className="text-lg text-white/90 leading-relaxed">
-                                <strong className="text-[#FFC2D1]">「育ちの良い人が激怒している顔」</strong>という描写は、宮廷で実際に感情を露わにしている貴族を見ていた彼女ならではの皮肉。鳥の観察が、いつの間にか人間観察（しかも欠点の指摘）にスライドするあたりが、枕草子らしい面白さです。
+                                「露の降りたる、いふべきにもあらず（露が降りているのは言うまでもない）」というフレーズ。彼女にとって、秋の草花は単体で完成しているのではなく、<strong className="text-[#FFC2D1]">「朝露に濡れてキラキラしている瞬間」</strong>こそが真の完成形なのです。シーンの切り取り方が天才的です。
                             </p>
                         </div>
 
                         <div className="bg-[#2A3B5A] p-8 rounded-3xl border-2 border-white/20">
-                            <h3 className="text-2xl font-bold text-[#B8F3D8] mb-4">📍 ウグイスへの「場所・時期」指定</h3>
+                            <h3 className="text-2xl font-bold text-[#B8F3D8] mb-4">🎌 ナデシコへのリスペクト</h3>
                             <p className="text-lg text-white/90 leading-relaxed">
-                                ウグイスの声は認めつつも、<strong className="text-[#B8F3D8]">「宮中で鳴いてこそ一流」「声が枯れる冬はイマイチ」</strong>と、そのコンディションやシチュエーションにまで細かく注文をつけるあたりに、彼女の美学の厳しさが表れています。
+                                当時、中国（唐）のものは高級品として珍重されていましたが、清少納言は<strong className="text-[#B8F3D8]">「日本のナデシコも負けてない、素晴らしい！」</strong>と断言。ここにも彼女の自国文化へのプライドと、権威や流行に流されない「自分の目による確かな評価基準」が見て取れます。
                             </p>
                         </div>
                     </div>
@@ -147,11 +158,11 @@ export function Dan41() {
                     <div className="bg-gradient-to-br from-[#C3B7F5] to-[#FFC2D1] p-8 rounded-3xl border-4 border-white">
                         <div className="space-y-4">
                             <div className="flex items-start gap-3">
-                                <div className="text-2xl">🎯</div>
+                                <div className="text-2xl">📸</div>
                                 <div>
-                                    <h4 className="font-bold text-xl text-[#1B2B44] mb-2">自分の「推し」を明確に持つ</h4>
+                                    <h4 className="font-bold text-xl text-[#1B2B44] mb-2">最高の「フィルター」を見つける</h4>
                                     <p className="text-[#1B2B44]/80 leading-relaxed">
-                                        清少納言のように、自分の好きなものを明確に言語化し、その理由を説明できる力は、自分の価値観を確立する上で重要です。推し活はただの趣味ではなく、自己理解の一つの形なのです。
+                                        清少納言が草花を「朝露」というフィルターを通して評価したように、私たちも日常の景色をより美しく見せる「最高の条件」を知っておくと、暮らしが豊かになります。晴れた日より雨の日のほうが魅力的な場所、朝より夜のほうが美しい街並み――そんな自分だけの「フィルター設定」を見つけてみましょう。
                                     </p>
                                 </div>
                             </div>
