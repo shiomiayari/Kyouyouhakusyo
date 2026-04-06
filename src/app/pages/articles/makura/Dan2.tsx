@@ -19,7 +19,7 @@ export function Dan2() {
       <section className="py-8 px-6 sm:px-8 lg:px-12">
         <div className="max-w-5xl mx-auto">
           <Link
-            to="/article/literature/makura"
+            to="/article/literature/makuranososhi"
             className="inline-flex items-center gap-2 px-4 py-2 bg-[#2A3B5A] text-white rounded-xl hover:bg-[#3A4B6A] transition-all border-2 border-white/20"
           >
             <ArrowLeft className="w-4 h-4" />
@@ -126,7 +126,7 @@ export function Dan2() {
         <div className="max-w-5xl mx-auto">
           <div className="flex flex-col sm:flex-row gap-4 justify-between">
             <Link
-              to="/article/literature/makura"
+              to="/article/literature/makuranososhi"
               className="flex items-center justify-center gap-2 px-6 py-3 bg-[#2A3B5A] text-white rounded-2xl hover:bg-[#3A4B6A] transition-all border-2 border-white/20"
             >
               <ArrowLeft className="w-5 h-5" />

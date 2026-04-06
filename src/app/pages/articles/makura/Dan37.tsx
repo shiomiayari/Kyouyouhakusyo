@@ -1,7 +1,7 @@
 import { Star, Sparkles, ArrowLeft, BookOpen, Brain } from 'lucide-react';
 import { Link } from 'react-router';
 
-export function Dan42() {
+export function Dan37() {
     return (
         <div className="min-h-screen relative overflow-hidden pb-16">
             {/* Sparkle decorations */}
@@ -31,14 +31,14 @@ export function Dan42() {
             {/* Hero Section */}
             <section className="py-8 px-6 sm:px-8 lg:px-12">
                 <div className="max-w-5xl mx-auto">
-                    <div className="inline-block px-4 py-2 bg-[#FFC2D1] text-[#1B2B44] rounded-full mb-6 font-bold border-2 border-white text-sm">
-                        第42段
+                    <div className="inline-block px-4 py-2 bg-[#B8F3D8] text-[#1B2B44] rounded-full mb-6 font-bold border-2 border-white text-sm">
+                        第37段
                     </div>
                     <h1 className="text-4xl md:text-6xl font-black mb-6 text-white leading-tight">
-                        虫は
+                        木は
                     </h1>
                     <p className="text-xl text-white/80">
-                        鈴虫1位！蚊はボロクソ！虫の格付けランキング
+                        「顔がブサイク」なんて言わせない！梨の花を見直す超教養的視点
                     </p>
                 </div>
             </section>
@@ -52,34 +52,28 @@ export function Dan42() {
                     </h2>
                     <div className="bg-[#2A3B5A] p-8 rounded-3xl border-2 border-white/20 space-y-4">
                         <p className="text-white text-lg leading-relaxed">
-                            虫は鈴虫。ひぐらし。てふ。あり。かげろふ。蛾。
+                            木は、檜。松。桃。柳。
                         </p>
                         <p className="text-white text-lg leading-relaxed">
-                            松虫、いとをかし。
+                            梨の花、いとすさまじきものにして、近う見ず、はかなき文の端などにも書かず。<br/>
+                            顔のいと見苦しきを、これにたとへて言ふ。
                         </p>
                         <p className="text-white text-lg leading-relaxed">
-                            きりぎりす、はたおり。
+                            色などは、いと清らにて、紅（くれなゐ）の、つややかなる。<br/>
+                            「唐人の顔」などに言ひて、めづらしきものにするは、例の、いふかひなき人の心なるべし。
                         </p>
                         <p className="text-white text-lg leading-relaxed">
-                            わらぢ虫、いと見苦し。
+                            楊貴妃が、玄宗皇帝の御前にて泣きける顔を「梨花一枝（りかいっし）、春、雨を帯びたり」と作りたる、いみじうめでたきことなれば、さらば、いとよき木なるべし。
                         </p>
                         <p className="text-white text-lg leading-relaxed">
-                            壁だに、いと見苦しきに、いと心苦し。
+                            桐の木、いと、をかし。花の色、紫に咲きたる、いと、をかし。葉のひろごりたるなど、いと、うたて、むつかしけれど、また、さらでも、いふべきにあらず。
                         </p>
                         <p className="text-white text-lg leading-relaxed">
-                            蚊はいと憎し。羽音の耳もとになきて、いと小さき風の吹きくるさへ。
+                            唐土（もろこし）には、いみじき鳥の、これにのみゐるなれば、これまた、いと、めでたし。まして、琴（こと）に作りて、さまざまの音（ね）の出で来るなど、いみじう、をかし。
                         </p>
                         <p className="text-white text-lg leading-relaxed">
-                            ぬかご。これは、秋風の吹くころ、声のいと細くて鳴きたる。
-                        </p>
-                        <p className="text-white text-lg leading-relaxed">
-                            蛍、いとおかし。
-                        </p>
-                        <p className="text-white text-lg leading-relaxed">
-                            また、ただ一つ二つなど、ほのかにうち光りて行くもをかし。
-                        </p>
-                        <p className="text-white text-lg leading-relaxed">
-                            雨など降るもをかし。
+                            譲葉（ゆづりは）、いと、をかし。<br/>
+                            青き葉の、つややかなるに、茎のいと赤き。
                         </p>
                     </div>
                 </div>
@@ -92,34 +86,30 @@ export function Dan42() {
                         <Sparkles className="w-8 h-8 text-[#FFE5A0]" />
                         現代語訳
                     </h2>
-                    <div className="bg-gradient-to-br from-[#B8F3D8] to-[#C3B7F5] p-8 rounded-3xl border-4 border-white">
+                    <div className="bg-gradient-to-br from-[#FFE5A0] to-[#B8F3D8] p-8 rounded-3xl border-4 border-white">
                         <div className="text-[#1B2B44]/90 leading-relaxed space-y-4">
                             <p>
-                                虫は、<strong>鈴虫</strong>。ヒグラシ。蝶。アリ。カゲロウ。蛾（が）もいいわね。
+                                木は、ヒノキ。松。桃。柳。
                             </p>
                             <p>
-                                <strong>松虫</strong>は、とても趣があって素敵。
+                                <strong>梨の花</strong>は、本当につまらないもの（すさまじきもの）だと思われていて、みんな近くで見ようともせず、ちょっとした手紙の端っこに書くことさえしないわね。<br/>
+                                顔がすごくブサイクなのを、「梨の花みたい」なんて例えて言ったりもするわ。
                             </p>
                             <p>
-                                キリギリス。ハタオリムシ（機織り虫）。
+                                でも、花の色はとても清らかで、縁取りの紅（べに）がツヤツヤしている。<br/>
+                                「中国人の顔みたい（派手で不気味）」なんて言って、珍しがるのは、いつものように、感性の鈍い人たちが考えることよ。
                             </p>
                             <p>
-                                <strong>ワラジムシは、本当におぞましくて見苦しいわ</strong>。
+                                あの楊貴妃が、玄宗皇帝の前で泣いた顔を<strong>「雨に濡れた一枝の梨の花のようだ」</strong>と詩（白居易の『長恨歌』）に詠まれているけれど、それは素晴らしい表現だわ。そう考えれば、梨の花はとても良い木であるはずだわ。
                             </p>
                             <p>
-                                （汚い）壁にいるのさえ見苦しいのに、わざわざ近くに寄ってこられると、もう本当に辛くて堪えられない。
+                                <strong>桐の木</strong>も、とても素敵。花が紫に咲いているのは、本当に風情がある。葉っぱがデカデカと広がっているのは、ちょっと不気味で嫌（むつかし）だけれど、それでも他の木と比べ物にならないくらい素晴らしい。
                             </p>
                             <p>
-                                <strong>蚊は、もう本当に憎たらしい！</strong>あの羽音が耳もとでプ〜ンと鳴って、ごく小さな羽風（はかぜ）まで吹かせてくる感じさえ、最高にムカつく。
+                                中国では、伝説の鳥（鳳凰）がこの木にしか止まらないというのだから、それだけでも価値があるわね。まして、この木で琴を作って、いろんな音色が出るのだから、最高に素敵だわ。
                             </p>
                             <p>
-                                ヌカゴ（小さな虫の一種）は、秋風が吹くころに、とても細い声で鳴いているのがいいわね。
-                            </p>
-                            <p>
-                                <strong>蛍</strong>は、とても素敵。
-                            </p>
-                            <p>
-                                （第1段でも言ったけれど）ただ一つ二つ、ぼんやり光って飛んでいくのも趣があるし、雨が降っている夜の蛍も風情があっていいわ。
+                                <strong>ユズリハ</strong>も、いいわね。<br/>青い葉っぱがツヤツヤしていて、茎がとても赤いところが最高。
                             </p>
                         </div>
                     </div>
@@ -135,30 +125,23 @@ export function Dan42() {
                     </h2>
                     <div className="space-y-6">
                         <div className="bg-[#2A3B5A] p-8 rounded-3xl border-2 border-white/20">
-                            <h3 className="text-2xl font-bold text-[#FFE5A0] mb-4">👂👁️ 「聴覚」と「視覚」のセレクト</h3>
+                            <h3 className="text-2xl font-bold text-[#FFE5A0] mb-4">⚖️ 「梨の花」逆転裁判</h3>
                             <p className="text-lg text-white/90 leading-relaxed">
-                                鈴虫やヒグラシのように「声」を楽しむ虫と、蝶や蛍のように「姿」を楽しむ虫。清少納言は、その虫が持つ<strong className="text-[#FFE5A0]">「最高の見せ場」</strong>を瞬時に判断してリストアップしています。
+                                当時、梨の花は「白すぎて死装束みたい」「ブサイクの例え」と、宮廷では不人気でした。しかし清少納言は「白楽天の詩を知らないの？」と言わんばかりに、漢詩の教養を盾に梨の花の地位を爆上げさせます。彼女にとって、美しさは単なる見た目ではなく<strong className="text-[#FFE5A0]">「背後にある教養やストーリー（文脈）」とセット</strong>なのです。
                             </p>
                         </div>
 
                         <div className="bg-[#2A3B5A] p-8 rounded-3xl border-2 border-white/20">
-                            <h3 className="text-2xl font-bold text-[#FFC2D1] mb-4">🦟 蚊への「風」の描写</h3>
+                            <h3 className="text-2xl font-bold text-[#FFC2D1] mb-4">🌳 桐の木への「多角的評価」</h3>
                             <p className="text-lg text-white/90 leading-relaxed">
-                                <strong className="text-[#FFC2D1]">「耳もとで鳴く」だけでなく、「小さな風が吹いてくる」という描写</strong>に注目。これは実際に静かな夜に蚊に悩まされた人でないと書けない、極めてリアルで繊細な不快感の表現です。
+                                葉っぱの見た目が「キモい（むつかし）」と本音を漏らしつつも、鳳凰が止まるという伝説や、琴の材料になるという実用性・ステータスを総合して<strong className="text-[#FFC2D1]">「やっぱり最高」</strong>と結論づけます。この「欠点も認めた上での推し」という視点が、ただ褒めるだけじゃないリアリティを生んでいます。
                             </p>
                         </div>
 
                         <div className="bg-[#2A3B5A] p-8 rounded-3xl border-2 border-white/20">
-                            <h3 className="text-2xl font-bold text-[#B3E5FC] mb-4">🐛 ワラジムシへの拒絶反応</h3>
+                            <h3 className="text-2xl font-bold text-[#B8F3D8] mb-4">🎨 色彩への鋭い反応</h3>
                             <p className="text-lg text-white/90 leading-relaxed">
-                                <strong className="text-[#B3E5FC]">「壁にいるのさえ嫌なのに、近くに来るなんて！」</strong>という生理的な嫌悪感。平安時代も今も、虫に対する「好き嫌い」の感覚は驚くほど変わっていないことがわかります。
-                            </p>
-                        </div>
-
-                        <div className="bg-[#2A3B5A] p-8 rounded-3xl border-2 border-white/20">
-                            <h3 className="text-2xl font-bold text-[#B8F3D8] mb-4">☔ 蛍の「雨の日」という新提案</h3>
-                            <p className="text-lg text-white/90 leading-relaxed">
-                                <strong className="text-[#B8F3D8]">「雨が降る夜の蛍もいい」</strong>という視点は、彼女ならではの「をかし（発見）」です。晴れた夜の輝きだけでなく、雨に煙る中での淡い光に美しさを見出すあたり、さすがのセンスです。
+                                最後にサラッと褒められているユズリハの<strong className="text-[#B8F3D8]">「青い葉と赤い茎」という色のコントラスト</strong>に注目。清少納言の審美眼は、常にパッと目を引く色の組み合わせを探しており、色彩感覚の豊かさが伺えます。
                             </p>
                         </div>
                     </div>
@@ -175,11 +158,11 @@ export function Dan42() {
                     <div className="bg-gradient-to-br from-[#C3B7F5] to-[#FFC2D1] p-8 rounded-3xl border-4 border-white">
                         <div className="space-y-4">
                             <div className="flex items-start gap-3">
-                                <div className="text-2xl">🎭</div>
+                                <div className="text-2xl">💡</div>
                                 <div>
-                                    <h4 className="font-bold text-xl text-[#1B2B44] mb-2">好き嫌いをハッキリ言う誠実さ</h4>
+                                    <h4 className="font-bold text-xl text-[#1B2B44] mb-2">「文脈」を知れば、モノの価値は一変する</h4>
                                     <p className="text-[#1B2B44]/80 leading-relaxed">
-                                        清少納言は鈴虫を褒めるだけでなく、蚊やワラジムシを「嫌い」とハッキリ言います。全てを好きにならなくていい、という自分の感性に正直な姿勢は、現代のSNS疲れを考える上でも参考になります。
+                                        世間が「ダサい」「イケてない」と言っているものでも、その背景にある歴史や優れたエピソード（文脈）を知ることで評価は180度変わります。清少納言のように、<strong className="text-[#1B2B44]">周りの意見に流されず「自分の知識で再評価する力」</strong>は、現代の情報社会でも非常に強力な武器になります。
                                     </p>
                                 </div>
                             </div>

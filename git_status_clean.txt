@@ -1,0 +1,33 @@
+interactive rebase in progress; onto fb60823
+Last command done (1 command done):
+   pick 1b8cc87 feat: add Dan 1, 2, 41, 42 component pages and setup detail route
+No commands remaining.
+You are currently rebasing branch 'main' on 'fb60823'.
+  (fix conflicts and then run "git rebase --continue")
+  (use "git rebase --skip" to skip this patch)
+  (use "git rebase --abort" to check out the original branch)
+
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+	new file:   package-lock.json
+	modified:   package.json
+	new file:   public/sei-shonagon.jpg
+	new file:   src/app/data/makura-dan-data.ts
+	new file:   src/app/pages/articles/Dan1.tsx
+	new file:   src/app/pages/articles/Dan2.tsx
+	new file:   src/app/pages/articles/Dan41.tsx
+	new file:   src/app/pages/articles/Dan42.tsx
+	new file:   src/app/pages/articles/MakuraDanDetail.tsx
+
+Unmerged paths:
+  (use "git restore --staged <file>..." to unstage)
+  (use "git add <file>..." to mark resolution)
+	both added:      src/app/pages/articles/MakuraNoSoshi.tsx
+	both modified:   src/app/routes.tsx
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+	.gitignore
+	dist/
+	git_status_clean.txt
+

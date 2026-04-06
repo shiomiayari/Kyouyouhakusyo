@@ -3,7 +3,7 @@ import { Link } from 'react-router';
 
 export function Dan1() {
   return (
-    <div className="min-h-screen relative overflow-hidden pb-16">
+    <div className="min-h-screen relative overflow-hidden pb-16 bg-[#1B2B44]">
       {/* Sparkle decorations */}
       <div className="absolute top-20 right-10 text-white/20 animate-pulse">
         <Star className="w-8 h-8 fill-current" />
@@ -19,7 +19,7 @@ export function Dan1() {
       <section className="py-8 px-6 sm:px-8 lg:px-12">
         <div className="max-w-5xl mx-auto">
           <Link
-            to="/article/literature/makura"
+            to="/article/literature/makuranososhi"
             className="inline-flex items-center gap-2 px-4 py-2 bg-[#2A3B5A] text-white rounded-xl hover:bg-[#3A4B6A] transition-all border-2 border-white/20"
           >
             <ArrowLeft className="w-4 h-4" />
@@ -373,7 +373,7 @@ export function Dan1() {
             <div className="bg-[#2A3B5A] p-8 rounded-3xl border-2 border-white/20">
               <h3 className="text-2xl font-bold text-[#FFC2D1] mb-4">💬 「わろし」という毒舌</h3>
               <p className="text-lg text-white/90 leading-relaxed">
-                最後に「わろし（良くない、ダサい）」という言葉で締めている点に注目。ただ「綺麗��ね」で終わらせず、自分の美学に反するもの（燃え尽きた炭の灰）をハッキリ否定するあたりに、<strong className="text-[#FFC2D1]">彼女の性格</strong>がよく表れています。
+                最後に「わろし（良くない、ダサい）」という言葉で締めている点に注目。ただ「綺麗だね」で終わらせず、自分の美学に反するもの（燃え尽きた炭の灰）をハッキリ否定するあたりに、<strong className="text-[#FFC2D1]">彼女の性格</strong>がよく表れています。
               </p>
             </div>
           </div>
@@ -417,7 +417,7 @@ export function Dan1() {
         <div className="max-w-5xl mx-auto">
           <div className="flex flex-col sm:flex-row gap-4 justify-between">
             <Link
-              to="/article/literature/makura"
+              to="/article/literature/makuranososhi"
               className="flex items-center justify-center gap-2 px-6 py-3 bg-[#2A3B5A] text-white rounded-2xl hover:bg-[#3A4B6A] transition-all border-2 border-white/20"
             >
               <ArrowLeft className="w-5 h-5" />
