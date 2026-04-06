@@ -1,6 +1,6 @@
 {
   "$schema": "node_modules/wrangler/config-schema.json",
-  "name": "kyouyouhakusyo",
+  "name": "kyouyou-hakusyo",
   "compatibility_date": "2024-04-06",
   "assets": {
     "directory": "./dist",
