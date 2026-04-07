@@ -161,7 +161,7 @@ export function Home() {
             </p>
           </div>
 
-          <div className="grid md:grid-cols-2 gap-8">
+          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
             {/* Article 1 */}
             <Link
               to="/article/literature/genji"
@@ -224,6 +224,41 @@ export function Home() {
                   </span>
                   <span className="px-3 py-1 bg-white rounded-full text-sm text-[#1a2744] font-medium">
                     清少納言
+                  </span>
+                </div>
+                <div className="absolute top-4 right-4 text-white/50">
+                  <Star className="w-5 h-5 fill-current" />
+                </div>
+              </div>
+            </Link>
+
+            {/* Article 3: Heian Culture */}
+            <Link
+              to="/article/culture/heian"
+              className="group relative"
+            >
+              <div className="bg-[#B8F3D8] rounded-3xl p-8 border-4 border-white hover:scale-105 transition-all hover:shadow-2xl">
+                <div className="flex items-center gap-3 mb-4">
+                  <div className="w-12 h-12 bg-[#1a2744] rounded-2xl flex items-center justify-center text-[#B8F3D8] border-4 border-white shadow-lg">
+                    <History className="w-6 h-6" />
+                  </div>
+                  <div>
+                    <div className="text-sm font-bold text-[#1a2744]/70">歴史と文化</div>
+                    <h3 className="text-2xl font-bold text-[#1a2744]">平安時代の文化</h3>
+                  </div>
+                </div>
+                <p className="text-[#1a2744]/80 mb-4 leading-relaxed">
+                  後宮の構造や色の美学、成人の儀式など。煌びやかな宮中生活の裏側と当時の常識を覗く。
+                </p>
+                <div className="flex flex-wrap gap-2">
+                  <span className="px-3 py-1 bg-white rounded-full text-sm text-[#1a2744] font-medium">
+                    宮中
+                  </span>
+                  <span className="px-3 py-1 bg-white rounded-full text-sm text-[#1a2744] font-medium">
+                    十二単
+                  </span>
+                  <span className="px-3 py-1 bg-white rounded-full text-sm text-[#1a2744] font-medium">
+                    雅（みやび）
                   </span>
                 </div>
                 <div className="absolute top-4 right-4 text-white/50">
