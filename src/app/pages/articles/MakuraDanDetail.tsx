@@ -12,12 +12,15 @@ import { Dan28 } from './makura/Dan28';
 import { Dan63 } from './makura/Dan63';
 import { Dan75 } from './makura/Dan75';
 import { Dan84 } from './makura/Dan84';
+import { Dan105 } from './makura/Dan105';
 import { Dan143 } from './makura/Dan143';
 import { Dan145 } from './makura/Dan145';
 import { Dan146 } from './makura/Dan146';
 import { Dan150 } from './makura/Dan150';
 import { Dan179 } from './makura/Dan179';
+import { Dan184 } from './makura/Dan184';
 import { Dan299 } from './makura/Dan299';
+import { Dan301 } from './makura/Dan301';
 
 export function MakuraDanDetail() {
   const { danId } = useParams();
@@ -33,12 +36,15 @@ export function MakuraDanDetail() {
   if (danId === 'dan-63') return <Dan63 />;
   if (danId === 'dan-75') return <Dan75 />;
   if (danId === 'dan-84') return <Dan84 />;
+  if (danId === 'dan-105') return <Dan105 />;
   if (danId === 'dan-143') return <Dan143 />;
   if (danId === 'dan-145') return <Dan145 />;
   if (danId === 'dan-146') return <Dan146 />;
   if (danId === 'dan-150') return <Dan150 />;
   if (danId === 'dan-179') return <Dan179 />;
+  if (danId === 'dan-184') return <Dan184 />;
   if (danId === 'dan-299') return <Dan299 />;
+  if (danId === 'dan-301') return <Dan301 />;
   
   const danData = allMakuraDans.find(d => d.id === danId);
 
