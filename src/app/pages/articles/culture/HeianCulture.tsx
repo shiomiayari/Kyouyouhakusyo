@@ -311,6 +311,19 @@ export function HeianCulture() {
             <Paintbrush className="w-8 h-8 text-[#C3B7F5]" />
             衣服と「色」の美学
           </h2>
+
+          <div className="bg-[#2A3B5A] rounded-3xl p-8 border-2 border-white/20 mb-12 text-center">
+            <img 
+              src="/heian-costume.png" 
+              alt="平安時代の装束（十二単と束帯・狩衣）" 
+              className="max-w-full h-auto mx-auto rounded-xl shadow-2xl border-4 border-white/10 mb-4"
+              onError={(e) => {
+                e.currentTarget.style.display = 'none';
+                e.currentTarget.parentElement!.innerHTML = '<div class="p-12 text-white/50 bg-[#1B2B44] rounded-xl border border-dashed border-white/20">画像 (heian-costume.png) を読み込めませんでした</div>';
+              }}
+            />
+            <p className="text-white/70 text-sm italic">平安時代の代表的な装束：女性（十二単）と男性（狩衣・束帯）</p>
+          </div>
           
           <div className="grid md:grid-cols-2 gap-8 mb-8">
             <div className="bg-[#2A3B5A] p-6 rounded-2xl border border-white/10 relative overflow-hidden">
