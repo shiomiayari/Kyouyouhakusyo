@@ -257,24 +257,80 @@ export function HeianCulture() {
       <section className="py-12 px-6 sm:px-8 lg:px-12 bg-[#2A3B5A]">
         <div className="max-w-5xl mx-auto grid lg:grid-cols-2 gap-12">
           
-          {/* 斎王 */}
-          <div>
-            <h2 className="text-3xl font-bold mb-6 text-white flex items-center gap-3">
+          {/* 斎王・斎宮 */}
+          <div className="lg:col-span-2">
+            <h2 className="text-3xl font-bold mb-8 text-white flex items-center gap-3">
               <Users className="w-8 h-8 text-[#FFC2D1]" />
-              斎宮・斎王
+              斎王・斎宮・斎院の世界
             </h2>
-            <div className="space-y-4">
-              <div className="bg-[#1B2B44] p-6 rounded-2xl">
-                <p className="text-white/90 leading-relaxed mb-4">
-                  伊勢神宮や賀茂神社で神に仕えるため、天皇の代理として送られた未婚の皇女のことです。<br/>
-                  伊勢の斎王とその役所・住まいの総称を<strong>「斎宮（さいぐう）」</strong>と呼びました。
-                </p>
-                <ul className="space-y-3 text-sm text-white/80 bg-black/20 p-4 rounded-xl">
-                  <li><strong className="text-[#FFE5A0]">永遠の別れ？:</strong> 都を出る際、天皇が「別れの櫛」を差し「都を振り返るな」と告げました。</li>
-                  <li><strong className="text-[#FFE5A0]">厳しい禁忌:</strong> 「仏」を「中子」、「経」を「染紙」と言い換えるなど忌み言葉があり、恋は絶対禁止でした。</li>
-                  <li><strong className="text-[#FFE5A0]">解任条件:</strong> 天皇の退位や死、あるいは親族の不幸など。帰京後は婚期を逃しひっそり暮らすことが多かった。</li>
-                </ul>
+            
+            <div className="grid md:grid-cols-2 gap-8">
+              {/* 1. 定義と役割 */}
+              <div className="bg-[#1B2B44] p-6 rounded-2xl border border-white/10">
+                <h3 className="text-xl font-bold text-[#FFC2D1] mb-4">1. 言葉の定義と役割</h3>
+                <div className="space-y-4 text-white/90 text-sm">
+                  <p>伊勢神宮や賀茂神社に奉仕する、天皇の名代として選ばれた<strong>未婚の皇女（内親王・女王）</strong>を指します。</p>
+                  <ul className="space-y-2">
+                    <li className="flex gap-2"><span className="text-[#FFE5A0] font-bold">斎王（さいおう）:</span> 皇女本人の呼称。</li>
+                    <li className="flex gap-2"><span className="text-[#FFE5A0] font-bold">斎宮（さいぐう）:</span> 伊勢神宮の斎王と、その住まい・役所の名。</li>
+                    <li className="flex gap-2"><span className="text-[#FFE5A0] font-bold">斎院（さいいん）:</span> 賀茂神社の斎王と、その住まいの名。</li>
+                  </ul>
+                </div>
               </div>
+
+              {/* 2. 選出と別れ */}
+              <div className="bg-[#1B2B44] p-6 rounded-2xl border border-white/10">
+                <h3 className="text-xl font-bold text-[#B3E5FC] mb-4">2. 選ばれるということ</h3>
+                <div className="space-y-4 text-white/90 text-sm">
+                  <p>天皇の即位のたびに、亀の甲羅を焼く<strong>占い（占点：うら）</strong>によって選ばれました。</p>
+                  <div className="bg-black/20 p-4 rounded-xl italic">
+                    <p className="font-bold text-white mb-1">「別れの櫛」のエピソード</p>
+                    出発の際、天皇は斎王の髪に櫛を差し、<span className="text-[#FFC2D1]">「都の方へ振り向いてはならぬ」</span>と言い渡しました。これは生きて再び会える保証のない、永遠の別れを意味することもありました。
+                  </div>
+                </div>
+              </div>
+
+              {/* 3. 潔斎と禁忌 */}
+              <div className="bg-[#1B2B44] p-6 rounded-2xl border border-white/10">
+                <h3 className="text-xl font-bold text-[#FFE5A0] mb-4">3. 潔斎と禁忌（タブー）</h3>
+                <div className="space-y-4 text-white/90 text-sm">
+                  <p>神に仕える身として、非常に厳しいルールが課されました。特に<strong>「不浄」</strong>と<strong>「仏教」</strong>に関連する言葉は避けられました。</p>
+                  <div className="grid grid-cols-2 gap-2 text-xs bg-black/20 p-3 rounded-xl mb-3">
+                    <div className="text-white/50 px-2 py-1">日常語</div>
+                    <div className="text-[#FFE5A0] px-2 py-1 font-bold">忌み言葉</div>
+                    <div className="border-t border-white/10 px-2 py-1">仏</div><div className="border-t border-white/10 px-2 py-1 font-bold">中子（なかご）</div>
+                    <div className="border-t border-white/10 px-2 py-1">経</div><div className="border-t border-white/10 px-2 py-1 font-bold">染紙（そめがみ）</div>
+                    <div className="border-t border-white/10 px-2 py-1">死</div><div className="border-t border-white/10 px-2 py-1 font-bold">直る（なおる）</div>
+                  </div>
+                  <p className="text-xs text-white/70">※未婚であることが絶対条件であり、恋をすることも許されませんでした。</p>
+                </div>
+              </div>
+
+              {/* 4. 斎宮の暮らし */}
+              <div className="bg-[#1B2B44] p-6 rounded-2xl border border-white/10">
+                <h3 className="text-xl font-bold text-[#B8F3D8] mb-4">4. 斎宮の暮らし</h3>
+                <div className="space-y-4 text-white/90 text-sm">
+                  <p>伊勢への旅は「群行（ぐんこう）」と呼ばれ、数百人の随行員を連れて5泊6日かけて行われました。</p>
+                  <p>
+                    現在の三重県多気郡明和町には広大な<strong>斎宮跡</strong>があり、都から離れたこの地は「もう一つの小さな都」のようでした。女房たちと歌を詠んだり、貝合わせをして静かに過ごしていたようです。
+                  </p>
+                </div>
+              </div>
+
+              {/* 5. 解任の時 */}
+              <div className="lg:col-span-2 bg-gradient-to-r from-[#1B2B44] to-[#2A3B5A] p-6 rounded-2xl border border-white/15">
+                <h3 className="text-xl font-bold text-white mb-4">5. 解任される時とその後</h3>
+                <p className="text-white/80 text-sm leading-relaxed mb-4">
+                  斎王の任が解かれるのは、<strong>天皇の譲位（退位）、天皇の崩御（死去）、または親族の不幸（穢れを避けるため）</strong>に限られていました。
+                </p>
+                <div className="bg-black/30 p-4 rounded-xl text-xs text-white/70 flex items-start gap-3">
+                  <Info className="w-5 h-5 flex-shrink-0 text-[#C3B7F5]" />
+                  <p>
+                    役目を終えて都に帰った元・斎王たちは、すでに婚期を逃していることが多く、独身を貫くか、ひっそりと余生を過ごすことが多かったと言われています。選ばれることは最大の名誉であると同時に、過酷な自己犠牲でもありました。
+                  </p>
+                </div>
+              </div>
+
             </div>
           </div>
 
