@@ -79,18 +79,12 @@ export function Sidebar() {
   const SidebarContent = () => (
     <div className="h-full flex flex-col bg-[#1B2B44]">
       <div className="p-6 border-b border-white/15">
-        <Link to="/" className="block">
-          <div className="text-2xl font-black text-center mb-2">
-            <span className="bg-gradient-to-r from-[#FFC2D1] via-[#C3B7F5] to-[#B8F3D8] bg-clip-text text-transparent">
-              大人の
-            </span>
-          </div>
-          <div className="text-2xl font-black text-center">
-            <span className="bg-gradient-to-r from-[#FFC2D1] via-[#C3B7F5] to-[#B8F3D8] bg-clip-text text-transparent">
-              教養白書
-            </span>
-          </div>
-          <div className="text-xs text-white/60 text-center mt-2">Knowledge Base</div>
+        <Link to="/" className="block py-4">
+          <img 
+            src="/logo.png" 
+            alt="大人の教養白書" 
+            className="w-full max-w-[180px] mx-auto drop-shadow-lg transform hover:scale-105 transition-transform"
+          />
         </Link>
       </div>
 

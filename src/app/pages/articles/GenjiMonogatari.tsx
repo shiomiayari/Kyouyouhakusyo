@@ -2,7 +2,7 @@ import { Star, Sparkles, BookOpen, Users, Brain, Heart, Clock, ChevronDown, Chev
 import { RadarChart, PolarGrid, PolarAngleAxis, PolarRadiusAxis, Radar, ResponsiveContainer, Legend } from 'recharts';
 import { useState } from 'react';
 const authorImage = '/murasaki-shikibu.jpg';
-const relationshipImage = '/genji-relationship.jpg';
+const relationshipImage = '/genji-relationship.png';
 const book1Image = '/genji-book1.jpg';
 const book2Image = '/genji-book2.jpg';
 const book3Image = '/genji-book3.jpg';
