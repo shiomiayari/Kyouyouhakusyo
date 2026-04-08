@@ -234,7 +234,7 @@ export function Home() {
 
             {/* Article 3: Heian Culture */}
             <Link
-              to="/article/culture/heian"
+              to="/article/literature/heian"
               className="group relative"
             >
               <div className="bg-[#B8F3D8] rounded-3xl p-8 border-4 border-white hover:scale-105 transition-all hover:shadow-2xl">

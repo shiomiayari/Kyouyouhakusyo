@@ -19,7 +19,7 @@ export const router = createBrowserRouter([
       { path: 'article/literature/genji', Component: GenjiMonogatari },
       { path: 'article/literature/makuranososhi', Component: MakuraNoSoshi },
       { path: 'article/literature/makura/:danId', Component: MakuraDanDetail },
-      { path: 'article/culture/heian', Component: HeianCulture },
+      { path: 'article/literature/heian', Component: HeianCulture },
       {
         path: '*',
         Component: () => (
