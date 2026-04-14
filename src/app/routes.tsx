@@ -7,6 +7,7 @@ import { GenjiMonogatari } from './pages/articles/GenjiMonogatari';
 import { MakuraNoSoshi } from './pages/articles/MakuraNoSoshi';
 import { MakuraDanDetail } from './pages/articles/MakuraDanDetail';
 import { HeianCulture } from './pages/articles/culture/HeianCulture';
+import { HeikeMonogatari } from './pages/articles/HeikeMonogatari';
 
 export const router = createBrowserRouter([
   {
@@ -20,6 +21,7 @@ export const router = createBrowserRouter([
       { path: 'article/literature/makuranososhi', Component: MakuraNoSoshi },
       { path: 'article/literature/makura/:danId', Component: MakuraDanDetail },
       { path: 'article/literature/heian', Component: HeianCulture },
+      { path: 'article/literature/heike', Component: HeikeMonogatari },
       {
         path: '*',
         Component: () => (
