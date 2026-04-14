@@ -1,11 +1,49 @@
+# 大人の教養白書 (Kyouyouhakusyo)
 
-  # ポップなウェブサイトデザイン
+知的好奇心を、もっと楽しく。大人だからこそ楽しめる「教養」を、最高のデザインと体験で届ける。
 
-  This is a code bundle for ポップなウェブサイトデザイン. The original project is available at https://www.figma.com/design/YVBtyCp1AmUdjHGEMrDGV3/%E3%83%9D%E3%83%83%E3%83%97%E3%81%AA%E3%82%A6%E3%82%A7%E3%83%96%E3%82%B5%E3%82%A4%E3%83%88%E3%83%87%E3%82%B6%E3%82%A4%E3%83%B3.
+![教養白書ロゴ](/logo.png)
 
-  ## Running the code
+## 📖 プロジェクト概要
+『大人の教養白書』は、日本の古典文学、歴史、芸術、経済など、多岐にわたる教養を現代的な視点で再構築したウェブアプリケーションです。
+単なる情報の羅列ではなく、**「読み物としての面白さ」**と**「視覚的な美しさ」**を追求し、大人の知的好奇心を刺激します。
 
-  Run `npm i` to install the dependencies.
+## ✨ 特徴
+- **プレミアム・デザイン**: グラスモーフィズムや鮮やかなグラデーション、滑らかなアニメーションを多用した、没入感のあるUI。
+- **独自分析レーダーチャート**: 各作品やテーマを「ドラマ性」「無常感」「エモさ」などの多角的な指標で視覚化。
+- **Deep Report**: 源氏物語、枕草子、平家物語など、複雑な古典の世界を「現代の言語」でわかりやすく解説。
+- **AI生成ビジュアル**: 各記事の内容に合わせ、AIを活用した高品質なイラストやアセットを配置。
 
-  Run `npm run dev` to start the development server.
-  
+## 🏹 主なコンテンツ
+- **源氏物語**: 千年愛される恋愛長編。愛執と権力のアーキテクチャを解剖。
+- **枕草子**: 1000年前のインフルエンサー、清少納言の感性が光る全段個別解説。
+- **平家物語**: 「滅びの美学」と諸行無常の人間ドラマをダイナミックに。
+- **平安時代の文化**: 十二単、後宮の構造、当時の常識を深掘りする文化レポート。
+
+## 🛠 テクニカルスタック
+- **Frontend**: React 18 / Vite 6
+- **Styling**: Tailwind CSS 4
+- **Animation**: Motion (Framer Motion)
+- **Icons**: Lucide React
+- **Charts**: Recharts
+- **Components**: Radix UI
+- **Typography**: 日本語に最適化されたタイポグラフィ設計
+
+## 🚀 はじめかた
+### 依存関係のインストール
+```bash
+npm install
+```
+
+### 開発サーバーの起動
+```bash
+npm run dev
+```
+
+### ビルド
+```bash
+npm run build
+```
+
+---
+Produced by [Ayari Shiomi](https://github.com/shiomiayari)
