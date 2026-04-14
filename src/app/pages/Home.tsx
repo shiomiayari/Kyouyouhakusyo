@@ -1,4 +1,4 @@
-import { BookOpen, Palette, TrendingUp, Music, History, Sparkles, Star } from 'lucide-react';
+import { BookOpen, Palette, TrendingUp, Music, History, Sparkles, Star, Swords } from 'lucide-react';
 import { Link } from 'react-router';
 import { ImageWithFallback } from '../components/figma/ImageWithFallback';
 const logoImage = '/logo.png';
@@ -259,6 +259,43 @@ export function Home() {
                   </span>
                   <span className="px-3 py-1 bg-white rounded-full text-sm text-[#1a2744] font-medium">
                     雅（みやび）
+                  </span>
+                </div>
+                <div className="absolute top-4 right-4 text-white/50">
+                  <Star className="w-5 h-5 fill-current" />
+                </div>
+              </div>
+            </Link>
+          </div>
+
+          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8 mt-8">
+            {/* Article 4: Heike Monogatari */}
+            <Link
+              to="/article/literature/heike"
+              className="group relative"
+            >
+              <div className="bg-[#FF4D4D] rounded-3xl p-8 border-4 border-white hover:scale-105 transition-all hover:shadow-2xl">
+                <div className="flex items-center gap-3 mb-4">
+                  <div className="w-12 h-12 bg-[#1a2744] rounded-2xl flex items-center justify-center text-[#FF4D4D] border-4 border-white shadow-lg">
+                    <Swords className="w-6 h-6" />
+                  </div>
+                  <div>
+                    <div className="text-sm font-bold text-[#1a2744]/70">日本の古典文学</div>
+                    <h3 className="text-2xl font-bold text-[#1a2744]">平家物語</h3>
+                  </div>
+                </div>
+                <p className="text-[#1a2744]/80 mb-4 leading-relaxed">
+                  奢れる者も久しからず。最強の軍団が、一瞬で海に消えるまでの壮大なバッドエンド・ストーリー。
+                </p>
+                <div className="flex flex-wrap gap-2">
+                  <span className="px-3 py-1 bg-white rounded-full text-sm text-[#1a2744] font-medium">
+                    諸行無常
+                  </span>
+                  <span className="px-3 py-1 bg-white rounded-full text-sm text-[#1a2744] font-medium">
+                    源平合戦
+                  </span>
+                  <span className="px-3 py-1 bg-white rounded-full text-sm text-[#1a2744] font-medium">
+                    滅びの美学
                   </span>
                 </div>
                 <div className="absolute top-4 right-4 text-white/50">
