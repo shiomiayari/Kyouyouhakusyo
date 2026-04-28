@@ -1,5 +1,5 @@
 import { Star, Sparkles, Mail, Github, Linkedin, Twitter, Code, Briefcase, GraduationCap, Award } from 'lucide-react';
-const profileImage = '/profile.jpg';
+const profileImage = '/profile.png';
 
 export function Author() {
   const skills = [

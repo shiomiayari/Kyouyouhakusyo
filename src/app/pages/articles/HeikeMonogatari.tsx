@@ -46,6 +46,7 @@ export function HeikeMonogatari() {
       icon: <Waves className="w-6 h-6" />,
       content: 'すべての始まり。「形あるものは必ず壊れる」という、この物語の「魂」が詰まった超有名イントロ。',
       color: '#FFB3B3',
+      path: '/article/literature/heike/gion',
     },
     {
       id: 2,
@@ -53,6 +54,7 @@ export function HeikeMonogatari() {
       icon: <Swords className="w-6 h-6" />,
       content: 'わずか16歳の美少年・平敦盛と、彼を討たねばならなかったベテラン武士・熊谷直実の悲劇。戦場における「情」と「残酷さ」が交錯する屈指の名シーン。',
       color: '#B3C6FF',
+      path: '/article/literature/heike/atsumori',
     },
     {
       id: 3,
@@ -60,6 +62,7 @@ export function HeikeMonogatari() {
       icon: <Target className="w-6 h-6" />,
       content: '「扇の的」を射抜く一瞬。敵味方双方がその技術を称賛し、一瞬だけ戦場が静まり返る、スポーツ的な爽快感と美しさがある場面。',
       color: '#FFE5A0',
+      path: '/article/literature/heike/yoichi',
     },
     {
       id: 4,
@@ -67,6 +70,7 @@ export function HeikeMonogatari() {
       icon: <Anchor className="w-6 h-6" />,
       content: '平家の滅亡。「波の下にも都がございます」と、幼い安徳天皇を抱いて入水する二位の尼。物語のクライマックスです。',
       color: '#B8F3D8',
+      path: '/article/literature/heike/dannoura',
     },
   ];
 
@@ -160,9 +164,10 @@ export function HeikeMonogatari() {
           </h2>
           <div className="grid gap-6">
             {episodes.map((episode) => (
-              <div
+              <Link
                 key={episode.id}
-                className="group relative overflow-hidden bg-white/5 backdrop-blur-md rounded-[2rem] border border-white/10 hover:border-white/30 transition-all duration-300"
+                to={episode.path}
+                className="group relative overflow-hidden bg-white/5 backdrop-blur-md rounded-[2rem] border border-white/10 hover:border-white/30 transition-all duration-300 block"
               >
                 <div className="p-8">
                   <div className="flex items-center gap-4 mb-4">
@@ -172,9 +177,14 @@ export function HeikeMonogatari() {
                     >
                       {episode.icon}
                     </div>
-                    <h3 className="text-2xl font-bold text-white group-hover:text-transparent group-hover:bg-clip-text group-hover:bg-gradient-to-r group-hover:from-white group-hover:to-white/50 transition-all">
-                      {episode.title}
-                    </h3>
+                    <div className="flex-grow">
+                      <h3 className="text-2xl font-bold text-white group-hover:text-transparent group-hover:bg-clip-text group-hover:bg-gradient-to-r group-hover:from-white group-hover:to-white/50 transition-all">
+                        {episode.title}
+                      </h3>
+                      {episode.path !== '#' && (
+                        <span className="text-xs font-bold text-white/40 uppercase tracking-widest mt-1 block">Click to Deep Dive →</span>
+                      )}
+                    </div>
                   </div>
                   <p className="text-lg text-white/70 leading-relaxed">
                     {episode.content}
@@ -184,7 +194,7 @@ export function HeikeMonogatari() {
                   className="absolute bottom-0 left-0 h-1 transition-all duration-300 w-0 group-hover:w-full"
                   style={{ backgroundColor: episode.color }}
                 ></div>
-              </div>
+              </Link>
             ))}
           </div>
         </div>
