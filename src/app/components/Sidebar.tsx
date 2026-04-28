@@ -1,5 +1,5 @@
 import { Link, useLocation } from 'react-router';
-import { BookOpen, Palette, TrendingUp, Music, History, ChevronRight, Menu, X, User, Info } from 'lucide-react';
+import { BookOpen, Palette, TrendingUp, Music, History, ChevronRight, Menu, X, User, Info, Feather } from 'lucide-react';
 import { useState } from 'react';
 
 interface Category {
@@ -27,6 +27,19 @@ export function Sidebar() {
         { id: 'heian', title: '平安時代の文化' },
         { id: 'heike', title: '平家物語' },
         { id: 'taketori', title: '竹取物語' },
+      ],
+    },
+    {
+      id: 'mythology',
+      name: '伝説・神話',
+      icon: <Feather className="w-5 h-5" />,
+      color: '#FFD6A5',
+      articles: [
+        { id: 'kojiki', title: '古事記（日本の始まり）' },
+        { id: 'yamatanoorochi', title: 'ヤマタノオロチ伝説' },
+        { id: 'yokai', title: '百鬼夜行と妖怪伝承' },
+        { id: 'king-arthur', title: 'アーサー王伝説と円卓の騎士' },
+        { id: 'greek mythology', title: 'ギリシャ神話' },
       ],
     },
     {
@@ -80,9 +93,9 @@ export function Sidebar() {
     <div className="h-full flex flex-col bg-[#1B2B44]">
       <div className="p-6 border-b border-white/15">
         <Link to="/" className="block py-4">
-          <img 
-            src="/logo.png" 
-            alt="大人の教養白書" 
+          <img
+            src="/logo.png"
+            alt="大人の教養白書"
             className="w-full max-w-[180px] mx-auto drop-shadow-lg transform hover:scale-105 transition-transform"
           />
         </Link>
@@ -94,11 +107,10 @@ export function Sidebar() {
             <div key={category.id}>
               <button
                 onClick={() => toggleCategory(category.id)}
-                className={`w-full flex items-center justify-between p-3 rounded-xl transition-all group ${
-                  expandedCategory === category.id 
-                    ? 'bg-[#2A3B5A]' 
+                className={`w-full flex items-center justify-between p-3 rounded-xl transition-all group ${expandedCategory === category.id
+                    ? 'bg-[#2A3B5A]'
                     : 'hover:bg-[#2A3B5A]/50'
-                }`}
+                  }`}
               >
                 <div className="flex items-center space-x-3">
                   <div
@@ -112,9 +124,8 @@ export function Sidebar() {
                   <span className="font-medium text-sm text-white">{category.name}</span>
                 </div>
                 <ChevronRight
-                  className={`w-4 h-4 transition-transform text-white/60 ${
-                    expandedCategory === category.id ? 'rotate-90' : ''
-                  }`}
+                  className={`w-4 h-4 transition-transform text-white/60 ${expandedCategory === category.id ? 'rotate-90' : ''
+                    }`}
                 />
               </button>
 
@@ -124,11 +135,10 @@ export function Sidebar() {
                     <Link
                       key={article.id}
                       to={`/article/${category.id}/${article.id}`}
-                      className={`block px-4 py-2 rounded-lg text-sm transition-all ${
-                        location.pathname === `/article/${category.id}/${article.id}`
+                      className={`block px-4 py-2 rounded-lg text-sm transition-all ${location.pathname === `/article/${category.id}/${article.id}`
                           ? 'font-medium bg-[#2A3B5A]'
                           : 'text-white/70 hover:text-white hover:bg-[#2A3B5A]/50'
-                      }`}
+                        }`}
                       style={
                         location.pathname === `/article/${category.id}/${article.id}`
                           ? { color: category.color }
@@ -184,9 +194,8 @@ export function Sidebar() {
 
       {/* Sidebar */}
       <aside
-        className={`fixed lg:sticky top-0 left-0 h-screen w-80 bg-[#1B2B44] border-r border-white/15 z-40 transition-transform lg:translate-x-0 ${
-          isOpen ? 'translate-x-0' : '-translate-x-full'
-        }`}
+        className={`fixed lg:sticky top-0 left-0 h-screen w-80 bg-[#1B2B44] border-r border-white/15 z-40 transition-transform lg:translate-x-0 ${isOpen ? 'translate-x-0' : '-translate-x-full'
+          }`}
       >
         <SidebarContent />
       </aside>
