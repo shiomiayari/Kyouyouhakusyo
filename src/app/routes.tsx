@@ -8,6 +8,7 @@ import { MakuraNoSoshi } from './pages/articles/MakuraNoSoshi';
 import { MakuraDanDetail } from './pages/articles/MakuraDanDetail';
 import { HeianCulture } from './pages/articles/culture/HeianCulture';
 import { HeikeMonogatari } from './pages/articles/HeikeMonogatari';
+import { HeikeEpisodeDetail } from './pages/articles/HeikeEpisodeDetail';
 
 export const router = createBrowserRouter([
   {
@@ -22,6 +23,7 @@ export const router = createBrowserRouter([
       { path: 'article/literature/makura/:danId', Component: MakuraDanDetail },
       { path: 'article/literature/heian', Component: HeianCulture },
       { path: 'article/literature/heike', Component: HeikeMonogatari },
+      { path: 'article/literature/heike/:episodeId', Component: HeikeEpisodeDetail },
       {
         path: '*',
         Component: () => (
