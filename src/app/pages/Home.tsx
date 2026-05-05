@@ -1,9 +1,16 @@
 import { BookOpen, Palette, TrendingUp, Music, History, Sparkles, Star, Swords } from 'lucide-react';
 import { Link } from 'react-router';
-import { ImageWithFallback } from '../components/figma/ImageWithFallback';
+import { motion, useScroll, useTransform } from 'motion/react';
 const logoImage = '/logo.png';
 
 export function Home() {
+  const { scrollYProgress } = useScroll();
+  const yHeroText = useTransform(scrollYProgress, [0, 1], [0, 150]);
+  const yHeroLogo = useTransform(scrollYProgress, [0, 1], [0, 100]);
+  const starRotate = useTransform(scrollYProgress, [0, 1], [0, 180]);
+  const starY1 = useTransform(scrollYProgress, [0, 1], [0, 100]);
+  const starY2 = useTransform(scrollYProgress, [0, 1], [0, -100]);
+
   const categories = [
     {
       id: 'literature',
@@ -50,40 +57,42 @@ export function Home() {
   return (
     <div className="min-h-screen relative overflow-hidden">
       {/* Sparkle decorations */}
-      <div className="absolute top-20 left-10 text-white/30 animate-pulse">
+      <motion.div style={{ y: starY1, rotate: starRotate }} className="absolute top-20 left-10 text-white/30 animate-pulse">
         <Star className="w-8 h-8 fill-current" />
-      </div>
-      <div className="absolute top-40 right-20 text-white/20 animate-pulse delay-100">
+      </motion.div>
+      <motion.div style={{ y: starY2, rotate: starRotate }} className="absolute top-40 right-20 text-white/20 animate-pulse delay-100">
         <Star className="w-6 h-6 fill-current" />
-      </div>
-      <div className="absolute bottom-40 left-1/4 text-white/25 animate-pulse delay-200">
+      </motion.div>
+      <motion.div style={{ y: starY1 }} className="absolute bottom-40 left-1/4 text-white/25 animate-pulse delay-200">
         <Star className="w-5 h-5 fill-current" />
-      </div>
-      <div className="absolute top-60 right-1/3 text-white/20 animate-pulse delay-300">
+      </motion.div>
+      <motion.div style={{ rotate: starRotate }} className="absolute top-60 right-1/3 text-white/20 animate-pulse delay-300">
         <Sparkles className="w-7 h-7" />
-      </div>
-      <div className="absolute bottom-60 right-10 text-white/30 animate-pulse">
+      </motion.div>
+      <motion.div style={{ y: starY2, rotate: starRotate }} className="absolute bottom-60 right-10 text-white/30 animate-pulse">
         <Star className="w-6 h-6 fill-current" />
-      </div>
+      </motion.div>
 
       {/* Hero Section with Logo */}
       <section className="relative py-16 px-6 sm:px-8 lg:px-12">
         <div className="max-w-4xl mx-auto text-center">
-          <div className="mb-8 inline-block">
+          <motion.div style={{ y: yHeroLogo }} className="mb-8 inline-block">
             <img 
               src={logoImage} 
               alt="大人の教養白書" 
               className="w-full max-w-lg mx-auto drop-shadow-2xl"
             />
-          </div>
+          </motion.div>
           
-          <p className="text-xl md:text-2xl text-white/90 mb-4 font-medium">
-            知的好奇心を、もっと楽しく。
-          </p>
-          <p className="text-base md:text-lg text-white/70 max-w-2xl mx-auto leading-relaxed">
-            古典文学、絵画、音楽、歴史、経済。<br />
-            大人が知りたい教養を、わかりやすく、面白く。
-          </p>
+          <motion.div style={{ y: yHeroText }}>
+            <p className="text-xl md:text-2xl text-white/90 mb-4 font-medium">
+              知的好奇心を、もっと楽しく。
+            </p>
+            <p className="text-base md:text-lg text-white/70 max-w-2xl mx-auto leading-relaxed">
+              古典文学、絵画、音楽、歴史、経済。<br />
+              大人が知りたい教養を、わかりやすく、面白く。
+            </p>
+          </motion.div>
         </div>
       </section>
 
@@ -100,50 +109,57 @@ export function Home() {
           </div>
 
           <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
-            {categories.map((category) => (
-              <Link
+            {categories.map((category, index) => (
+              <motion.div
                 key={category.id}
-                to={`/category/${category.id}`}
-                className="group relative"
+                initial={{ opacity: 0, y: 50 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true, margin: "-50px" }}
+                transition={{ duration: 0.6, delay: index * 0.1 }}
               >
-                <div 
-                  className="relative overflow-hidden rounded-3xl p-8 transition-all hover:scale-105 hover:shadow-2xl border-4 border-white"
-                  style={{ backgroundColor: category.color }}
+                <Link
+                  to={`/category/${category.id}`}
+                  className="group relative block"
                 >
-                  {/* Icon */}
-                  <div className="flex items-center justify-center mb-4">
-                    <div 
-                      className="w-16 h-16 rounded-2xl flex items-center justify-center border-4 border-white shadow-lg"
-                      style={{ backgroundColor: '#1a2744' }}
-                    >
-                      <div style={{ color: category.color }}>
-                        {category.icon}
+                  <div 
+                    className="relative overflow-hidden rounded-3xl p-8 transition-all hover:scale-105 hover:shadow-2xl border-4 border-white"
+                    style={{ backgroundColor: category.color }}
+                  >
+                    {/* Icon */}
+                    <div className="flex items-center justify-center mb-4">
+                      <div 
+                        className="w-16 h-16 rounded-2xl flex items-center justify-center border-4 border-white shadow-lg"
+                        style={{ backgroundColor: '#1a2744' }}
+                      >
+                        <div style={{ color: category.color }}>
+                          {category.icon}
+                        </div>
                       </div>
                     </div>
-                  </div>
-                  
-                  {/* Content */}
-                  <h3 className="font-bold text-xl mb-2 text-[#1a2744] text-center">
-                    {category.name}
-                  </h3>
-                  <p className="text-sm text-[#1a2744]/70 text-center mb-3">
-                    {category.description}
-                  </p>
-                  <div className="text-center">
-                    <span className="inline-block px-4 py-1 bg-white/90 rounded-full text-sm font-medium text-[#1a2744]">
-                      {category.count}記事
-                    </span>
-                  </div>
+                    
+                    {/* Content */}
+                    <h3 className="font-bold text-xl mb-2 text-[#1a2744] text-center">
+                      {category.name}
+                    </h3>
+                    <p className="text-sm text-[#1a2744]/70 text-center mb-3">
+                      {category.description}
+                    </p>
+                    <div className="text-center">
+                      <span className="inline-block px-4 py-1 bg-white/90 rounded-full text-sm font-medium text-[#1a2744]">
+                        {category.count}記事
+                      </span>
+                    </div>
 
-                  {/* Decorative stars */}
-                  <div className="absolute top-3 right-3 text-white/50">
-                    <Star className="w-4 h-4 fill-current" />
+                    {/* Decorative stars */}
+                    <div className="absolute top-3 right-3 text-white/50">
+                      <Star className="w-4 h-4 fill-current" />
+                    </div>
+                    <div className="absolute bottom-3 left-3 text-white/40">
+                      <Star className="w-3 h-3 fill-current" />
+                    </div>
                   </div>
-                  <div className="absolute bottom-3 left-3 text-white/40">
-                    <Star className="w-3 h-3 fill-current" />
-                  </div>
-                </div>
-              </Link>
+                </Link>
+              </motion.div>
             ))}
           </div>
         </div>
@@ -163,146 +179,174 @@ export function Home() {
 
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
             {/* Article 1 */}
-            <Link
-              to="/article/literature/genji"
-              className="group relative"
+            <motion.div
+              initial={{ opacity: 0, y: 50 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true, margin: "-50px" }}
+              transition={{ duration: 0.6 }}
             >
-              <div className="bg-[#FFB3D9] rounded-3xl p-8 border-4 border-white hover:scale-105 transition-all hover:shadow-2xl">
-                <div className="flex items-center gap-3 mb-4">
-                  <div className="w-12 h-12 bg-[#1a2744] rounded-2xl flex items-center justify-center text-[#FFB3D9] border-4 border-white shadow-lg">
-                    <BookOpen className="w-6 h-6" />
+              <Link
+                to="/article/literature/genji"
+                className="group relative block"
+              >
+                <div className="bg-[#FFB3D9] rounded-3xl p-8 border-4 border-white hover:scale-105 transition-all hover:shadow-2xl">
+                  <div className="flex items-center gap-3 mb-4">
+                    <div className="w-12 h-12 bg-[#1a2744] rounded-2xl flex items-center justify-center text-[#FFB3D9] border-4 border-white shadow-lg">
+                      <BookOpen className="w-6 h-6" />
+                    </div>
+                    <div>
+                      <div className="text-sm font-bold text-[#1a2744]/70">日本の古典文学</div>
+                      <h3 className="text-2xl font-bold text-[#1a2744]">源氏物語</h3>
+                    </div>
                   </div>
-                  <div>
-                    <div className="text-sm font-bold text-[#1a2744]/70">日本の古典文学</div>
-                    <h3 className="text-2xl font-bold text-[#1a2744]">源氏物語</h3>
+                  <p className="text-[#1a2744]/80 mb-4 leading-relaxed">
+                    千年愛される、究極の恋愛ストーリー。光源氏の恋愛模様から学ぶ、人間関係のサバイバル術。
+                  </p>
+                  <div className="flex flex-wrap gap-2">
+                    <span className="px-3 py-1 bg-white rounded-full text-sm text-[#1a2744] font-medium">
+                      恋愛
+                    </span>
+                    <span className="px-3 py-1 bg-white rounded-full text-sm text-[#1a2744] font-medium">
+                      宮廷
+                    </span>
+                    <span className="px-3 py-1 bg-white rounded-full text-sm text-[#1a2744] font-medium">
+                      人間ドラマ
+                    </span>
+                  </div>
+                  <div className="absolute top-4 right-4 text-white/50">
+                    <Star className="w-5 h-5 fill-current" />
                   </div>
                 </div>
-                <p className="text-[#1a2744]/80 mb-4 leading-relaxed">
-                  千年愛される、究極の恋愛ストーリー。光源氏の恋愛模様から学ぶ、人間関係のサバイバル術。
-                </p>
-                <div className="flex flex-wrap gap-2">
-                  <span className="px-3 py-1 bg-white rounded-full text-sm text-[#1a2744] font-medium">
-                    恋愛
-                  </span>
-                  <span className="px-3 py-1 bg-white rounded-full text-sm text-[#1a2744] font-medium">
-                    宮廷
-                  </span>
-                  <span className="px-3 py-1 bg-white rounded-full text-sm text-[#1a2744] font-medium">
-                    人間ドラマ
-                  </span>
-                </div>
-                <div className="absolute top-4 right-4 text-white/50">
-                  <Star className="w-5 h-5 fill-current" />
-                </div>
-              </div>
-            </Link>
+              </Link>
+            </motion.div>
 
             {/* Article 2 */}
-            <Link
-              to="/article/literature/makuranososhi"
-              className="group relative"
+            <motion.div
+              initial={{ opacity: 0, y: 50 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true, margin: "-50px" }}
+              transition={{ duration: 0.6, delay: 0.1 }}
             >
-              <div className="bg-[#FFE5A0] rounded-3xl p-8 border-4 border-white hover:scale-105 transition-all hover:shadow-2xl">
-                <div className="flex items-center gap-3 mb-4">
-                  <div className="w-12 h-12 bg-[#1a2744] rounded-2xl flex items-center justify-center text-[#FFE5A0] border-4 border-white shadow-lg">
-                    <BookOpen className="w-6 h-6" />
+              <Link
+                to="/article/literature/makuranososhi"
+                className="group relative block"
+              >
+                <div className="bg-[#FFE5A0] rounded-3xl p-8 border-4 border-white hover:scale-105 transition-all hover:shadow-2xl">
+                  <div className="flex items-center gap-3 mb-4">
+                    <div className="w-12 h-12 bg-[#1a2744] rounded-2xl flex items-center justify-center text-[#FFE5A0] border-4 border-white shadow-lg">
+                      <BookOpen className="w-6 h-6" />
+                    </div>
+                    <div>
+                      <div className="text-sm font-bold text-[#1a2744]/70">日本の古典文学</div>
+                      <h3 className="text-2xl font-bold text-[#1a2744]">枕草子</h3>
+                    </div>
                   </div>
-                  <div>
-                    <div className="text-sm font-bold text-[#1a2744]/70">日本の古典文学</div>
-                    <h3 className="text-2xl font-bold text-[#1a2744]">枕草子</h3>
+                  <p className="text-[#1a2744]/80 mb-4 leading-relaxed">
+                    1000年前のインフルエンサー・清少納言の日常エッセイ。「春はあけぼの」に込められた感性の秘密。
+                  </p>
+                  <div className="flex flex-wrap gap-2">
+                    <span className="px-3 py-1 bg-white rounded-full text-sm text-[#1a2744] font-medium">
+                      日常
+                    </span>
+                    <span className="px-3 py-1 bg-white rounded-full text-sm text-[#1a2744] font-medium">
+                      エッセイ
+                    </span>
+                    <span className="px-3 py-1 bg-white rounded-full text-sm text-[#1a2744] font-medium">
+                      清少納言
+                    </span>
+                  </div>
+                  <div className="absolute top-4 right-4 text-white/50">
+                    <Star className="w-5 h-5 fill-current" />
                   </div>
                 </div>
-                <p className="text-[#1a2744]/80 mb-4 leading-relaxed">
-                  1000年前のインフルエンサー・清少納言の日常エッセイ。「春はあけぼの」に込められた感性の秘密。
-                </p>
-                <div className="flex flex-wrap gap-2">
-                  <span className="px-3 py-1 bg-white rounded-full text-sm text-[#1a2744] font-medium">
-                    日常
-                  </span>
-                  <span className="px-3 py-1 bg-white rounded-full text-sm text-[#1a2744] font-medium">
-                    エッセイ
-                  </span>
-                  <span className="px-3 py-1 bg-white rounded-full text-sm text-[#1a2744] font-medium">
-                    清少納言
-                  </span>
-                </div>
-                <div className="absolute top-4 right-4 text-white/50">
-                  <Star className="w-5 h-5 fill-current" />
-                </div>
-              </div>
-            </Link>
+              </Link>
+            </motion.div>
 
             {/* Article 3: Heian Culture */}
-            <Link
-              to="/article/literature/heian"
-              className="group relative"
+            <motion.div
+              initial={{ opacity: 0, y: 50 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true, margin: "-50px" }}
+              transition={{ duration: 0.6, delay: 0.2 }}
             >
-              <div className="bg-[#B8F3D8] rounded-3xl p-8 border-4 border-white hover:scale-105 transition-all hover:shadow-2xl">
-                <div className="flex items-center gap-3 mb-4">
-                  <div className="w-12 h-12 bg-[#1a2744] rounded-2xl flex items-center justify-center text-[#B8F3D8] border-4 border-white shadow-lg">
-                    <History className="w-6 h-6" />
+              <Link
+                to="/article/literature/heian"
+                className="group relative block"
+              >
+                <div className="bg-[#B8F3D8] rounded-3xl p-8 border-4 border-white hover:scale-105 transition-all hover:shadow-2xl">
+                  <div className="flex items-center gap-3 mb-4">
+                    <div className="w-12 h-12 bg-[#1a2744] rounded-2xl flex items-center justify-center text-[#B8F3D8] border-4 border-white shadow-lg">
+                      <History className="w-6 h-6" />
+                    </div>
+                    <div>
+                      <div className="text-sm font-bold text-[#1a2744]/70">歴史と文化</div>
+                      <h3 className="text-2xl font-bold text-[#1a2744]">平安時代の文化</h3>
+                    </div>
                   </div>
-                  <div>
-                    <div className="text-sm font-bold text-[#1a2744]/70">歴史と文化</div>
-                    <h3 className="text-2xl font-bold text-[#1a2744]">平安時代の文化</h3>
+                  <p className="text-[#1a2744]/80 mb-4 leading-relaxed">
+                    後宮の構造や色の美学、成人の儀式など。煌びやかな宮中生活の裏側と当時の常識を覗く。
+                  </p>
+                  <div className="flex flex-wrap gap-2">
+                    <span className="px-3 py-1 bg-white rounded-full text-sm text-[#1a2744] font-medium">
+                      宮中
+                    </span>
+                    <span className="px-3 py-1 bg-white rounded-full text-sm text-[#1a2744] font-medium">
+                      十二単
+                    </span>
+                    <span className="px-3 py-1 bg-white rounded-full text-sm text-[#1a2744] font-medium">
+                      雅（みやび）
+                    </span>
+                  </div>
+                  <div className="absolute top-4 right-4 text-white/50">
+                    <Star className="w-5 h-5 fill-current" />
                   </div>
                 </div>
-                <p className="text-[#1a2744]/80 mb-4 leading-relaxed">
-                  後宮の構造や色の美学、成人の儀式など。煌びやかな宮中生活の裏側と当時の常識を覗く。
-                </p>
-                <div className="flex flex-wrap gap-2">
-                  <span className="px-3 py-1 bg-white rounded-full text-sm text-[#1a2744] font-medium">
-                    宮中
-                  </span>
-                  <span className="px-3 py-1 bg-white rounded-full text-sm text-[#1a2744] font-medium">
-                    十二単
-                  </span>
-                  <span className="px-3 py-1 bg-white rounded-full text-sm text-[#1a2744] font-medium">
-                    雅（みやび）
-                  </span>
-                </div>
-                <div className="absolute top-4 right-4 text-white/50">
-                  <Star className="w-5 h-5 fill-current" />
-                </div>
-              </div>
-            </Link>
+              </Link>
+            </motion.div>
           </div>
 
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8 mt-8">
             {/* Article 4: Heike Monogatari */}
-            <Link
-              to="/article/literature/heike"
-              className="group relative"
+            <motion.div
+              initial={{ opacity: 0, y: 50 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true, margin: "-50px" }}
+              transition={{ duration: 0.6 }}
             >
-              <div className="bg-[#FF4D4D] rounded-3xl p-8 border-4 border-white hover:scale-105 transition-all hover:shadow-2xl">
-                <div className="flex items-center gap-3 mb-4">
-                  <div className="w-12 h-12 bg-[#1a2744] rounded-2xl flex items-center justify-center text-[#FF4D4D] border-4 border-white shadow-lg">
-                    <Swords className="w-6 h-6" />
+              <Link
+                to="/article/literature/heike"
+                className="group relative block"
+              >
+                <div className="bg-[#FF4D4D] rounded-3xl p-8 border-4 border-white hover:scale-105 transition-all hover:shadow-2xl">
+                  <div className="flex items-center gap-3 mb-4">
+                    <div className="w-12 h-12 bg-[#1a2744] rounded-2xl flex items-center justify-center text-[#FF4D4D] border-4 border-white shadow-lg">
+                      <Swords className="w-6 h-6" />
+                    </div>
+                    <div>
+                      <div className="text-sm font-bold text-[#1a2744]/70">日本の古典文学</div>
+                      <h3 className="text-2xl font-bold text-[#1a2744]">平家物語</h3>
+                    </div>
                   </div>
-                  <div>
-                    <div className="text-sm font-bold text-[#1a2744]/70">日本の古典文学</div>
-                    <h3 className="text-2xl font-bold text-[#1a2744]">平家物語</h3>
+                  <p className="text-[#1a2744]/80 mb-4 leading-relaxed">
+                    奢れる者も久しからず。最強の軍団が、一瞬で海に消えるまでの壮大なバッドエンド・ストーリー。
+                  </p>
+                  <div className="flex flex-wrap gap-2">
+                    <span className="px-3 py-1 bg-white rounded-full text-sm text-[#1a2744] font-medium">
+                      諸行無常
+                    </span>
+                    <span className="px-3 py-1 bg-white rounded-full text-sm text-[#1a2744] font-medium">
+                      源平合戦
+                    </span>
+                    <span className="px-3 py-1 bg-white rounded-full text-sm text-[#1a2744] font-medium">
+                      滅びの美学
+                    </span>
+                  </div>
+                  <div className="absolute top-4 right-4 text-white/50">
+                    <Star className="w-5 h-5 fill-current" />
                   </div>
                 </div>
-                <p className="text-[#1a2744]/80 mb-4 leading-relaxed">
-                  奢れる者も久しからず。最強の軍団が、一瞬で海に消えるまでの壮大なバッドエンド・ストーリー。
-                </p>
-                <div className="flex flex-wrap gap-2">
-                  <span className="px-3 py-1 bg-white rounded-full text-sm text-[#1a2744] font-medium">
-                    諸行無常
-                  </span>
-                  <span className="px-3 py-1 bg-white rounded-full text-sm text-[#1a2744] font-medium">
-                    源平合戦
-                  </span>
-                  <span className="px-3 py-1 bg-white rounded-full text-sm text-[#1a2744] font-medium">
-                    滅びの美学
-                  </span>
-                </div>
-                <div className="absolute top-4 right-4 text-white/50">
-                  <Star className="w-5 h-5 fill-current" />
-                </div>
-              </div>
-            </Link>
+              </Link>
+            </motion.div>
           </div>
         </div>
       </section>
@@ -310,7 +354,13 @@ export function Home() {
       {/* CTA Section */}
       <section className="py-16 px-6 sm:px-8 lg:px-12">
         <div className="max-w-4xl mx-auto">
-          <div className="relative overflow-hidden rounded-3xl p-12 text-center border-4 border-white bg-gradient-to-br from-[#FFB3D9] via-[#D4B8FF] to-[#B8E6E1]">
+          <motion.div 
+            initial={{ opacity: 0, scale: 0.95 }}
+            whileInView={{ opacity: 1, scale: 1 }}
+            viewport={{ once: true, margin: "-50px" }}
+            transition={{ duration: 0.8 }}
+            className="relative overflow-hidden rounded-3xl p-12 text-center border-4 border-white bg-gradient-to-br from-[#FFB3D9] via-[#D4B8FF] to-[#B8E6E1]"
+          >
             <div className="relative z-10">
               <h2 className="text-3xl md:text-4xl font-bold text-[#1a2744] mb-4">
                 さあ、始めよう
@@ -323,13 +373,13 @@ export function Home() {
                 <span className="font-bold text-[#1a2744]">記事は随時追加中！</span>
               </div>
             </div>
-            <div className="absolute top-6 right-6 text-white/30">
+            <motion.div style={{ rotate: starRotate }} className="absolute top-6 right-6 text-white/30">
               <Star className="w-8 h-8 fill-current" />
-            </div>
-            <div className="absolute bottom-6 left-6 text-white/30">
+            </motion.div>
+            <motion.div style={{ rotate: starRotate }} className="absolute bottom-6 left-6 text-white/30">
               <Star className="w-6 h-6 fill-current" />
-            </div>
-          </div>
+            </motion.div>
+          </motion.div>
         </div>
       </section>
     </div>
