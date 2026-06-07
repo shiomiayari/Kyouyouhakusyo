@@ -48,6 +48,7 @@ export function Sidebar() {
       icon: <Palette className="w-5 h-5" />,
       color: '#C3B7F5',
       articles: [
+        { id: 'monet', title: 'モネ：睡蓮' },
         { id: 'monalisa', title: 'モナ・リザ' },
         { id: 'starrynight', title: '星月夜' },
         { id: 'thedream', title: '夢' },
