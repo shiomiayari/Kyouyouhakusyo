@@ -200,7 +200,7 @@ export function Sidebar() {
 
       {/* Sidebar */}
       <aside
-        className={`fixed lg:sticky top-0 left-0 h-screen w-80 bg-[#1B2B44] border-r border-white/15 z-40 transition-transform lg:translate-x-0 ${isOpen ? 'translate-x-0' : '-translate-x-full'
+        className={`fixed lg:sticky top-0 left-0 h-screen w-80 shrink-0 bg-[#1B2B44] border-r border-white/15 z-40 transition-transform lg:translate-x-0 ${isOpen ? 'translate-x-0' : '-translate-x-full'
           }`}
       >
         <SidebarContent />
