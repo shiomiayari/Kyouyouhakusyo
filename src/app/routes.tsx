@@ -12,6 +12,8 @@ import { HeikeEpisodeDetail } from './pages/articles/HeikeEpisodeDetail';
 import { KingArthur } from './pages/articles/mythology/KingArthur';
 import { KingArthurStoryDetail } from './pages/articles/mythology/KingArthurStoryDetail';
 import { MonetWaterLilies } from './pages/articles/art/MonetWaterLilies';
+import { Impressionism } from './pages/articles/art/Impressionism';
+import { StarryNight } from './pages/articles/art/StarryNight';
 
 export const router = createBrowserRouter([
   {
@@ -30,6 +32,8 @@ export const router = createBrowserRouter([
       { path: 'article/mythology/king-arthur', Component: KingArthur },
       { path: 'article/mythology/king-arthur/:storyId', Component: KingArthurStoryDetail },
       { path: 'article/art/monet', Component: MonetWaterLilies },
+      { path: 'article/art/impressionism', Component: Impressionism },
+      { path: 'article/art/starrynight', Component: StarryNight },
       {
         path: '*',
         Component: () => (
