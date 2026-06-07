@@ -14,6 +14,8 @@ import { KingArthurStoryDetail } from './pages/articles/mythology/KingArthurStor
 import { MonetWaterLilies } from './pages/articles/art/MonetWaterLilies';
 import { Impressionism } from './pages/articles/art/Impressionism';
 import { StarryNight } from './pages/articles/art/StarryNight';
+import { MonaLisa } from './pages/articles/art/MonaLisa';
+import { TheDream } from './pages/articles/art/TheDream';
 
 export const router = createBrowserRouter([
   {
@@ -34,6 +36,8 @@ export const router = createBrowserRouter([
       { path: 'article/art/monet', Component: MonetWaterLilies },
       { path: 'article/art/impressionism', Component: Impressionism },
       { path: 'article/art/starrynight', Component: StarryNight },
+      { path: 'article/art/monalisa', Component: MonaLisa },
+      { path: 'article/art/thedream', Component: TheDream },
       {
         path: '*',
         Component: () => (
