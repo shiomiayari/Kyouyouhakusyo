@@ -1,41 +1,21 @@
 import { Star, Sparkles, BookOpen, Users, Brain, Heart, Clock, ChevronDown, ChevronUp } from 'lucide-react';
 import { RadarChart, PolarGrid, PolarAngleAxis, PolarRadiusAxis, Radar, ResponsiveContainer, Legend } from 'recharts';
 import { useState } from 'react';
-const authorImage = '/murasaki-shikibu.jpg';
+const authorImage = '/Tosa_Mitsuoki_001.jpg';
 const relationshipImage = '/genji-relationship.png';
 const book1Image = '/genji-book1.jpg';
 const book2Image = '/genji-book2.jpg';
 const book3Image = '/genji-book3.jpg';
 
 export function GenjiMonogatari() {
-  const [expandedPart, setExpandedPart] = useState<number | null>(1);
+  const [expandedPart, setExpandedPart] = useState<number | null>(null);
 
   const radarData = [
-    {
-      subject: '人間関係の複雑度',
-      value: 100,
-      fullMark: 100,
-    },
-    {
-      subject: '現代への転用力',
-      value: 80,
-      fullMark: 100,
-    },
-    {
-      subject: 'エモ・情緒レベル',
-      value: 100,
-      fullMark: 100,
-    },
-    {
-      subject: '哲学的深度',
-      value: 60,
-      fullMark: 100,
-    },
-    {
-      subject: 'タイパ・読了難易度',
-      value: 100,
-      fullMark: 100,
-    },
+    { subject: '人間関係の複雑度', value: 100, fullMark: 100 },
+    { subject: '現代への転用力', value: 80, fullMark: 100 },
+    { subject: 'エモ・情緒レベル', value: 100, fullMark: 100 },
+    { subject: '哲学的深度', value: 60, fullMark: 100 },
+    { subject: 'タイパ・読了難易度', value: 100, fullMark: 100 },
   ];
 
   const part1Chapters = [
@@ -94,7 +74,7 @@ export function GenjiMonogatari() {
     { num: 47, title: '総角', summary: '薫の求愛を拒み続けた大君が、心身の消耗の末にこの世を去る。' },
     { num: 48, title: '早蕨', summary: '姉を失った中君が都へ移り、薫との複雑な縁が続いていく。' },
     { num: 49, title: '宿木', summary: '薫が別の女性と結婚するも、心は常に亡き大君の面影を追い続ける。' },
-    { num: 50, title: '東屋', summary: '大君に生き写しの異母妹・浮舟が現れ、薫の執着が燃する。' },
+    { num: 50, title: '東屋', summary: '大君に生き写しの異母妹・浮舟が現れ、薫の執着が燃える。' },
     { num: 51, title: '浮舟', summary: '薫と匂宮、二人の貴公子に愛され追い詰められた浮舟が宇治の川へ身を投げる。' },
     { num: 52, title: '蜻蛉', summary: '浮舟の死を悼む人々の中で、薫は再び「喪失」という虚無に直面する。' },
     { num: 53, title: '手習', summary: '奇跡的に救われていた浮舟が、比叡山の麓で自らの過去を捨てて出家する。' },
@@ -108,43 +88,43 @@ export function GenjiMonogatari() {
   return (
     <div className="min-h-screen relative overflow-hidden pb-16">
       {/* Sparkle decorations */}
-      <div className="absolute top-20 right-10 text-white/20 animate-pulse">
+      <div className="absolute top-20 right-10 text-white/20 animate-pulse hidden md:block">
         <Star className="w-8 h-8 fill-current" />
       </div>
-      <div className="absolute bottom-80 left-10 text-white/20 animate-pulse delay-100">
+      <div className="absolute bottom-80 left-10 text-white/20 animate-pulse delay-100 hidden md:block">
         <Star className="w-6 h-6 fill-current" />
       </div>
-      <div className="absolute top-96 right-1/3 text-white/20 animate-pulse delay-200">
+      <div className="absolute top-96 right-1/3 text-white/20 animate-pulse delay-200 hidden md:block">
         <Sparkles className="w-7 h-7" />
       </div>
 
       {/* Hero Section */}
-      <section className="py-12 px-6 sm:px-8 lg:px-12">
+      <section className="py-6 md:py-12 px-4 sm:px-6 lg:px-12">
         <div className="max-w-5xl mx-auto">
-          <div className="inline-block px-4 py-2 bg-[#FFC2D1] text-[#1B2B44] rounded-full mb-6 font-bold border-2 border-white text-sm">
+          <div className="inline-block px-3 py-1.5 bg-[#FFC2D1] text-[#1B2B44] rounded-full mb-4 md:mb-6 font-bold border-2 border-white text-xs md:text-sm">
             大人の教養白書：Deep Report #01
           </div>
-          <h1 className="text-4xl md:text-6xl font-black mb-6 text-white leading-tight">
+          <h1 className="text-3xl md:text-5xl font-black mb-4 md:mb-6 text-white leading-tight">
             『源氏物語』<br />
-            <span className="text-3xl md:text-4xl">〜愛執と権力のアーキテクチャ〜</span>
+            <span className="text-lg sm:text-xl md:text-3xl block mt-2">〜愛執と権力のアーキテクチャ〜</span>
           </h1>
         </div>
       </section>
 
       {/* Catchphrase */}
-      <section className="py-8 px-6 sm:px-8 lg:px-12">
+      <section className="py-4 md:py-8 px-4 sm:px-6 lg:px-12">
         <div className="max-w-5xl mx-auto">
-          <div className="relative bg-gradient-to-br from-[#FFC2D1] to-[#C3B7F5] p-8 md:p-12 rounded-3xl border-4 border-white">
-            <div className="flex items-start gap-4">
-              <div className="text-4xl flex-shrink-0">💔</div>
+          <div className="relative bg-gradient-to-br from-[#FFC2D1] to-[#C3B7F5] p-5 md:p-10 rounded-2xl md:rounded-3xl border-4 border-white">
+            <div className="flex items-start gap-3 md:gap-4">
+              <div className="text-3xl md:text-4xl flex-shrink-0">💔</div>
               <div>
-                <h2 className="text-xl md:text-2xl font-bold text-[#1B2B44] leading-relaxed">
+                <h2 className="text-base md:text-2xl font-bold text-[#1B2B44] leading-relaxed break-keep">
                   全方位外交の代償。<br />
                   1000年前のプレイボーイが陥った『因果応報』な行く末
                 </h2>
               </div>
             </div>
-            <div className="absolute top-4 right-4 text-white/50">
+            <div className="absolute top-3 right-3 text-white/50 hidden md:block">
               <Star className="w-6 h-6 fill-current" />
             </div>
           </div>
@@ -152,14 +132,14 @@ export function GenjiMonogatari() {
       </section>
 
       {/* Summary */}
-      <section className="py-8 px-6 sm:px-8 lg:px-12">
+      <section className="py-4 md:py-8 px-4 sm:px-6 lg:px-12">
         <div className="max-w-5xl mx-auto">
-          <h2 className="text-3xl font-bold mb-6 text-white flex items-center gap-3">
-            <BookOpen className="w-8 h-8 text-[#FFC2D1]" />
+          <h2 className="text-xl md:text-3xl font-bold mb-4 md:mb-6 text-white flex items-center gap-2 md:gap-3">
+            <BookOpen className="w-6 h-6 md:w-8 md:h-8 text-[#FFC2D1]" />
             要約
           </h2>
-          <div className="bg-[#2A3B5A] p-8 rounded-3xl border-2 border-white/20">
-            <p className="text-lg text-white/90 leading-relaxed">
+          <div className="bg-[#2A3B5A] p-5 md:p-8 rounded-2xl md:rounded-3xl border-2 border-white/20">
+            <p className="text-sm md:text-lg text-white/90 leading-relaxed">
               帝の愛息でありながら臣下にされた「光源氏」を軸に、平安貴族社会の頂点へ登り詰める栄華と、愛した女性たちの死、そして自らの不義が自身に返ってくる晩年の凋落を描く。単なる「恋多き男の物語」ではなく、<strong className="text-[#FFC2D1]">「持てる者がすべてを失っていく過程」</strong>を冷徹に描いた、日本文学史上最も美しく残酷なリアリズム小説である。
             </p>
           </div>
@@ -167,10 +147,10 @@ export function GenjiMonogatari() {
       </section>
 
       {/* All 54 Chapters */}
-      <section className="py-8 px-6 sm:px-8 lg:px-12">
+      <section className="py-4 md:py-8 px-4 sm:px-6 lg:px-12">
         <div className="max-w-5xl mx-auto">
-          <h2 className="text-3xl font-bold mb-6 text-white flex items-center gap-3">
-            <BookOpen className="w-8 h-8 text-[#FFE5A0]" />
+          <h2 className="text-lg md:text-3xl font-bold mb-4 md:mb-6 text-white flex items-center gap-2 md:gap-3 break-keep">
+            <BookOpen className="w-6 h-6 md:w-8 md:h-8 text-[#FFE5A0]" />
             源氏物語・全54帖：各章完全要約白書
           </h2>
 
@@ -178,32 +158,32 @@ export function GenjiMonogatari() {
           <div className="mb-4">
             <button
               onClick={() => togglePart(1)}
-              className="w-full bg-gradient-to-r from-[#FFC2D1] to-[#C3B7F5] p-6 rounded-3xl border-4 border-white hover:scale-[1.02] transition-all"
+              className="w-full bg-gradient-to-r from-[#FFC2D1] to-[#C3B7F5] p-4 md:p-6 rounded-2xl md:rounded-3xl border-4 border-white hover:scale-[1.02] transition-all"
             >
               <div className="flex items-center justify-between">
-                <div className="text-left">
-                  <h3 className="text-2xl font-bold text-[#1B2B44] mb-2">第一部：光源氏の栄華と愛の遍歴</h3>
-                  <p className="text-[#1B2B44]/70">桐壺 〜 藤裏葉（全33帖）</p>
+                <div className="text-left pr-2">
+                  <h3 className="text-base md:text-2xl font-bold text-[#1B2B44] mb-1 md:mb-2 break-keep">第一部：光源氏の栄華と愛の遍歴</h3>
+                  <p className="text-xs md:text-base text-[#1B2B44]/70">桐壺 〜 藤裏葉（全33帖）</p>
                 </div>
                 {expandedPart === 1 ? (
-                  <ChevronUp className="w-8 h-8 text-[#1B2B44]" />
+                  <ChevronUp className="w-6 h-6 md:w-8 md:h-8 text-[#1B2B44] flex-shrink-0" />
                 ) : (
-                  <ChevronDown className="w-8 h-8 text-[#1B2B44]" />
+                  <ChevronDown className="w-6 h-6 md:w-8 md:h-8 text-[#1B2B44] flex-shrink-0" />
                 )}
               </div>
             </button>
             {expandedPart === 1 && (
-              <div className="mt-4 bg-[#2A3B5A] p-6 rounded-3xl border-2 border-white/20">
+              <div className="mt-3 md:mt-4 bg-[#2A3B5A] p-4 md:p-6 rounded-2xl md:rounded-3xl border-2 border-white/20">
                 <div className="space-y-3">
                   {part1Chapters.map((chapter) => (
-                    <div key={chapter.num} className="bg-[#1B2B44] p-4 rounded-2xl border-2 border-white/10 hover:border-[#FFC2D1]/50 transition-all">
+                    <div key={chapter.num} className="bg-[#1B2B44] p-3 md:p-4 rounded-xl md:rounded-2xl border-2 border-white/10 hover:border-[#FFC2D1]/50 transition-all">
                       <div className="flex items-start gap-3">
-                        <div className="w-10 h-10 flex-shrink-0 bg-[#FFC2D1] rounded-xl flex items-center justify-center text-[#1B2B44] font-bold border-2 border-white">
+                        <div className="w-8 h-8 md:w-10 md:h-10 flex-shrink-0 bg-[#FFC2D1] rounded-lg md:rounded-xl flex items-center justify-center text-[#1B2B44] font-bold border-2 border-white text-sm md:text-base">
                           {chapter.num}
                         </div>
                         <div>
-                          <h4 className="font-bold text-white mb-1">{chapter.title}</h4>
-                          <p className="text-sm text-white/70 leading-relaxed">{chapter.summary}</p>
+                          <h4 className="font-bold text-white mb-1 text-sm md:text-base">{chapter.title}</h4>
+                          <p className="text-xs md:text-sm text-white/70 leading-relaxed">{chapter.summary}</p>
                         </div>
                       </div>
                     </div>
@@ -217,32 +197,32 @@ export function GenjiMonogatari() {
           <div className="mb-4">
             <button
               onClick={() => togglePart(2)}
-              className="w-full bg-gradient-to-r from-[#C3B7F5] to-[#B3E5FC] p-6 rounded-3xl border-4 border-white hover:scale-[1.02] transition-all"
+              className="w-full bg-gradient-to-r from-[#C3B7F5] to-[#B3E5FC] p-4 md:p-6 rounded-2xl md:rounded-3xl border-4 border-white hover:scale-[1.02] transition-all"
             >
               <div className="flex items-center justify-between">
-                <div className="text-left">
-                  <h3 className="text-2xl font-bold text-[#1B2B44] mb-2">第二部：因果応報と崩壊の物語</h3>
-                  <p className="text-[#1B2B44]/70">若菜 上 〜 雲隠（全9帖）</p>
+                <div className="text-left pr-2">
+                  <h3 className="text-base md:text-2xl font-bold text-[#1B2B44] mb-1 md:mb-2 break-keep">第二部：因果応報と崩壊の物語</h3>
+                  <p className="text-xs md:text-base text-[#1B2B44]/70">若菜 上 〜 雲隠（全9帖）</p>
                 </div>
                 {expandedPart === 2 ? (
-                  <ChevronUp className="w-8 h-8 text-[#1B2B44]" />
+                  <ChevronUp className="w-6 h-6 md:w-8 md:h-8 text-[#1B2B44] flex-shrink-0" />
                 ) : (
-                  <ChevronDown className="w-8 h-8 text-[#1B2B44]" />
+                  <ChevronDown className="w-6 h-6 md:w-8 md:h-8 text-[#1B2B44] flex-shrink-0" />
                 )}
               </div>
             </button>
             {expandedPart === 2 && (
-              <div className="mt-4 bg-[#2A3B5A] p-6 rounded-3xl border-2 border-white/20">
+              <div className="mt-3 md:mt-4 bg-[#2A3B5A] p-4 md:p-6 rounded-2xl md:rounded-3xl border-2 border-white/20">
                 <div className="space-y-3">
                   {part2Chapters.map((chapter) => (
-                    <div key={chapter.num} className="bg-[#1B2B44] p-4 rounded-2xl border-2 border-white/10 hover:border-[#C3B7F5]/50 transition-all">
+                    <div key={chapter.num} className="bg-[#1B2B44] p-3 md:p-4 rounded-xl md:rounded-2xl border-2 border-white/10 hover:border-[#C3B7F5]/50 transition-all">
                       <div className="flex items-start gap-3">
-                        <div className="w-10 h-10 flex-shrink-0 bg-[#C3B7F5] rounded-xl flex items-center justify-center text-[#1B2B44] font-bold border-2 border-white">
+                        <div className="w-8 h-8 md:w-10 md:h-10 flex-shrink-0 bg-[#C3B7F5] rounded-lg md:rounded-xl flex items-center justify-center text-[#1B2B44] font-bold border-2 border-white text-sm md:text-base">
                           {chapter.num}
                         </div>
                         <div>
-                          <h4 className="font-bold text-white mb-1">{chapter.title}</h4>
-                          <p className="text-sm text-white/70 leading-relaxed">{chapter.summary}</p>
+                          <h4 className="font-bold text-white mb-1 text-sm md:text-base">{chapter.title}</h4>
+                          <p className="text-xs md:text-sm text-white/70 leading-relaxed">{chapter.summary}</p>
                         </div>
                       </div>
                     </div>
@@ -256,32 +236,32 @@ export function GenjiMonogatari() {
           <div>
             <button
               onClick={() => togglePart(3)}
-              className="w-full bg-gradient-to-r from-[#B3E5FC] to-[#B8F3D8] p-6 rounded-3xl border-4 border-white hover:scale-[1.02] transition-all"
+              className="w-full bg-gradient-to-r from-[#B3E5FC] to-[#B8F3D8] p-4 md:p-6 rounded-2xl md:rounded-3xl border-4 border-white hover:scale-[1.02] transition-all"
             >
               <div className="flex items-center justify-between">
-                <div className="text-left">
-                  <h3 className="text-2xl font-bold text-[#1B2B44] mb-2">第三部：宇治十帖（次世代の彷徨）</h3>
-                  <p className="text-[#1B2B44]/70">匂兵部卿 〜 夢浮橋（全12帖）</p>
+                <div className="text-left pr-2">
+                  <h3 className="text-base md:text-2xl font-bold text-[#1B2B44] mb-1 md:mb-2 break-keep">第三部：宇治十帖（次世代の彷徨）</h3>
+                  <p className="text-xs md:text-base text-[#1B2B44]/70">匂兵部卿 〜 夢浮橋（全12帖）</p>
                 </div>
                 {expandedPart === 3 ? (
-                  <ChevronUp className="w-8 h-8 text-[#1B2B44]" />
+                  <ChevronUp className="w-6 h-6 md:w-8 md:h-8 text-[#1B2B44] flex-shrink-0" />
                 ) : (
-                  <ChevronDown className="w-8 h-8 text-[#1B2B44]" />
+                  <ChevronDown className="w-6 h-6 md:w-8 md:h-8 text-[#1B2B44] flex-shrink-0" />
                 )}
               </div>
             </button>
             {expandedPart === 3 && (
-              <div className="mt-4 bg-[#2A3B5A] p-6 rounded-3xl border-2 border-white/20">
+              <div className="mt-3 md:mt-4 bg-[#2A3B5A] p-4 md:p-6 rounded-2xl md:rounded-3xl border-2 border-white/20">
                 <div className="space-y-3">
                   {part3Chapters.map((chapter) => (
-                    <div key={chapter.num} className="bg-[#1B2B44] p-4 rounded-2xl border-2 border-white/10 hover:border-[#B3E5FC]/50 transition-all">
+                    <div key={chapter.num} className="bg-[#1B2B44] p-3 md:p-4 rounded-xl md:rounded-2xl border-2 border-white/10 hover:border-[#B3E5FC]/50 transition-all">
                       <div className="flex items-start gap-3">
-                        <div className="w-10 h-10 flex-shrink-0 bg-[#B3E5FC] rounded-xl flex items-center justify-center text-[#1B2B44] font-bold border-2 border-white">
+                        <div className="w-8 h-8 md:w-10 md:h-10 flex-shrink-0 bg-[#B3E5FC] rounded-lg md:rounded-xl flex items-center justify-center text-[#1B2B44] font-bold border-2 border-white text-sm md:text-base">
                           {chapter.num}
                         </div>
                         <div>
-                          <h4 className="font-bold text-white mb-1">{chapter.title}</h4>
-                          <p className="text-sm text-white/70 leading-relaxed">{chapter.summary}</p>
+                          <h4 className="font-bold text-white mb-1 text-sm md:text-base">{chapter.title}</h4>
+                          <p className="text-xs md:text-sm text-white/70 leading-relaxed">{chapter.summary}</p>
                         </div>
                       </div>
                     </div>
@@ -294,13 +274,13 @@ export function GenjiMonogatari() {
       </section>
 
       {/* Character Relationship */}
-      <section className="py-8 px-6 sm:px-8 lg:px-12">
+      <section className="py-4 md:py-8 px-4 sm:px-6 lg:px-12">
         <div className="max-w-5xl mx-auto">
-          <h2 className="text-3xl font-bold mb-6 text-white flex items-center gap-3">
-            <Users className="w-8 h-8 text-[#FFC2D1]" />
+          <h2 className="text-xl md:text-3xl font-bold mb-4 md:mb-6 text-white flex items-center gap-2 md:gap-3">
+            <Users className="w-6 h-6 md:w-8 md:h-8 text-[#FFC2D1]" />
             人物相関図
           </h2>
-          <div className="bg-white p-8 rounded-3xl border-4 border-white shadow-xl">
+          <div className="bg-white p-5 md:p-8 rounded-2xl md:rounded-3xl border-4 border-white shadow-xl">
             <img 
               src={relationshipImage} 
               alt="源氏物語・人物相関図" 
@@ -311,24 +291,24 @@ export function GenjiMonogatari() {
       </section>
 
       {/* Background & Author */}
-      <section className="py-8 px-6 sm:px-8 lg:px-12">
+      <section className="py-4 md:py-8 px-4 sm:px-6 lg:px-12">
         <div className="max-w-5xl mx-auto">
-          <h2 className="text-3xl font-bold mb-6 text-white flex items-center gap-3">
-            <Users className="w-8 h-8 text-[#FFE5A0]" />
+          <h2 className="text-xl md:text-3xl font-bold mb-4 md:mb-6 text-white flex items-center gap-2 md:gap-3 break-keep">
+            <Users className="w-6 h-6 md:w-8 md:h-8 text-[#FFE5A0]" />
             作品の背景・作者
           </h2>
-          <div className="bg-[#2A3B5A] p-8 rounded-3xl border-2 border-white/20">
-            <div className="grid md:grid-cols-2 gap-8 items-center">
-              <div className="space-y-6">
+          <div className="bg-[#2A3B5A] p-5 md:p-8 rounded-2xl md:rounded-3xl border-2 border-white/20">
+            <div className="grid md:grid-cols-2 gap-6 md:gap-8 items-center">
+              <div className="space-y-4 md:space-y-6">
                 <div>
-                  <h3 className="text-xl font-bold text-[#FFC2D1] mb-3">作者：紫式部</h3>
-                  <p className="text-white/90 leading-relaxed">
+                  <h3 className="text-lg md:text-xl font-bold text-[#FFC2D1] mb-2 break-keep">作者：紫式部</h3>
+                  <p className="text-sm md:text-base text-white/90 leading-relaxed">
                     藤原道長の娘・彰子の家庭教師（女房）として出仕。最高権力者・道長のプロデュースを受け、当時の政治的パワーゲームを間近で見ながら執筆した。
                   </p>
                 </div>
                 <div>
-                  <h3 className="text-xl font-bold text-[#C3B7F5] mb-3">時代背景：摂関政治の最盛期</h3>
-                  <p className="text-white/90 leading-relaxed">
+                  <h3 className="text-lg md:text-xl font-bold text-[#C3B7F5] mb-2 break-keep">時代背景：摂関政治の最盛期</h3>
+                  <p className="text-sm md:text-base text-white/90 leading-relaxed">
                     「娘を帝に嫁がせ、外戚として権力を握る」という構造がすべて。女性の価値が政治利用される中で、彼女たちの「心の居場所」を文学として救い出した側面がある。
                   </p>
                 </div>
@@ -337,7 +317,7 @@ export function GenjiMonogatari() {
                 <img 
                   src={authorImage} 
                   alt="紫式部" 
-                  className="w-full rounded-2xl border-4 border-white shadow-xl"
+                  className="w-full rounded-xl md:rounded-2xl border-4 border-white shadow-xl"
                 />
               </div>
             </div>
@@ -346,20 +326,19 @@ export function GenjiMonogatari() {
       </section>
 
       {/* Radar Chart */}
-      <section className="py-8 px-6 sm:px-8 lg:px-12">
+      <section className="py-4 md:py-8 px-4 sm:px-6 lg:px-12">
         <div className="max-w-5xl mx-auto">
-          <h2 className="text-3xl font-bold mb-6 text-white flex items-center gap-3">
-            <Heart className="w-8 h-8 text-[#C3B7F5]" />
+          <h2 className="text-xl md:text-3xl font-bold mb-4 md:mb-6 text-white flex items-center gap-2 md:gap-3 break-keep">
+            <Heart className="w-6 h-6 md:w-8 md:h-8 text-[#C3B7F5]" />
             作品評価レーダーチャート
           </h2>
-          <div className="bg-[#2A3B5A] p-8 rounded-3xl border-2 border-white/20">
-            <ResponsiveContainer width="100%" height={400}>
+          <div className="bg-[#2A3B5A] p-5 md:p-8 rounded-2xl md:rounded-3xl border-2 border-white/20">
+            <ResponsiveContainer width="100%" height={300} className="md:h-[400px]">
               <RadarChart data={radarData}>
                 <PolarGrid stroke="#ffffff30" key="polar-grid" />
                 <PolarAngleAxis 
                   dataKey="subject" 
-                  tick={{ fill: '#ffffff', fontSize: 12 }}
-                  className="text-xs"
+                  tick={{ fill: '#ffffff', fontSize: 11 }}
                   key="polar-angle-axis"
                 />
                 <PolarRadiusAxis angle={90} domain={[0, 100]} tick={{ fill: '#ffffff80' }} key="polar-radius-axis" />
@@ -369,36 +348,36 @@ export function GenjiMonogatari() {
                   stroke="#FFC2D1" 
                   fill="#FFC2D1" 
                   fillOpacity={0.6}
-                  strokeWidth={3}
+                  strokeWidth={2}
                   key="radar-genji"
                 />
                 <Legend 
-                  wrapperStyle={{ color: '#ffffff' }}
+                  wrapperStyle={{ color: '#ffffff', fontSize: '12px' }}
                   iconType="circle"
                   key="legend"
                 />
               </RadarChart>
             </ResponsiveContainer>
-            <div className="mt-6 grid md:grid-cols-2 gap-4 text-sm text-white/80">
+            <div className="mt-4 md:mt-6 grid md:grid-cols-2 gap-3 md:gap-4 text-xs md:text-sm text-white/80">
               <div>
-                <strong className="text-[#FFC2D1]">💔 人間関係の複雑度：5.0</strong>
-                <p className="mt-1">愛憎、嫉妬、生霊。まさに昼ドラの極致。</p>
+                <strong className="text-[#FFC2D1] block mb-1">💔 人間関係の複雑度：5.0</strong>
+                <p>愛憎、嫉妬、生霊。まさに昼ドラの極致。</p>
               </div>
               <div>
-                <strong className="text-[#B3E5FC]">💼 現代への転用力：4.0</strong>
-                <p className="mt-1">恋愛、政治、ブランディング。全てが学べる。</p>
+                <strong className="text-[#B3E5FC] block mb-1">💼 現代への転用力：4.0</strong>
+                <p>恋愛、政治、ブランディング。全てが学べる。</p>
               </div>
               <div>
-                <strong className="text-[#B8F3D8]">🌸 エモ・情緒レベル：5.0</strong>
-                <p className="mt-1">風景描写と心理描写が絶品。読んでいて涙が出る。</p>
+                <strong className="text-[#B8F3D8] block mb-1">🌸 エモ・情緒レベル：5.0</strong>
+                <p>風景描写と心理描写が絶品。読んでいて涙が出る。</p>
               </div>
               <div>
-                <strong className="text-[#C3B7F5]">🤔 哲学的深度：3.0</strong>
-                <p className="mt-1">無常、因果応報、人生の虚しさを問い続ける。</p>
+                <strong className="text-[#C3B7F5] block mb-1">🤔 哲学的深度：3.0</strong>
+                <p>無常、因果応報、人生の虚しさを問い続ける。</p>
               </div>
               <div className="md:col-span-2">
-                <strong className="text-[#FFE5A0]">⏱️ タイパ・読了難易度：5.0</strong>
-                <p className="mt-1">54帖は長い。漫画版ならなら意外と読める。</p>
+                <strong className="text-[#FFE5A0] block mb-1">⏱️ タイパ・読了難易度：5.0</strong>
+                <p>54帖は長い。漫画版ならなら意外と読める。</p>
               </div>
             </div>
           </div>
@@ -406,14 +385,14 @@ export function GenjiMonogatari() {
       </section>
 
       {/* Recommended Books */}
-      <section className="py-8 px-6 sm:px-8 lg:px-12">
+      <section className="py-4 md:py-8 px-4 sm:px-6 lg:px-12">
         <div className="max-w-5xl mx-auto">
-          <h2 className="text-3xl font-bold mb-6 text-white flex items-center gap-3">
-            <BookOpen className="w-8 h-8 text-[#FFE5A0]" />
+          <h2 className="text-xl md:text-3xl font-bold mb-4 md:mb-6 text-white flex items-center gap-2 md:gap-3 break-keep">
+            <BookOpen className="w-6 h-6 md:w-8 md:h-8 text-[#FFE5A0]" />
             さらに深堀りたい人にお勧めな本三選
           </h2>
-          <div className="grid md:grid-cols-3 gap-6">
-            <div className="bg-[#FFC2D1] p-6 rounded-3xl border-4 border-white">
+          <div className="grid md:grid-cols-3 gap-4 md:gap-6">
+            <div className="bg-[#FFC2D1] p-5 md:p-6 rounded-2xl md:rounded-3xl border-4 border-white">
               <div className="mb-4">
                 <img 
                   src={book1Image} 
@@ -421,14 +400,14 @@ export function GenjiMonogatari() {
                   className="w-full rounded-xl border-2 border-white shadow-lg"
                 />
               </div>
-              <h3 className="font-bold text-lg text-[#1B2B44] mb-2 text-center">『あさきゆめみし』</h3>
-              <p className="text-sm text-[#1B2B44]/70 mb-3 text-center font-bold">大和和紀（著）</p>
-              <p className="text-sm text-[#1B2B44]/80 leading-relaxed">
+              <h3 className="font-bold text-base md:text-lg text-[#1B2B44] mb-1 md:mb-2 text-center break-keep">『あさきゆめみし』</h3>
+              <p className="text-xs md:text-sm text-[#1B2B44]/70 mb-2 md:mb-3 text-center font-bold">大和和紀（著）</p>
+              <p className="text-xs md:text-sm text-[#1B2B44]/80 leading-relaxed">
                 源氏物語を完全漫画化した不朽の名作。美麗な作画で平安貴族の世界観を体感できる。原文が苦手な人は、まずここから。
               </p>
             </div>
 
-            <div className="bg-[#C3B7F5] p-6 rounded-3xl border-4 border-white">
+            <div className="bg-[#C3B7F5] p-5 md:p-6 rounded-2xl md:rounded-3xl border-4 border-white">
               <div className="mb-4">
                 <img 
                   src={book2Image} 
@@ -436,14 +415,14 @@ export function GenjiMonogatari() {
                   className="w-full rounded-xl border-2 border-white shadow-lg"
                 />
               </div>
-              <h3 className="font-bold text-lg text-[#1B2B44] mb-2 text-center">『源氏物語の時代』</h3>
-              <p className="text-sm text-[#1B2B44]/70 mb-3 text-center font-bold">山本淳子（著）</p>
-              <p className="text-sm text-[#1B2B44]/80 leading-relaxed">
+              <h3 className="font-bold text-base md:text-lg text-[#1B2B44] mb-1 md:mb-2 text-center break-keep">『源氏物語の時代』</h3>
+              <p className="text-xs md:text-sm text-[#1B2B44]/70 mb-2 md:mb-3 text-center font-bold">山本淳子（著）</p>
+              <p className="text-xs md:text-sm text-[#1B2B44]/80 leading-relaxed">
                 摂関政治、後宮システム、平安貴族の恋愛観など、物語の背景にある「システム」を徹底解説。読後の理解が10倍深まる。
               </p>
             </div>
 
-            <div className="bg-[#B3E5FC] p-6 rounded-3xl border-4 border-white">
+            <div className="bg-[#B3E5FC] p-5 md:p-6 rounded-2xl md:rounded-3xl border-4 border-white">
               <div className="mb-4">
                 <img 
                   src={book3Image} 
@@ -451,9 +430,9 @@ export function GenjiMonogatari() {
                   className="w-full rounded-xl border-2 border-white shadow-lg"
                 />
               </div>
-              <h3 className="font-bold text-lg text-[#1B2B44] mb-2 text-center">『紫式部日記』</h3>
-              <p className="text-sm text-[#1B2B44]/70 mb-3 text-center font-bold">紫式部（著）</p>
-              <p className="text-sm text-[#1B2B44]/80 leading-relaxed">
+              <h3 className="font-bold text-base md:text-lg text-[#1B2B44] mb-1 md:mb-2 text-center break-keep">『紫式部日記』</h3>
+              <p className="text-xs md:text-sm text-[#1B2B44]/70 mb-2 md:mb-3 text-center font-bold">紫式部（著）</p>
+              <p className="text-xs md:text-sm text-[#1B2B44]/80 leading-relaxed">
                 作者自身が記した宮廷日記。藤原道長や彰子中宮とのリアルな関係、そして「源氏物語」創作の舞台裏が垣間見える。
               </p>
             </div>
@@ -462,30 +441,30 @@ export function GenjiMonogatari() {
       </section>
 
       {/* Trivia */}
-      <section className="py-8 px-6 sm:px-8 lg:px-12">
+      <section className="py-4 md:py-8 px-4 sm:px-6 lg:px-12">
         <div className="max-w-5xl mx-auto">
-          <h2 className="text-3xl font-bold mb-6 text-white flex items-center gap-3">
-            <Brain className="w-8 h-8 text-[#B8F3D8]" />
+          <h2 className="text-xl md:text-3xl font-bold mb-4 md:mb-6 text-white flex items-center gap-2 md:gap-3 break-keep">
+            <Brain className="w-6 h-6 md:w-8 md:h-8 text-[#B8F3D8]" />
             作品の豆知識（ディープ版）
           </h2>
-          <div className="space-y-4">
-            <div className="bg-[#FFC2D1] p-6 rounded-3xl border-4 border-white">
-              <div className="flex items-start gap-4">
-                <div className="text-3xl">🎭</div>
+          <div className="space-y-3 md:space-y-4">
+            <div className="bg-[#FFC2D1] p-5 md:p-6 rounded-2xl md:rounded-3xl border-4 border-white">
+              <div className="flex items-start gap-3 md:gap-4">
+                <div className="text-2xl md:text-3xl flex-shrink-0">🎭</div>
                 <div>
-                  <h3 className="font-bold text-xl text-[#1B2B44] mb-2">光源氏にモデルはいない？</h3>
-                  <p className="text-[#1B2B44]/80 leading-relaxed">
+                  <h3 className="font-bold text-lg md:text-xl text-[#1B2B44] mb-2 break-keep">光源氏にモデルはいない？</h3>
+                  <p className="text-sm md:text-base text-[#1B2B44]/80 leading-relaxed">
                     特定のモデルはおらず、在原業平の「色好み」、藤原道長の「権力」、源融の「邸宅」など、当時のスターたちの要素をマッシュアップした<strong>「最強の架空キャラ」</strong>として設計されている。
                   </p>
                 </div>
               </div>
             </div>
-            <div className="bg-[#B3E5FC] p-6 rounded-3xl border-4 border-white">
-              <div className="flex items-start gap-4">
-                <div className="text-3xl">💜</div>
+            <div className="bg-[#B3E5FC] p-5 md:p-6 rounded-2xl md:rounded-3xl border-4 border-white">
+              <div className="flex items-start gap-3 md:gap-4">
+                <div className="text-2xl md:text-3xl flex-shrink-0">💜</div>
                 <div>
-                  <h3 className="font-bold text-xl text-[#1B2B44] mb-2">「紫のゆかり」というブランディング</h3>
-                  <p className="text-[#1B2B44]/80 leading-relaxed">
+                  <h3 className="font-bold text-lg md:text-xl text-[#1B2B44] mb-2 break-keep">「紫のゆかり」というブランディング</h3>
+                  <p className="text-sm md:text-base text-[#1B2B44]/80 leading-relaxed">
                     源氏が初恋の女性（藤壺）に似ている少女（若紫）を拉致し、理想の女性に育てる。これは単なる監禁ではなく、自分好みの「価値」をゼロから創り出すという、究極の自己愛の象徴。
                   </p>
                 </div>
@@ -496,25 +475,25 @@ export function GenjiMonogatari() {
       </section>
 
       {/* CTA */}
-      <section className="py-8 px-6 sm:px-8 lg:px-12">
+      <section className="py-4 md:py-8 px-4 sm:px-6 lg:px-12">
         <div className="max-w-5xl mx-auto">
-          <div className="relative overflow-hidden rounded-3xl p-12 text-center border-4 border-white bg-gradient-to-br from-[#FFC2D1] via-[#C3B7F5] to-[#B8F3D8]">
+          <div className="relative overflow-hidden rounded-2xl md:rounded-3xl p-8 md:p-12 text-center border-4 border-white bg-gradient-to-br from-[#FFC2D1] via-[#C3B7F5] to-[#B8F3D8]">
             <div className="relative z-10">
-              <h2 className="text-3xl md:text-4xl font-bold text-[#1B2B44] mb-4">
+              <h2 className="text-2xl md:text-4xl font-bold text-[#1B2B44] mb-2 md:mb-4">
                 もっと深く知りたくなった？
               </h2>
-              <p className="text-lg text-[#1B2B44]/80 mb-8">
+              <p className="text-sm md:text-lg text-[#1B2B44]/80 mb-6 md:mb-8">
                 サイドバーから、他のカテゴリーも探索してみてください
               </p>
-              <div className="inline-flex items-center gap-2 px-6 py-3 bg-[#1B2B44] rounded-2xl shadow-lg border-4 border-white hover:scale-105 transition-transform cursor-pointer">
-                <Sparkles className="w-5 h-5 text-white" />
-                <span className="font-bold text-white">次の記事へ</span>
+              <div className="inline-flex items-center gap-2 px-5 py-2 md:px-6 md:py-3 bg-[#1B2B44] rounded-xl md:rounded-2xl shadow-lg border-2 md:border-4 border-white hover:scale-105 transition-transform cursor-pointer">
+                <Sparkles className="w-4 h-4 md:w-5 md:h-5 text-white" />
+                <span className="font-bold text-sm md:text-base text-white">次の記事へ</span>
               </div>
             </div>
-            <div className="absolute top-6 right-6 text-white/30">
+            <div className="absolute top-6 right-6 text-white/30 hidden md:block">
               <Star className="w-10 h-10 fill-current" />
             </div>
-            <div className="absolute bottom-6 left-6 text-white/30">
+            <div className="absolute bottom-6 left-6 text-white/30 hidden md:block">
               <Star className="w-8 h-8 fill-current" />
             </div>
           </div>
