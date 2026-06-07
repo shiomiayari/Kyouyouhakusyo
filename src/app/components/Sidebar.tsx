@@ -75,6 +75,8 @@ export function Sidebar() {
         { id: 'mozart', title: 'モーツァルト：レクイエム' },
         { id: 'liebestraum', title: 'リスト：愛の夢' },
         { id: 'clairdelune', title: 'ドビュッシー：月の光' },
+        { id: 'moonlight', title: 'ベートーヴェン：月光' },
+        { id: 'heroic', title: 'ショパン：英雄ポロネーズ' },
       ],
     },
     {

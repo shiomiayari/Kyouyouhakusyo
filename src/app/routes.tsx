@@ -18,6 +18,8 @@ import { MonaLisa } from './pages/articles/art/MonaLisa';
 import { TheDream } from './pages/articles/art/TheDream';
 import { LiebestraumNo3 } from './pages/articles/music/LiebestraumNo3';
 import { ClairDeLune } from './pages/articles/music/ClairDeLune';
+import { MoonlightSonata } from './pages/articles/music/MoonlightSonata';
+import { HeroicPolonaise } from './pages/articles/music/HeroicPolonaise';
 
 export const router = createBrowserRouter([
   {
@@ -42,6 +44,8 @@ export const router = createBrowserRouter([
       { path: 'article/art/thedream', Component: TheDream },
       { path: 'article/music/liebestraum', Component: LiebestraumNo3 },
       { path: 'article/music/clairdelune', Component: ClairDeLune },
+      { path: 'article/music/moonlight', Component: MoonlightSonata },
+      { path: 'article/music/heroic', Component: HeroicPolonaise },
       {
         path: '*',
         Component: () => (
