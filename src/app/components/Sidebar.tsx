@@ -73,6 +73,8 @@ export function Sidebar() {
       articles: [
         { id: 'beethoven', title: 'ベートーヴェン交響曲第9番' },
         { id: 'mozart', title: 'モーツァルト：レクイエム' },
+        { id: 'liebestraum', title: 'リスト：愛の夢' },
+        { id: 'clairdelune', title: 'ドビュッシー：月の光' },
       ],
     },
     {
