@@ -9,6 +9,8 @@ import { MakuraDanDetail } from './pages/articles/MakuraDanDetail';
 import { HeianCulture } from './pages/articles/culture/HeianCulture';
 import { HeikeMonogatari } from './pages/articles/HeikeMonogatari';
 import { HeikeEpisodeDetail } from './pages/articles/HeikeEpisodeDetail';
+import { KingArthur } from './pages/articles/mythology/KingArthur';
+import { KingArthurStoryDetail } from './pages/articles/mythology/KingArthurStoryDetail';
 
 export const router = createBrowserRouter([
   {
@@ -24,6 +26,8 @@ export const router = createBrowserRouter([
       { path: 'article/literature/heian', Component: HeianCulture },
       { path: 'article/literature/heike', Component: HeikeMonogatari },
       { path: 'article/literature/heike/:episodeId', Component: HeikeEpisodeDetail },
+      { path: 'article/mythology/king-arthur', Component: KingArthur },
+      { path: 'article/mythology/king-arthur/:storyId', Component: KingArthurStoryDetail },
       {
         path: '*',
         Component: () => (
