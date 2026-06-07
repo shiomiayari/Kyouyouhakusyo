@@ -11,6 +11,12 @@ export function Home() {
   const starY1 = useTransform(scrollYProgress, [0, 1], [0, 100]);
   const starY2 = useTransform(scrollYProgress, [0, 1], [0, -100]);
 
+  // Background parallax transforms
+  const yBg = useTransform(scrollYProgress, [0, 1], ["0%", "20%"]);
+  const yBgFast = useTransform(scrollYProgress, [0, 1], ["0%", "50%"]);
+  const opacityBg = useTransform(scrollYProgress, [0, 0.5, 1], [0.3, 0.5, 0.3]);
+
+
   const categories = [
     {
       id: 'literature',
@@ -55,7 +61,21 @@ export function Home() {
   ];
 
   return (
-    <div className="min-h-screen relative overflow-hidden">
+    <div className="min-h-screen relative overflow-hidden bg-[#0a0f1d]">
+      {/* Background Image Layers */}
+      <div className="fixed inset-0 z-0 pointer-events-none">
+        <div className="absolute inset-0 bg-gradient-to-b from-[#0a0f1d]/80 via-transparent to-[#0a0f1d]/80 z-10" />
+        <motion.div 
+          style={{ y: yBg }} 
+          className="absolute inset-[-50%] w-[200%] h-[200%] bg-[url('/bg-japanese.png')] bg-repeat opacity-40 bg-[length:600px] sm:bg-[length:800px]" 
+        />
+        <motion.div 
+          style={{ y: yBgFast, opacity: opacityBg }} 
+          className="absolute inset-[-50%] w-[200%] h-[200%] bg-[url('/bg-japanese.png')] bg-repeat bg-[length:800px] sm:bg-[length:1200px] mix-blend-overlay rotate-180" 
+        />
+      </div>
+
+      <div className="relative z-10">
       {/* Sparkle decorations */}
       <motion.div style={{ y: starY1, rotate: starRotate }} className="absolute top-20 left-10 text-white/30 animate-pulse">
         <Star className="w-8 h-8 fill-current" />
@@ -382,6 +402,7 @@ export function Home() {
           </motion.div>
         </div>
       </section>
+      </div>
     </div>
   );
 }
