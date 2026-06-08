@@ -66,14 +66,14 @@ export function HeianCulture() {
 
           <div className="grid md:grid-cols-2 gap-6">
             <div className="bg-[#1B2B44] border-2 border-[#FFC2D1]/30 rounded-2xl p-6">
-              <h3 className="text-xl font-bold text-[#FFC2D1] mb-4 flex items-center gap-2">
+              <h3 className="text-base md:text-xl font-bold text-[#FFC2D1] mb-4 flex items-center gap-2">
                 <Crown className="w-5 h-5" /> 1. 天皇の空間（中心・南部）
               </h3>
-              <ul className="space-y-4 text-white/90">
-                <li><strong className="text-white">紫宸殿（ししんでん）:</strong> 内裏の正殿。即位の礼や節会など、最も重要な公的儀式が行われる場所。</li>
-                <li><strong className="text-white">清涼殿（せいりょうでん）:</strong> 天皇の日常の住まい。政務や儀式も行われ、政治の中心となった。</li>
-                <li><strong className="text-white">仁寿殿（じじゅうでん）:</strong> 多目的に使われる儀式や宴の場。</li>
-                <li><strong className="text-white">承香殿（じょうきょうでん）:</strong> 控室や后妃の居所。</li>
+              <ul className="space-y-4 text-sm md:text-base text-white/90">
+                <li><strong className="text-white">紫宸殿:</strong> 内裏の正殿。即位の礼や節会など、最も重要な公的儀式が行われる場所。</li>
+                <li><strong className="text-white">清涼殿:</strong> 天皇の日常の住まい。政務や儀式も行われ、政治の中心となった。</li>
+                <li><strong className="text-white">仁寿殿:</strong> 多目的に使われる儀式や宴の場。</li>
+                <li><strong className="text-white">承香殿:</strong> 控室や后妃の居所。</li>
               </ul>
             </div>
 
@@ -127,11 +127,11 @@ export function HeianCulture() {
           <div className="grid md:grid-cols-2 gap-8">
             <div className="space-y-6">
               <div className="bg-gradient-to-br from-[#FFE5A0]/20 to-transparent p-6 rounded-2xl border border-[#FFE5A0]/30">
-                <h3 className="text-2xl font-bold text-[#FFE5A0] mb-3">女性の名前は「隠される」もの</h3>
-                <p className="text-white/90 leading-relaxed mb-4">
+                <h3 className="text-lg md:text-2xl font-bold text-[#FFE5A0] mb-3">女性の名前は「隠される」もの</h3>
+                <p className="text-sm md:text-base text-white/90 leading-relaxed mb-4">
                   現代のように名前で自己アピールするのではなく、平安女性にとって本名は「自分を守るために隠すもの」でした。公式記録ですら「藤原為時の女（むすめ）」と書かれます。
                 </p>
-                <div className="space-y-2 text-white/80 bg-black/20 p-4 rounded-xl">
+                <div className="space-y-2 text-sm text-white/80 bg-black/20 p-4 rounded-xl leading-relaxed">
                   <p><strong>呼び方のバリエーション:</strong></p>
                   <ul className="list-disc list-inside ml-2">
                     <li>場所: 「西の対」「～の上の御方」</li>
@@ -144,11 +144,11 @@ export function HeianCulture() {
 
             <div className="space-y-6">
               <div className="bg-gradient-to-br from-[#B3E5FC]/20 to-transparent p-6 rounded-2xl border border-[#B3E5FC]/30 h-full">
-                <h3 className="text-2xl font-bold text-[#B3E5FC] mb-3">男性は「役職名」で呼ばれる</h3>
-                <p className="text-white/90 leading-relaxed mb-4">
+                <h3 className="text-lg md:text-2xl font-bold text-[#B3E5FC] mb-3">男性は「役職名」で呼ばれる</h3>
+                <p className="text-sm md:text-base text-white/90 leading-relaxed mb-4">
                   男性には実名（例: 藤原道長）がありましたが、日常的に実名で呼ぶことは失礼とされました。
                 </p>
-                <div className="space-y-2 text-white/80 bg-black/20 p-4 rounded-xl">
+                <div className="space-y-2 text-sm text-white/80 bg-black/20 p-4 rounded-xl leading-relaxed">
                   <p><strong>出世でコロコロ変わる名前:</strong></p>
                   <p className="text-sm">
                     「大納言」「中将」など役職で呼ぶのが基本。出世するたびに呼び名が変わるため、誰が誰かわかりづらいのが平安文学の特徴。同じ役職の人は「二条の摂政」のように場所を足して区別しました。
@@ -172,9 +172,9 @@ export function HeianCulture() {
             </h2>
             <div className="grid md:grid-cols-2 gap-6 mb-8">
               <div className="bg-[#2A3B5A] p-6 rounded-2xl border border-white/10">
-                <div className="inline-block px-3 py-1 bg-[#FFC2D1]/20 text-[#FFC2D1] rounded-full text-sm font-bold mb-3">女子（12〜15歳）</div>
-                <h3 className="text-2xl font-bold text-white mb-4">裳着（もぎ）</h3>
-                <ul className="space-y-3 text-white/80">
+                <div className="inline-block px-3 py-1 bg-[#FFC2D1]/20 text-[#FFC2D1] rounded-full text-xs font-bold mb-3">女子（12〜15歳）</div>
+                <h3 className="text-xl md:text-2xl font-bold text-white mb-4">裳着</h3>
+                <ul className="space-y-3 text-sm md:text-base text-white/80">
                   <li><strong>裳を腰に結ぶ:</strong> 後ろに引きずる装束「裳」を結び、大人の正装ができる身分になったことを示す。これ以降結婚可能に。</li>
                   <li><strong>腰結（こしゆい）:</strong> 紐を結ぶ役の男性。社会的地位の高い人が選ばれるほど、後ろ盾の強さをアピールできた。</li>
                   <li><strong>髪上げ:</strong> 垂れ髪を大人用に結い上げる。</li>
@@ -182,9 +182,9 @@ export function HeianCulture() {
               </div>
               
               <div className="bg-[#2A3B5A] p-6 rounded-2xl border border-white/10">
-                <div className="inline-block px-3 py-1 bg-[#B3E5FC]/20 text-[#B3E5FC] rounded-full text-sm font-bold mb-3">男子（12〜15歳）</div>
-                <h3 className="text-2xl font-bold text-white mb-4">元服（げんぷく）</h3>
-                <ul className="space-y-3 text-white/80">
+                <div className="inline-block px-3 py-1 bg-[#B3E5FC]/20 text-[#B3E5FC] rounded-full text-xs font-bold mb-3">男子（12〜15歳）</div>
+                <h3 className="text-xl md:text-2xl font-bold text-white mb-4">元服</h3>
+                <ul className="space-y-3 text-sm md:text-base text-white/80">
                   <li><strong>加冠（かかん）:</strong> 子供の髪型を解き、大人の証である「冠」を初めて被る。</li>
                   <li><strong>理髪:</strong> 髪を剃り上げ、髻（もとどり）を作る。</li>
                   <li><strong>名前の変更:</strong> 幼名（牛若丸など）を捨て、成人としての実名（義経など）が与えられる。</li>
@@ -193,8 +193,8 @@ export function HeianCulture() {
             </div>
 
             <div className="bg-gradient-to-r from-[#C3B7F5]/20 to-[#FFC2D1]/20 p-8 rounded-2xl border border-white/20">
-              <h3 className="text-2xl font-bold text-white mb-4">入内（じゅだい）</h3>
-              <p className="text-white/90 leading-relaxed mb-4">
+              <h3 className="text-xl md:text-2xl font-bold text-white mb-4">入内</h3>
+              <p className="text-sm md:text-base text-white/90 leading-relaxed mb-4">
                 公卿の娘が天皇の妃候補として宮中に入ること。現代の結婚とは違い、実家の命運を賭けた政治的な儀式でした。「宮仕え（事務職）」とは明確に区別されます。
               </p>
               <div className="bg-black/20 p-4 rounded-xl flex items-center gap-4 text-white/80 text-sm">
@@ -208,42 +208,42 @@ export function HeianCulture() {
           <div>
             <h2 className="text-3xl font-bold mb-8 text-white flex items-center gap-3">
               <Crown className="w-8 h-8 text-[#FFE5A0]" />
-              后妃の階級（パワーバランス）
+              后妃の階級
             </h2>
             <div className="overflow-x-auto bg-[#2A3B5A] rounded-2xl border border-white/20">
-              <table className="w-full text-left border-collapse">
+              <table className="w-full text-left border-collapse text-sm md:text-base">
                 <thead>
                   <tr className="bg-black/30 text-white/90 border-b border-white/10">
-                    <th className="p-4 rounded-tl-2xl">位</th>
-                    <th className="p-4">名称</th>
-                    <th className="p-4">人数</th>
-                    <th className="p-4 rounded-tr-2xl">特徴・権力</th>
+                    <th className="p-2 md:p-4 rounded-tl-2xl whitespace-nowrap">位</th>
+                    <th className="p-2 md:p-4 whitespace-nowrap">名称</th>
+                    <th className="p-2 md:p-4 whitespace-nowrap">人数</th>
+                    <th className="p-2 md:p-4 rounded-tr-2xl">特徴・権力</th>
                   </tr>
                 </thead>
                 <tbody className="text-white/80 divide-y divide-white/10">
                   <tr className="hover:bg-white/5 transition-colors">
-                    <td className="p-4 font-bold text-[#FFE5A0]">最高位</td>
-                    <td className="p-4 font-bold text-white">中宮・皇后</td>
-                    <td className="p-4">各1名</td>
-                    <td className="p-4">天皇の正妻。一族に絶大な権力をもたらす。※藤原道長は強引に「一帝二后」にした。</td>
+                    <td className="p-2 md:p-4 font-bold text-[#FFE5A0] whitespace-nowrap">最高位</td>
+                    <td className="p-2 md:p-4 font-bold text-white whitespace-nowrap">中宮・皇后</td>
+                    <td className="p-2 md:p-4 whitespace-nowrap">各1名</td>
+                    <td className="p-2 md:p-4 text-xs md:text-sm">天皇の正妻。一族に絶大な権力をもたらす。※藤原道長は強引に「一帝二后」にした。</td>
                   </tr>
                   <tr className="hover:bg-white/5 transition-colors">
-                    <td className="p-4 font-bold text-[#FFC2D1]">第2位</td>
-                    <td className="p-4 font-bold text-white">女御（にょうご）</td>
-                    <td className="p-4">複数</td>
-                    <td className="p-4">大臣クラスの娘しかなれない。中宮への昇進候補。</td>
+                    <td className="p-2 md:p-4 font-bold text-[#FFC2D1] whitespace-nowrap">第2位</td>
+                    <td className="p-2 md:p-4 font-bold text-white whitespace-nowrap">女御</td>
+                    <td className="p-2 md:p-4 whitespace-nowrap">複数</td>
+                    <td className="p-2 md:p-4 text-xs md:text-sm">大臣クラスの娘しかなれない。中宮への昇進候補。</td>
                   </tr>
                   <tr className="hover:bg-white/5 transition-colors">
-                    <td className="p-4 font-bold text-white/60">第3位</td>
-                    <td className="p-4 font-bold text-white">更衣（こうい）</td>
-                    <td className="p-4">複数</td>
-                    <td className="p-4">中納言以下の娘。天皇の着替えを助ける役職が語源。天皇から溺愛されるといじめの的に。</td>
+                    <td className="p-2 md:p-4 font-bold text-white/60 whitespace-nowrap">第3位</td>
+                    <td className="p-2 md:p-4 font-bold text-white whitespace-nowrap">更衣</td>
+                    <td className="p-2 md:p-4 whitespace-nowrap">複数</td>
+                    <td className="p-2 md:p-4 text-xs md:text-sm">中納言以下の娘。天皇の着替えを助ける役職が語源。天皇から溺愛されるといじめの的に。</td>
                   </tr>
                   <tr className="hover:bg-white/5 transition-colors">
-                    <td className="p-4 font-bold text-white/40">その他</td>
-                    <td className="p-4 font-bold text-white">御息所（みやすんどころ）</td>
-                    <td className="p-4">-</td>
-                    <td className="p-4">元々は寝所に侍る女性の総称。後に皇子を生んだ妃を指すように。</td>
+                    <td className="p-2 md:p-4 font-bold text-white/40 whitespace-nowrap">その他</td>
+                    <td className="p-2 md:p-4 font-bold text-white whitespace-nowrap">御息所</td>
+                    <td className="p-2 md:p-4 whitespace-nowrap">-</td>
+                    <td className="p-2 md:p-4 text-xs md:text-sm">元々は寝所に侍る女性の総称。後に皇子を生んだ妃を指すように。</td>
                   </tr>
                 </tbody>
               </table>
@@ -259,7 +259,7 @@ export function HeianCulture() {
           
           {/* 斎王・斎宮 */}
           <div className="lg:col-span-2">
-            <h2 className="text-3xl font-bold mb-8 text-white flex items-center gap-3">
+            <h2 className="text-xl md:text-3xl font-bold mb-8 text-white flex items-center gap-3">
               <Users className="w-8 h-8 text-[#FFC2D1]" />
               斎王・斎宮・斎院の世界
             </h2>
@@ -386,7 +386,7 @@ export function HeianCulture() {
               <div className="absolute top-0 right-0 p-4 opacity-10">
                 <Flower2 className="w-24 h-24 text-white" />
               </div>
-              <h3 className="text-2xl font-bold text-[#FFC2D1] mb-3 relative z-10">重なるシルエット</h3>
+              <h3 className="text-xl md:text-2xl font-bold text-[#FFC2D1] mb-3 relative z-10">重なるシルエット</h3>
               <p className="text-white/80 text-sm mb-4 relative z-10">体の線を隠しボリュームを出すことで権威を表現。</p>
               <ul className="space-y-4 text-white/90 relative z-10">
                 <li>
@@ -401,7 +401,7 @@ export function HeianCulture() {
             </div>
 
             <div className="bg-[#2A3B5A] p-6 rounded-2xl border border-white/10">
-              <h3 className="text-2xl font-bold text-[#B3E5FC] mb-3">階級と絶対禁色</h3>
+              <h3 className="text-xl md:text-2xl font-bold text-[#B3E5FC] mb-3">階級と絶対禁色</h3>
               <p className="text-white/80 text-sm mb-4">身分によって着て良い色が厳格に決定。</p>
               <ul className="space-y-3 text-white/90">
                 <li className="flex items-center gap-3">
@@ -422,7 +422,7 @@ export function HeianCulture() {
           </div>
 
           <div className="bg-gradient-to-br from-[#2A3B5A] to-[#1B2B44] p-8 rounded-2xl border border-white/20">
-            <h3 className="text-2xl font-bold text-white mb-4">重ね色目（かさねいろめ）</h3>
+            <h3 className="text-xl md:text-2xl font-bold text-white mb-4">重ね色目</h3>
             <p className="text-white/80 mb-6">
               袖口や襟元から見える表と裏の布の重なりで自然の風景を表現しました。季節外れの色を着ることは「教養がない」と恥ずべきことでした。
             </p>
@@ -497,8 +497,8 @@ export function HeianCulture() {
               </p>
               <ul className="space-y-4 text-sm text-white/90">
                 <li><strong className="text-[#FFC2D1]">管弦の遊び:</strong> 琴や笛による即興セッション。</li>
-                <li><strong className="text-[#FFC2D1]">歌合（うたあわせ）:</strong> 左右に分かれてお題の和歌を競う。台座の装飾等も評価対象。</li>
-                <li><strong className="text-[#FFC2D1]">薫物合（たきものあわせ）:</strong> 練り合わせた香りの良さを競う。すれ違った後の残り香で自分をアピール。</li>
+                <li><strong className="text-[#FFC2D1]">歌合:</strong> 左右に分かれてお題の和歌を競う。台座の装飾等も評価対象。</li>
+                <li><strong className="text-[#FFC2D1]">薫物合:</strong> 練り合わせた香りの良さを競う。すれ違った後の残り香で自分をアピール。</li>
                 <li><strong className="text-[#FFC2D1]">貝合・偏つぎ:</strong> 絵を合わせる遊びや、漢字の部首当てクイズ。</li>
               </ul>
             </div>
