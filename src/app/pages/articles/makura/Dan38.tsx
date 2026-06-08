@@ -16,7 +16,7 @@ export function Dan38() {
             </div>
 
             {/* Back Button */}
-            <section className="py-8 px-6 sm:px-8 lg:px-12">
+            <section className="py-6 px-4 sm:px-6 lg:px-12">
                 <div className="max-w-5xl mx-auto">
                     <Link
                         to="/article/literature/makuranososhi"
@@ -29,12 +29,12 @@ export function Dan38() {
             </section>
 
             {/* Hero Section */}
-            <section className="py-8 px-6 sm:px-8 lg:px-12">
+            <section className="py-6 px-4 sm:px-6 lg:px-12">
                 <div className="max-w-5xl mx-auto">
                     <div className="inline-block px-4 py-2 bg-[#B8F3D8] text-[#1B2B44] rounded-full mb-6 font-bold border-2 border-white text-sm">
                         第38段
                     </div>
-                    <h1 className="text-4xl md:text-6xl font-black mb-6 text-white leading-tight">
+                    <h1 className="text-3xl md:text-5xl font-black mb-6 text-white leading-tight">
                         草は
                     </h1>
                     <p className="text-xl text-white/80">
@@ -44,33 +44,33 @@ export function Dan38() {
             </section>
 
             {/* 原文（一部抜粋） */}
-            <section className="py-8 px-6 sm:px-8 lg:px-12">
+            <section className="py-6 px-4 sm:px-6 lg:px-12">
                 <div className="max-w-5xl mx-auto">
-                    <h2 className="text-3xl font-bold mb-6 text-white flex items-center gap-3">
+                    <h2 className="text-2xl md:text-3xl font-bold mb-6 text-white flex items-center gap-3">
                         <BookOpen className="w-8 h-8 text-[#B8F3D8]" />
                         原文（一部抜粋）
                     </h2>
-                    <div className="bg-[#2A3B5A] p-8 rounded-3xl border-2 border-white/20 space-y-4">
-                        <p className="text-white text-lg leading-relaxed">
+                    <div className="bg-[#2A3B5A] p-5 md:p-8 rounded-3xl border-2 border-white/20 space-y-4">
+                        <p className="text-white text-base md:text-lg leading-relaxed">
                             草は、菖蒲（あやめ）。葵。おもだか、名もいとをかし。<br/>
                             しのぶ、いとをかし。蓬（よもぎ）、いとをかし。
                         </p>
-                        <p className="text-white text-lg leading-relaxed">
+                        <p className="text-white text-base md:text-lg leading-relaxed">
                             草の庵（いほ）などは、いとあはれなり。
                         </p>
-                        <p className="text-white text-lg leading-relaxed">
+                        <p className="text-white text-base md:text-lg leading-relaxed">
                             なづな、なまえだに、いとおかしき。
                         </p>
-                        <p className="text-white text-lg leading-relaxed">
+                        <p className="text-white text-base md:text-lg leading-relaxed">
                             夕顔、花のかたちはいとをかしう、実のなりたるもいとをかし。<br/>
                             いかなれば、あやしき家にのみ生ひかかるらむと、いとあやし。<br/>
                             はふ（這う）めるも、いとあはれなり。
                         </p>
-                        <p className="text-white text-lg leading-relaxed">
+                        <p className="text-white text-base md:text-lg leading-relaxed">
                             秋の野の、女郎花（をみなへし）、萩（はぎ）、桔梗（きちかう）、菊、かるかや。<br/>
                             露の降りたる、いふべきにもあらず。
                         </p>
-                        <p className="text-white text-lg leading-relaxed">
+                        <p className="text-white text-base md:text-lg leading-relaxed">
                             なでしこ、唐（から）のはさらなり、大和のも、いとめでたし。
                         </p>
                     </div>
@@ -78,13 +78,13 @@ export function Dan38() {
             </section>
 
             {/* 現代語訳 */}
-            <section className="py-8 px-6 sm:px-8 lg:px-12">
+            <section className="py-6 px-4 sm:px-6 lg:px-12">
                 <div className="max-w-5xl mx-auto">
-                    <h2 className="text-3xl font-bold mb-6 text-white flex items-center gap-3">
+                    <h2 className="text-2xl md:text-3xl font-bold mb-6 text-white flex items-center gap-3">
                         <Sparkles className="w-8 h-8 text-[#FFE5A0]" />
                         現代語訳
                     </h2>
-                    <div className="bg-gradient-to-br from-[#FFE5A0] to-[#B8F3D8] p-8 rounded-3xl border-4 border-white">
+                    <div className="bg-gradient-to-br from-[#FFE5A0] to-[#B8F3D8] p-5 md:p-8 rounded-3xl border-4 border-white">
                         <div className="text-[#1B2B44]/90 leading-relaxed space-y-4">
                             <p>
                                 草といえば、まずは菖蒲（あやめ）。葵（あおい）も本当に素晴らしい。神代の昔から特別なご利益があると言われているのも、とても興味深くて素敵（をかし）。
@@ -117,30 +117,30 @@ export function Dan38() {
             </section>
 
             {/* 詳しい解説 */}
-            <section className="py-8 px-6 sm:px-8 lg:px-12">
+            <section className="py-6 px-4 sm:px-6 lg:px-12">
                 <div className="max-w-5xl mx-auto">
-                    <h2 className="text-3xl font-bold mb-6 text-white flex items-center gap-3">
+                    <h2 className="text-2xl md:text-3xl font-bold mb-6 text-white flex items-center gap-3">
                         <Brain className="w-8 h-8 text-[#C3B7F5]" />
                         詳しい解説
                     </h2>
                     <div className="space-y-6">
-                        <div className="bg-[#2A3B5A] p-8 rounded-3xl border-2 border-white/20">
+                        <div className="bg-[#2A3B5A] p-5 md:p-8 rounded-3xl border-2 border-white/20">
                             <h3 className="text-2xl font-bold text-[#FFE5A0] mb-4">👀 「ギャップ」を愛でる視点</h3>
-                            <p className="text-lg text-white/90 leading-relaxed">
+                            <p className="text-base md:text-lg text-white/90 leading-relaxed">
                                 夕顔について、「あんなボロい家に咲くなんて不思議」と毒を吐きつつも、その這い上がる生命力に「エモさ（あはれ）」を感じています。この<strong className="text-[#FFE5A0]">「卑しい場所 × 美しい花」というコントラスト</strong>を楽しむのが、清少納言流の美学です。
                             </p>
                         </div>
 
-                        <div className="bg-[#2A3B5A] p-8 rounded-3xl border-2 border-white/20">
+                        <div className="bg-[#2A3B5A] p-5 md:p-8 rounded-3xl border-2 border-white/20">
                             <h3 className="text-2xl font-bold text-[#FFC2D1] mb-4">💧 「露」というフィルター</h3>
-                            <p className="text-lg text-white/90 leading-relaxed">
+                            <p className="text-base md:text-lg text-white/90 leading-relaxed">
                                 「露の降りたる、いふべきにもあらず（露が降りているのは言うまでもない）」というフレーズ。彼女にとって、秋の草花は単体で完成しているのではなく、<strong className="text-[#FFC2D1]">「朝露に濡れてキラキラしている瞬間」</strong>こそが真の完成形なのです。シーンの切り取り方が天才的です。
                             </p>
                         </div>
 
-                        <div className="bg-[#2A3B5A] p-8 rounded-3xl border-2 border-white/20">
+                        <div className="bg-[#2A3B5A] p-5 md:p-8 rounded-3xl border-2 border-white/20">
                             <h3 className="text-2xl font-bold text-[#B8F3D8] mb-4">🎌 ナデシコへのリスペクト</h3>
-                            <p className="text-lg text-white/90 leading-relaxed">
+                            <p className="text-base md:text-lg text-white/90 leading-relaxed">
                                 当時、中国（唐）のものは高級品として珍重されていましたが、清少納言は<strong className="text-[#B8F3D8]">「日本のナデシコも負けてない、素晴らしい！」</strong>と断言。ここにも彼女の自国文化へのプライドと、権威や流行に流されない「自分の目による確かな評価基準」が見て取れます。
                             </p>
                         </div>
@@ -149,18 +149,18 @@ export function Dan38() {
             </section>
 
             {/* 現代に活かせるポイント */}
-            <section className="py-8 px-6 sm:px-8 lg:px-12">
+            <section className="py-6 px-4 sm:px-6 lg:px-12">
                 <div className="max-w-5xl mx-auto">
-                    <h2 className="text-3xl font-bold mb-6 text-white flex items-center gap-3">
+                    <h2 className="text-2xl md:text-3xl font-bold mb-6 text-white flex items-center gap-3">
                         <Sparkles className="w-8 h-8 text-[#FFE5A0]" />
                         現代に活かせるポイント
                     </h2>
-                    <div className="bg-gradient-to-br from-[#C3B7F5] to-[#FFC2D1] p-8 rounded-3xl border-4 border-white">
+                    <div className="bg-gradient-to-br from-[#C3B7F5] to-[#FFC2D1] p-5 md:p-8 rounded-3xl border-4 border-white">
                         <div className="space-y-4">
                             <div className="flex items-start gap-3">
                                 <div className="text-2xl">📸</div>
                                 <div>
-                                    <h4 className="font-bold text-xl text-[#1B2B44] mb-2">最高の「フィルター」を見つける</h4>
+                                    <h4 className="font-bold text-lg md:text-xl text-[#1B2B44] mb-2">最高の「フィルター」を見つける</h4>
                                     <p className="text-[#1B2B44]/80 leading-relaxed">
                                         清少納言が草花を「朝露」というフィルターを通して評価したように、私たちも日常の景色をより美しく見せる「最高の条件」を知っておくと、暮らしが豊かになります。晴れた日より雨の日のほうが魅力的な場所、朝より夜のほうが美しい街並み――そんな自分だけの「フィルター設定」を見つけてみましょう。
                                     </p>
@@ -172,7 +172,7 @@ export function Dan38() {
             </section>
 
             {/* Navigation */}
-            <section className="py-8 px-6 sm:px-8 lg:px-12">
+            <section className="py-6 px-4 sm:px-6 lg:px-12">
                 <div className="max-w-5xl mx-auto">
                     <div className="flex flex-col sm:flex-row gap-4 justify-between">
                         <Link

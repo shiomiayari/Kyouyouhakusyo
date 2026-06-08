@@ -16,7 +16,7 @@ export function Dan63() {
       </div>
 
       {/* Back Button */}
-      <section className="py-8 px-6 sm:px-8 lg:px-12">
+      <section className="py-6 px-4 sm:px-6 lg:px-12">
         <div className="max-w-5xl mx-auto">
           <Link
             to="/article/literature/makuranososhi"
@@ -29,12 +29,12 @@ export function Dan63() {
       </section>
 
       {/* Hero Section */}
-      <section className="py-8 px-6 sm:px-8 lg:px-12">
+      <section className="py-6 px-4 sm:px-6 lg:px-12">
         <div className="max-w-5xl mx-auto">
           <div className="inline-block px-4 py-2 bg-[#E1BEE7] text-[#1B2B44] rounded-full mb-6 font-bold border-2 border-white text-sm">
             第63段
           </div>
-          <h1 className="text-4xl md:text-6xl font-black mb-6 text-white leading-tight">
+          <h1 className="text-3xl md:text-5xl font-black mb-6 text-white leading-tight">
             節は
           </h1>
           <p className="text-xl text-white/80">
@@ -44,13 +44,13 @@ export function Dan63() {
       </section>
 
       {/* 原文 */}
-      <section className="py-8 px-6 sm:px-8 lg:px-12">
+      <section className="py-6 px-4 sm:px-6 lg:px-12">
         <div className="max-w-5xl mx-auto">
-          <h2 className="text-3xl font-bold mb-6 text-white flex items-center gap-3">
+          <h2 className="text-2xl md:text-3xl font-bold mb-6 text-white flex items-center gap-3">
             <BookOpen className="w-8 h-8 text-[#E1BEE7]" />
             原文
           </h2>
-          <div className="bg-[#2A3B5A] p-8 rounded-3xl border-2 border-white/20">
+          <div className="bg-[#2A3B5A] p-5 md:p-8 rounded-3xl border-2 border-white/20">
             <p className="text-white/90 text-lg leading-loose space-y-6 whitespace-pre-wrap">
               {`節は、五月（さつき）の菖蒲（あやめ）。三月（やよひ）の三日。
 九月（ながつき）の九日。十一月（しもつき）の五節（ごせち）。
@@ -66,13 +66,13 @@ export function Dan63() {
       </section>
 
       {/* 現代語訳 */}
-      <section className="py-8 px-6 sm:px-8 lg:px-12">
+      <section className="py-6 px-4 sm:px-6 lg:px-12">
         <div className="max-w-5xl mx-auto">
-          <h2 className="text-3xl font-bold mb-6 text-white flex items-center gap-3">
+          <h2 className="text-2xl md:text-3xl font-bold mb-6 text-white flex items-center gap-3">
             <Sparkles className="w-8 h-8 text-[#FFE5A0]" />
             現代語訳
           </h2>
-          <div className="bg-gradient-to-br from-[#E1BEE7] to-[#B8F3D8] p-8 rounded-3xl border-4 border-white">
+          <div className="bg-gradient-to-br from-[#E1BEE7] to-[#B8F3D8] p-5 md:p-8 rounded-3xl border-4 border-white">
             <div className="text-[#1B2B44]/90 leading-relaxed space-y-6">
               <p>
                 季節の節目（行事）は、まずは五月五日の端午の節句。三月三日の上巳（じょうし）の節句。<br />
@@ -94,30 +94,30 @@ export function Dan63() {
       </section>
 
       {/* 詳しい解説 */}
-      <section className="py-8 px-6 sm:px-8 lg:px-12">
+      <section className="py-6 px-4 sm:px-6 lg:px-12">
         <div className="max-w-5xl mx-auto">
-          <h2 className="text-3xl font-bold mb-6 text-white flex items-center gap-3">
+          <h2 className="text-2xl md:text-3xl font-bold mb-6 text-white flex items-center gap-3">
             <Brain className="w-8 h-8 text-[#C3B7F5]" />
             詳しい解説
           </h2>
           <div className="space-y-6">
-            <div className="bg-[#2A3B5A] p-8 rounded-3xl border-2 border-white/20">
+            <div className="bg-[#2A3B5A] p-5 md:p-8 rounded-3xl border-2 border-white/20">
               <h3 className="text-2xl font-bold text-[#FFC2D1] mb-4">🎨 「色」のコントラスト</h3>
-              <p className="text-lg text-white/90 leading-relaxed">
+              <p className="text-base md:text-lg text-white/90 leading-relaxed">
                 「菖蒲の青（緑）」と「物忌札の赤」。清少納言は、植物の自然な色に人工的な鮮やかな色を添えるセンスを「をかし」として絶賛しています。彼女の色彩感覚は常にビビッドです。
               </p>
             </div>
 
-            <div className="bg-[#2A3B5A] p-8 rounded-3xl border-2 border-white/20">
+            <div className="bg-[#2A3B5A] p-5 md:p-8 rounded-3xl border-2 border-white/20">
               <h3 className="text-2xl font-bold text-[#E1BEE7] mb-4">🌼 「着せ綿（きせわた）」の風流</h3>
-              <p className="text-lg text-white/90 leading-relaxed">
+              <p className="text-base md:text-lg text-white/90 leading-relaxed">
                 重陽の節句では、前夜に菊の花に綿を被せ、翌朝にその露と香りが染み込んだ綿で肌を拭うと長寿になると信じられていました。その「濡れた綿」に美を見出すあたり、非常に繊細な感性です。
               </p>
             </div>
 
-            <div className="bg-[#2A3B5A] p-8 rounded-3xl border-2 border-white/20">
+            <div className="bg-[#2A3B5A] p-5 md:p-8 rounded-3xl border-2 border-white/20">
               <h3 className="text-2xl font-bold text-[#B8F3D8] mb-4">🏮 「祭りのあと」の美学</h3>
-              <p className="text-lg text-white/90 leading-relaxed">
+              <p className="text-base md:text-lg text-white/90 leading-relaxed">
                 最高潮に盛り上がっている瞬間だけでなく、すべてが終わったあとの静寂や名残惜しさに「あはれ」を感じる。この「動」から「静」への移り変わりを愛でるのが、清少納言の美学の深みです。
               </p>
             </div>
@@ -126,7 +126,7 @@ export function Dan63() {
       </section>
 
       {/* Navigation */}
-      <section className="py-8 px-6 sm:px-8 lg:px-12">
+      <section className="py-6 px-4 sm:px-6 lg:px-12">
         <div className="max-w-5xl mx-auto">
           <div className="flex flex-col sm:flex-row gap-4 justify-between">
             <Link

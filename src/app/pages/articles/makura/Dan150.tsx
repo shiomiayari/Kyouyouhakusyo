@@ -16,7 +16,7 @@ export function Dan150() {
       </div>
 
       {/* Back Button */}
-      <section className="py-8 px-6 sm:px-8 lg:px-12">
+      <section className="py-6 px-4 sm:px-6 lg:px-12">
         <div className="max-w-5xl mx-auto">
           <Link
             to="/article/literature/makuranososhi"
@@ -29,12 +29,12 @@ export function Dan150() {
       </section>
 
       {/* Hero Section */}
-      <section className="py-8 px-6 sm:px-8 lg:px-12">
+      <section className="py-6 px-4 sm:px-6 lg:px-12">
         <div className="max-w-5xl mx-auto">
           <div className="inline-block px-4 py-2 bg-[#C3B7F5] text-[#1B2B44] rounded-full mb-6 font-bold border-2 border-white text-sm">
             第150段
           </div>
-          <h1 className="text-4xl md:text-6xl font-black mb-6 text-white leading-tight">
+          <h1 className="text-3xl md:text-5xl font-black mb-6 text-white leading-tight">
             あてなるもの
           </h1>
           <p className="text-xl text-white/80">
@@ -44,13 +44,13 @@ export function Dan150() {
       </section>
 
       {/* 原文 */}
-      <section className="py-8 px-6 sm:px-8 lg:px-12">
+      <section className="py-6 px-4 sm:px-6 lg:px-12">
         <div className="max-w-5xl mx-auto">
-          <h2 className="text-3xl font-bold mb-6 text-white flex items-center gap-3">
+          <h2 className="text-2xl md:text-3xl font-bold mb-6 text-white flex items-center gap-3">
             <BookOpen className="w-8 h-8 text-[#C3B7F5]" />
             原文
           </h2>
-          <div className="bg-[#2A3B5A] p-8 rounded-3xl border-2 border-white/20">
+          <div className="bg-[#2A3B5A] p-5 md:p-8 rounded-3xl border-2 border-white/20">
             <p className="text-white/90 text-lg leading-loose space-y-6 whitespace-pre-wrap">
               {`あてなるもの。白き色の衣（きぬ）の上に、薄紫の織物（おりもの）重ねて着たる。
 
@@ -69,13 +69,13 @@ export function Dan150() {
       </section>
 
       {/* 現代語訳 */}
-      <section className="py-8 px-6 sm:px-8 lg:px-12">
+      <section className="py-6 px-4 sm:px-6 lg:px-12">
         <div className="max-w-5xl mx-auto">
-          <h2 className="text-3xl font-bold mb-6 text-white flex items-center gap-3">
+          <h2 className="text-2xl md:text-3xl font-bold mb-6 text-white flex items-center gap-3">
             <Sparkles className="w-8 h-8 text-[#B8F3D8]" />
             現代語訳
           </h2>
-          <div className="bg-gradient-to-br from-[#E1BEE7] to-[#B3E5FC] p-8 rounded-3xl border-4 border-white">
+          <div className="bg-gradient-to-br from-[#E1BEE7] to-[#B3E5FC] p-5 md:p-8 rounded-3xl border-4 border-white">
             <div className="text-[#1B2B44]/90 leading-relaxed space-y-6">
               <p>
                 <strong>上品で洗練されているもの。</strong>
@@ -104,37 +104,37 @@ export function Dan150() {
       </section>
 
       {/* 詳しい解説 */}
-      <section className="py-8 px-6 sm:px-8 lg:px-12">
+      <section className="py-6 px-4 sm:px-6 lg:px-12">
         <div className="max-w-5xl mx-auto">
-          <h2 className="text-3xl font-bold mb-6 text-white flex items-center gap-3">
+          <h2 className="text-2xl md:text-3xl font-bold mb-6 text-white flex items-center gap-3">
             <Brain className="w-8 h-8 text-[#FFC2D1]" />
             詳しい解説
           </h2>
           <div className="space-y-6">
-            <div className="bg-[#2A3B5A] p-8 rounded-3xl border-2 border-white/20">
+            <div className="bg-[#2A3B5A] p-5 md:p-8 rounded-3xl border-2 border-white/20">
               <h3 className="text-2xl font-bold text-[#E1BEE7] mb-4">👘 「色」のレイヤード</h3>
-              <p className="text-lg text-white/90 leading-relaxed">
+              <p className="text-base md:text-lg text-white/90 leading-relaxed">
                 冒頭の「白に薄紫」という配色。平安時代のファッションにおいて、紫は最高位の色であり、白と重ねることでその透明感と品格を際立たせています。彼女の色彩センスが光る一文です。
               </p>
             </div>
 
-            <div className="bg-[#2A3B5A] p-8 rounded-3xl border-2 border-white/20">
+            <div className="bg-[#2A3B5A] p-5 md:p-8 rounded-3xl border-2 border-white/20">
               <h3 className="text-2xl font-bold text-[#B3E5FC] mb-4">🍧 平安時代のスイーツ</h3>
-              <p className="text-lg text-white/90 leading-relaxed">
+              <p className="text-base md:text-lg text-white/90 leading-relaxed">
                 「削り氷（かき氷）」は当時の超贅沢品。冷蔵庫がない時代に、冬の氷を「氷室（ひむろ）」に保存し、それを夏に銀の器で食べる。この<strong className="text-[#B3E5FC]">「冷たさ」「甘さ」「銀の輝き」</strong>の三拍子が揃った瞬間を、彼女は最高にエレガントだと定義しています。
               </p>
             </div>
 
-            <div className="bg-[#2A3B5A] p-8 rounded-3xl border-2 border-white/20">
+            <div className="bg-[#2A3B5A] p-5 md:p-8 rounded-3xl border-2 border-white/20">
               <h3 className="text-2xl font-bold text-[#FFFFFF] mb-4">🥚 「白さ」への執着</h3>
-              <p className="text-lg text-white/90 leading-relaxed">
+              <p className="text-base md:text-lg text-white/90 leading-relaxed">
                 雁の卵、雪、水晶。清少納言は「白」という色に清潔感と気高さ（あてなり）を感じています。濁りのない、凛とした美しさが彼女の理想です。
               </p>
             </div>
 
-            <div className="bg-[#2A3B5A] p-8 rounded-3xl border-2 border-white/20">
+            <div className="bg-[#2A3B5A] p-5 md:p-8 rounded-3xl border-2 border-white/20">
               <h3 className="text-2xl font-bold text-[#FFC2D1] mb-4">🍓 「無垢」と「赤」のコントラスト</h3>
-              <p className="text-lg text-white/90 leading-relaxed">
+              <p className="text-base md:text-lg text-white/90 leading-relaxed">
                 最後の一文、可愛い子が苺を食べる様子。幼子の白い肌と、苺の鮮やかな赤。この視覚的なコントラストを「あてなり」と捉えるあたりに、彼女の独自の審美眼と、対象を愛でる優しい眼差しが感じられます。
               </p>
             </div>
@@ -143,7 +143,7 @@ export function Dan150() {
       </section>
 
       {/* Navigation */}
-      <section className="py-8 px-6 sm:px-8 lg:px-12">
+      <section className="py-6 px-4 sm:px-6 lg:px-12">
         <div className="max-w-5xl mx-auto">
           <div className="flex flex-col sm:flex-row gap-4 justify-between">
             <Link
