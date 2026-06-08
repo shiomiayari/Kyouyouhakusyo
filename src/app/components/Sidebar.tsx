@@ -26,7 +26,6 @@ export function Sidebar() {
         { id: 'makuranososhi', title: '枕草子' },
         { id: 'heian', title: '平安時代の文化' },
         { id: 'heike', title: '平家物語' },
-        { id: 'taketori', title: '竹取物語' },
       ],
     },
     {
@@ -35,11 +34,7 @@ export function Sidebar() {
       icon: <Feather className="w-5 h-5" />,
       color: '#FFD6A5',
       articles: [
-        { id: 'kojiki', title: '古事記（日本の始まり）' },
-        { id: 'yamatanoorochi', title: 'ヤマタノオロチ伝説' },
-        { id: 'yokai', title: '百鬼夜行と妖怪伝承' },
         { id: 'king-arthur', title: 'アーサー王伝説と円卓の騎士' },
-        { id: 'greek mythology', title: 'ギリシャ神話' },
       ],
     },
     {
@@ -55,40 +50,20 @@ export function Sidebar() {
         { id: 'thedream', title: '夢' },
       ],
     },
-    {
-      id: 'economy',
-      name: '政治・経済',
-      icon: <TrendingUp className="w-5 h-5" />,
-      color: '#B3E5FC',
-      articles: [
-        { id: 'capitalism', title: '資本主義の歴史' },
-        { id: 'democracy', title: '民主主義とは' },
-      ],
-    },
+
     {
       id: 'music',
       name: 'クラシック音楽',
       icon: <Music className="w-5 h-5" />,
       color: '#FFE5A0',
       articles: [
-        { id: 'beethoven', title: 'ベートーヴェン交響曲第9番' },
-        { id: 'mozart', title: 'モーツァルト：レクイエム' },
         { id: 'liebestraum', title: 'リスト：愛の夢' },
         { id: 'clairdelune', title: 'ドビュッシー：月の光' },
         { id: 'moonlight', title: 'ベートーヴェン：月光' },
         { id: 'heroic', title: 'ショパン：英雄ポロネーズ' },
       ],
     },
-    {
-      id: 'history',
-      name: '世界史',
-      icon: <History className="w-5 h-5" />,
-      color: '#B8F3D8',
-      articles: [
-        { id: 'roman', title: 'ローマ帝国の興亡' },
-        { id: 'french', title: 'フランス革命' },
-      ],
-    },
+
   ];
 
   const toggleCategory = (categoryId: string) => {
