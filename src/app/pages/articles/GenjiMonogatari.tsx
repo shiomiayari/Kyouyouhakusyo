@@ -159,7 +159,7 @@ export function GenjiMonogatari() {
             要約
           </h2>
           <div className="bg-[#2A3B5A] p-5 md:p-8 rounded-3xl border-2 border-white/20">
-            <p className="text-base md:text-lg text-white/90 leading-relaxed">
+            <p className="text-sm md:text-base text-white/90 leading-relaxed">
               帝の愛息でありながら臣下にされた「光源氏」を軸に、平安貴族社会の頂点へ登り詰める栄華と、愛した女性たちの死、そして自らの不義が自身に返ってくる晩年の凋落を描く。単なる「恋多き男の物語」ではなく、<strong className="text-[#FFC2D1]">「持てる者がすべてを失っていく過程」</strong>を冷徹に描いた、日本文学史上最も美しく残酷なリアリズム小説である。
             </p>
           </div>
@@ -169,7 +169,7 @@ export function GenjiMonogatari() {
       {/* All 54 Chapters */}
       <section className="py-6 px-4 sm:px-6 lg:px-12">
         <div className="max-w-5xl mx-auto">
-          <h2 className="text-2xl md:text-3xl font-bold mb-6 text-white flex items-center gap-3">
+          <h2 className="text-lg sm:text-xl md:text-3xl font-bold mb-6 text-white flex items-center gap-3">
             <BookOpen className="w-8 h-8 text-[#FFE5A0]" />
             源氏物語・全54帖：各章完全要約白書
           </h2>
@@ -202,8 +202,8 @@ export function GenjiMonogatari() {
                           {chapter.num}
                         </div>
                         <div>
-                          <h4 className="font-bold text-white mb-1">{chapter.title}</h4>
-                          <p className="text-sm text-white/70 leading-relaxed">{chapter.summary}</p>
+                          <h4 className="font-bold text-white mb-1 text-sm md:text-base">{chapter.title}</h4>
+                          <p className="text-xs md:text-sm text-white/70 leading-relaxed">{chapter.summary}</p>
                         </div>
                       </div>
                     </div>
@@ -241,8 +241,8 @@ export function GenjiMonogatari() {
                           {chapter.num}
                         </div>
                         <div>
-                          <h4 className="font-bold text-white mb-1">{chapter.title}</h4>
-                          <p className="text-sm text-white/70 leading-relaxed">{chapter.summary}</p>
+                          <h4 className="font-bold text-white mb-1 text-sm md:text-base">{chapter.title}</h4>
+                          <p className="text-xs md:text-sm text-white/70 leading-relaxed">{chapter.summary}</p>
                         </div>
                       </div>
                     </div>
@@ -280,8 +280,8 @@ export function GenjiMonogatari() {
                           {chapter.num}
                         </div>
                         <div>
-                          <h4 className="font-bold text-white mb-1">{chapter.title}</h4>
-                          <p className="text-sm text-white/70 leading-relaxed">{chapter.summary}</p>
+                          <h4 className="font-bold text-white mb-1 text-sm md:text-base">{chapter.title}</h4>
+                          <p className="text-xs md:text-sm text-white/70 leading-relaxed">{chapter.summary}</p>
                         </div>
                       </div>
                     </div>
