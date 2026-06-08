@@ -62,21 +62,21 @@ export function MakuraNoSoshi() {
           <div className="inline-block px-4 py-2 bg-[#FFE5A0] text-[#1B2B44] rounded-full mb-6 font-bold border-2 border-white text-sm">
             大人の教養白書：Deep Report #02
           </div>
-          <h1 className="text-4xl md:text-6xl font-black mb-6 text-white leading-tight">
+          <h1 className="text-3xl md:text-5xl font-black mb-6 text-white leading-tight">
             『枕草子』<br />
-            <span className="text-2xl md:text-3xl">〜平安の毒舌インフルエンサーが綴った「エモい」日常〜</span>
+            <span className="text-lg md:text-2xl block mt-2">〜平安の毒舌インフルエンサーが綴った「エモい」日常〜</span>
           </h1>
         </div>
       </section>
 
       {/* Catchphrase */}
-      <section className="py-8 px-6 sm:px-8 lg:px-12">
+      <section className="py-6 px-4 sm:px-6 lg:px-12">
         <div className="max-w-5xl mx-auto">
           <div className="relative bg-gradient-to-br from-[#FFE5A0] to-[#B8F3D8] p-8 md:p-12 rounded-3xl border-4 border-white">
             <div className="flex items-start gap-4">
               <div className="text-4xl flex-shrink-0">✨</div>
               <div>
-                <h2 className="text-xl md:text-2xl font-bold text-[#1B2B44] leading-relaxed">
+                <h2 className="text-xl md:text-lg md:text-2xl font-bold text-[#1B2B44] leading-relaxed">
                   「春はあけぼの」から始まる1000年前の日記は、<br />
                   驚くほど「今」と同じだった。
                 </h2>
@@ -90,18 +90,18 @@ export function MakuraNoSoshi() {
       </section>
 
       {/* Summary */}
-      <section className="py-8 px-6 sm:px-8 lg:px-12">
+      <section className="py-6 px-4 sm:px-6 lg:px-12">
         <div className="max-w-5xl mx-auto">
-          <h2 className="text-3xl font-bold mb-6 text-white flex items-center gap-3">
+          <h2 className="text-2xl md:text-3xl font-bold mb-6 text-white flex items-center gap-3">
             <BookOpen className="w-8 h-8 text-[#FFE5A0]" />
             内容の全体要約
           </h2>
-          <div className="bg-[#2A3B5A] p-8 rounded-3xl border-2 border-white/20 space-y-4">
-            <p className="text-lg text-white/90 leading-relaxed">
+          <div className="bg-[#2A3B5A] p-5 md:p-8 rounded-3xl border-2 border-white/20 space-y-4">
+            <p className="text-base md:text-lg text-white/90 leading-relaxed">
               『枕草子』は、平安時代中期に<strong className="text-[#FFE5A0]">清少納言</strong>によって書かれた<strong className="text-[#FFE5A0]">日本最古の「随筆（エッセイ）」</strong>です。
               紫式部の『源氏物語』が壮大なフィクション（小説）なら、こちらは清少納言の<strong className="text-[#FFE5A0]">リアルな日常や本音</strong>を詰め込んだブログのような作品。
             </p>
-            <p className="text-lg text-white/90 leading-relaxed">
+            <p className="text-base md:text-lg text-white/90 leading-relaxed">
               作品は、<strong className="text-[#B8F3D8]">「段（だん）」</strong>と呼ばれる約300の短いエピソードで構成されています。
               ストーリーが繋がっているわけではないので、現代のタイムラインをスクロールするように、どこから読んでも楽しめるのが最大の特徴。彼女の鋭いセンスで切り取られた「世の中のあれこれ」は、1000年経った今でも「わかる！」の連続です。
             </p>
@@ -110,13 +110,13 @@ export function MakuraNoSoshi() {
       </section>
 
       {/* Basic Information */}
-      <section className="py-8 px-6 sm:px-8 lg:px-12">
+      <section className="py-6 px-4 sm:px-6 lg:px-12">
         <div className="max-w-5xl mx-auto">
-          <h2 className="text-3xl font-bold mb-6 text-white flex items-center gap-3">
+          <h2 className="text-2xl md:text-3xl font-bold mb-6 text-white flex items-center gap-3">
             <Users className="w-8 h-8 text-[#FFC2D1]" />
             基本情報
           </h2>
-          <div className="bg-[#2A3B5A] p-8 rounded-3xl border-2 border-white/20">
+          <div className="bg-[#2A3B5A] p-5 md:p-8 rounded-3xl border-2 border-white/20">
             <div className="flex flex-col md:flex-row gap-6">
               {/* 情報テキスト */}
               <div className="flex-1 space-y-4">
@@ -152,13 +152,13 @@ export function MakuraNoSoshi() {
       </section>
 
       {/* Radar Chart */}
-      <section className="py-8 px-6 sm:px-8 lg:px-12">
+      <section className="py-6 px-4 sm:px-6 lg:px-12">
         <div className="max-w-5xl mx-auto">
-          <h2 className="text-3xl font-bold mb-6 text-white flex items-center gap-3">
+          <h2 className="text-2xl md:text-3xl font-bold mb-6 text-white flex items-center gap-3">
             <Heart className="w-8 h-8 text-[#FFC2D1]" />
             作品評価レーダーチャート
           </h2>
-          <div className="bg-[#2A3B5A] p-8 rounded-3xl border-2 border-white/20">
+          <div className="bg-[#2A3B5A] p-5 md:p-8 rounded-3xl border-2 border-white/20">
             <ResponsiveContainer width="100%" height={400}>
               <RadarChart data={radarData}>
                 <PolarGrid stroke="#ffffff30" key="polar-grid" />
@@ -212,22 +212,25 @@ export function MakuraNoSoshi() {
       </section>
 
       {/* Famous Sections */}
-      <section className="py-8 px-6 sm:px-8 lg:px-12">
+      <section className="py-6 px-4 sm:px-6 lg:px-12">
         <div className="max-w-5xl mx-auto">
-          <h2 className="text-3xl font-bold mb-6 text-white flex items-center gap-3">
+          <h2 className="text-2xl md:text-3xl font-bold mb-6 text-white flex items-center gap-3">
             <BookOpen className="w-8 h-8 text-[#B8F3D8]" />
-            これは押さえておきたい！有名な段20選！
+            <div>
+              これは押さえておきたい！有名な段20選！
+              <span className="block text-sm md:text-base text-white/70 mt-1 font-normal">各段をタップすると詳細ページに飛びます</span>
+            </div>
           </h2>
 
           {/* Series 1 */}
           <div className="mb-4">
             <button
               onClick={() => toggleSeries(1)}
-              className="w-full bg-gradient-to-r from-[#B8F3D8] to-[#B3E5FC] p-6 rounded-3xl border-4 border-white hover:scale-[1.02] transition-all"
+              className="w-full bg-gradient-to-r from-[#B8F3D8] to-[#B3E5FC] p-4 md:p-6 rounded-3xl border-4 border-white hover:scale-[1.02] transition-all"
             >
               <div className="flex items-center justify-between">
                 <div className="text-left">
-                  <h3 className="text-2xl font-bold text-[#1B2B44] mb-2">シリーズ① 自然と推し活：清少納言の「四季と世界」</h3>
+                  <h3 className="text-lg md:text-2xl font-bold text-[#1B2B44] mb-2">シリーズ① 自然と推し活：清少納言の「四季と世界」</h3>
                   <p className="text-[#1B2B44]/70">6段</p>
                 </div>
                 {expandedSeries === 1 ? (
@@ -238,7 +241,7 @@ export function MakuraNoSoshi() {
               </div>
             </button>
             {expandedSeries === 1 && (
-              <div className="mt-4 bg-[#2A3B5A] p-6 rounded-3xl border-2 border-white/20">
+              <div className="mt-4 bg-[#2A3B5A] p-4 md:p-6 rounded-3xl border-2 border-white/20">
                 <div className="space-y-3">
                   {series1Chapters.map((chapter, index) => {
                     const CardWrapper = (chapter.id ? Link : 'div') as any;
@@ -271,11 +274,11 @@ export function MakuraNoSoshi() {
           <div className="mb-4">
             <button
               onClick={() => toggleSeries(2)}
-              className="w-full bg-gradient-to-r from-[#FFE5A0] to-[#FFC2D1] p-6 rounded-3xl border-4 border-white hover:scale-[1.02] transition-all"
+              className="w-full bg-gradient-to-r from-[#FFE5A0] to-[#FFC2D1] p-4 md:p-6 rounded-3xl border-4 border-white hover:scale-[1.02] transition-all"
             >
               <div className="flex items-center justify-between">
                 <div className="text-left">
-                  <h3 className="text-2xl font-bold text-[#1B2B44] mb-2">シリーズ② 感性カタログ：現代人にも刺さる「〇〇なもの」8選</h3>
+                  <h3 className="text-lg md:text-2xl font-bold text-[#1B2B44] mb-2">シリーズ② 感性カタログ：現代人にも刺さる「〇〇なもの」8選</h3>
                   <p className="text-[#1B2B44]/70">8段</p>
                 </div>
                 {expandedSeries === 2 ? (
@@ -286,7 +289,7 @@ export function MakuraNoSoshi() {
               </div>
             </button>
             {expandedSeries === 2 && (
-              <div className="mt-4 bg-[#2A3B5A] p-6 rounded-3xl border-2 border-white/20">
+              <div className="mt-4 bg-[#2A3B5A] p-4 md:p-6 rounded-3xl border-2 border-white/20">
                 <div className="space-y-3">
                   {series2Chapters.map((chapter, index) => {
                     const CardWrapper = (chapter.id ? Link : 'div') as any;
@@ -319,11 +322,11 @@ export function MakuraNoSoshi() {
           <div>
             <button
               onClick={() => toggleSeries(3)}
-              className="w-full bg-gradient-to-r from-[#FFC2D1] to-[#C3B7F5] p-6 rounded-3xl border-4 border-white hover:scale-[1.02] transition-all"
+              className="w-full bg-gradient-to-r from-[#FFC2D1] to-[#C3B7F5] p-4 md:p-6 rounded-3xl border-4 border-white hover:scale-[1.02] transition-all"
             >
               <div className="flex items-center justify-between">
                 <div className="text-left">
-                  <h3 className="text-2xl font-bold text-[#1B2B44] mb-2">シリーズ③ 宮廷ドラマ：主君・定子様との「愛と知性のエピソード」</h3>
+                  <h3 className="text-lg md:text-2xl font-bold text-[#1B2B44] mb-2">シリーズ③ 宮廷ドラマ：主君・定子様との「愛と知性のエピソード」</h3>
                   <p className="text-[#1B2B44]/70">6段</p>
                 </div>
                 {expandedSeries === 3 ? (
@@ -334,7 +337,7 @@ export function MakuraNoSoshi() {
               </div>
             </button>
             {expandedSeries === 3 && (
-              <div className="mt-4 bg-[#2A3B5A] p-6 rounded-3xl border-2 border-white/20">
+              <div className="mt-4 bg-[#2A3B5A] p-4 md:p-6 rounded-3xl border-2 border-white/20">
                 <div className="space-y-3">
                   {series3Chapters.map((chapter, index) => {
                     const CardWrapper = (chapter.id ? Link : 'div') as any;
@@ -366,13 +369,13 @@ export function MakuraNoSoshi() {
       </section>
 
       {/* Author */}
-      <section className="py-8 px-6 sm:px-8 lg:px-12">
+      <section className="py-6 px-4 sm:px-6 lg:px-12">
         <div className="max-w-5xl mx-auto">
-          <h2 className="text-3xl font-bold mb-6 text-white flex items-center gap-3">
+          <h2 className="text-2xl md:text-3xl font-bold mb-6 text-white flex items-center gap-3">
             <Smile className="w-8 h-8 text-[#FFE5A0]" />
             作者：清少納言
           </h2>
-          <div className="bg-[#2A3B5A] p-8 rounded-3xl border-2 border-white/20">
+          <div className="bg-[#2A3B5A] p-5 md:p-8 rounded-3xl border-2 border-white/20">
             <div className="flex flex-col md:flex-row gap-6 items-start">
               <div className="flex-shrink-0">
                 <img
@@ -382,7 +385,7 @@ export function MakuraNoSoshi() {
                 />
               </div>
               <div className="flex-1">
-                <p className="text-lg text-white/90 leading-relaxed">
+                <p className="text-base md:text-lg text-white/90 leading-relaxed">
                   一条天皇の中宮・<strong className="text-[#FFC2D1]">定子</strong>に仕えた女房（女性秘書のような存在）。機知に富み、漢詩や和歌の教養を武器に、男性貴族たちとも対等に渡り合った才女。紫式部とは同じ時代に生きたライバル関係とされ、お互いに日記で毒舌を飛ばし合っています（清少納言は「陽キャ」、紫式部は「陰キャ」と評されることも）。
                 </p>
               </div>
@@ -392,29 +395,29 @@ export function MakuraNoSoshi() {
       </section>
 
       {/* Trivia */}
-      <section className="py-8 px-6 sm:px-8 lg:px-12">
+      <section className="py-6 px-4 sm:px-6 lg:px-12">
         <div className="max-w-5xl mx-auto">
-          <h2 className="text-3xl font-bold mb-6 text-white flex items-center gap-3">
+          <h2 className="text-2xl md:text-3xl font-bold mb-6 text-white flex items-center gap-3">
             <Brain className="w-8 h-8 text-[#C3B7F5]" />
             豆知識
           </h2>
           <div className="space-y-4">
-            <div className="bg-[#B3E5FC] p-6 rounded-3xl border-4 border-white">
+            <div className="bg-[#B3E5FC] p-4 md:p-6 rounded-3xl border-4 border-white">
               <div className="flex items-start gap-4">
                 <div className="text-3xl">📖</div>
                 <div>
-                  <h3 className="font-bold text-xl text-[#1B2B44] mb-2">名前の由来</h3>
+                  <h3 className="font-bold text-lg md:text-xl text-[#1B2B44] mb-2">名前の由来</h3>
                   <p className="text-[#1B2B44]/80 leading-relaxed">
                     「枕草子」の理由は未だ謎。「枕元に置いたから」「枕（秘蔵品）のようにしたから」など諸説あるミステリアスな題名。
                   </p>
                 </div>
               </div>
             </div>
-            <div className="bg-[#FFE5A0] p-6 rounded-3xl border-4 border-white">
+            <div className="bg-[#FFE5A0] p-4 md:p-6 rounded-3xl border-4 border-white">
               <div className="flex items-start gap-4">
                 <div className="text-3xl">⚔️</div>
                 <div>
-                  <h3 className="font-bold text-xl text-[#1B2B44] mb-2">紫式部とのバトル</h3>
+                  <h3 className="font-bold text-lg md:text-xl text-[#1B2B44] mb-2">紫式部とのバトル</h3>
                   <p className="text-[#1B2B44]/80 leading-relaxed">
                     ライバルの紫式部には日記で「知ったかぶりで鼻持ちならない」と酷評されています。陽キャと陰キャの致命的な相性の悪さが見て取れます。
                   </p>
@@ -426,17 +429,17 @@ export function MakuraNoSoshi() {
       </section>
 
       {/* Deep Dive */}
-      <section className="py-8 px-6 sm:px-8 lg:px-12">
+      <section className="py-6 px-4 sm:px-6 lg:px-12">
         <div className="max-w-5xl mx-auto">
-          <h2 className="text-3xl font-bold mb-6 text-white flex items-center gap-3">
+          <h2 className="text-2xl md:text-3xl font-bold mb-6 text-white flex items-center gap-3">
             <Heart className="w-8 h-8 text-[#FFC2D1]" />
             深掘り：悲劇を隠した「明るい文章」
           </h2>
-          <div className="bg-gradient-to-br from-[#C3B7F5] to-[#FFC2D1] p-8 rounded-3xl border-4 border-white">
-            <p className="text-lg text-[#1B2B44] leading-relaxed mb-4">
+          <div className="bg-gradient-to-br from-[#C3B7F5] to-[#FFC2D1] p-5 md:p-8 rounded-3xl border-4 border-white">
+            <p className="text-base md:text-lg text-[#1B2B44] leading-relaxed mb-4">
               『枕草子』を読み進めると、きらきらした幸福感に包まれます。しかし、実は執筆当時の現実、清少納言が仕えた<strong>中宮定子の一族は政治的に没落し、定子自身も若くして亡くなるという悲劇の真っ只中</strong>でした。
             </p>
-            <p className="text-lg text-[#1B2B44] leading-relaxed">
+            <p className="text-base md:text-lg text-[#1B2B44] leading-relaxed">
               それでも清少納言は、定子の苦しみや涙を一行も書きませんでした。彼女は定子の輝いていた姿だけを永遠に残そうとしたのです。作品全体が、主君への「祈り」と「愛」の記録だったのかもしれません。
             </p>
           </div>
@@ -444,14 +447,14 @@ export function MakuraNoSoshi() {
       </section>
 
       {/* Summary/Conclusion */}
-      <section className="py-8 px-6 sm:px-8 lg:px-12">
+      <section className="py-6 px-4 sm:px-6 lg:px-12">
         <div className="max-w-5xl mx-auto">
-          <h2 className="text-3xl font-bold mb-6 text-white flex items-center gap-3">
+          <h2 className="text-2xl md:text-3xl font-bold mb-6 text-white flex items-center gap-3">
             <Sparkles className="w-8 h-8 text-[#B8F3D8]" />
             まとめ
           </h2>
-          <div className="bg-[#2A3B5A] p-8 rounded-3xl border-2 border-white/20">
-            <p className="text-lg text-white/90 leading-relaxed">
+          <div className="bg-[#2A3B5A] p-5 md:p-8 rounded-3xl border-2 border-white/20">
+            <p className="text-base md:text-lg text-white/90 leading-relaxed">
               清少納言が教えてくれるのは、<strong className="text-[#B8F3D8]">「日常をどう面白がるか」</strong>という視点です。
               嫌なことがあっても「にくきもの」として言語化し、小さな幸せを「うつくしきもの」として愛でる。そんな彼女のポジティブな知性は、1000年経った今の私たちにも、毎日を「をかし」く生きるヒントをくれています。
             </p>
@@ -460,14 +463,14 @@ export function MakuraNoSoshi() {
       </section>
 
       {/* CTA */}
-      <section className="py-8 px-6 sm:px-8 lg:px-12">
+      <section className="py-6 px-4 sm:px-6 lg:px-12">
         <div className="max-w-5xl mx-auto">
           <div className="relative overflow-hidden rounded-3xl p-12 text-center border-4 border-white bg-gradient-to-br from-[#FFE5A0] via-[#B8F3D8] to-[#C3B7F5]">
             <div className="relative z-10">
               <h2 className="text-3xl md:text-4xl font-bold text-[#1B2B44] mb-4">
                 もっと深く知りたくなった？
               </h2>
-              <p className="text-lg text-[#1B2B44]/80 mb-8">
+              <p className="text-base md:text-lg text-[#1B2B44]/80 mb-8">
                 サイドバーから、他のカテゴリーも探索してみてください
               </p>
               <div className="inline-flex items-center gap-2 px-6 py-3 bg-[#1B2B44] rounded-2xl shadow-lg border-4 border-white hover:scale-105 transition-transform cursor-pointer">

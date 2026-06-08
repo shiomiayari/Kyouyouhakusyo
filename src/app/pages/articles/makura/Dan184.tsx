@@ -16,7 +16,7 @@ export function Dan184() {
       </div>
 
       {/* Back Button */}
-      <section className="py-8 px-6 sm:px-8 lg:px-12">
+      <section className="py-6 px-4 sm:px-6 lg:px-12">
         <div className="max-w-5xl mx-auto">
           <Link
             to="/article/literature/makuranososhi"
@@ -29,12 +29,12 @@ export function Dan184() {
       </section>
 
       {/* Hero Section */}
-      <section className="py-8 px-6 sm:px-8 lg:px-12">
+      <section className="py-6 px-4 sm:px-6 lg:px-12">
         <div className="max-w-5xl mx-auto">
           <div className="inline-block px-4 py-2 bg-[#FFC2D1] text-[#1B2B44] rounded-full mb-6 font-bold border-2 border-white text-sm">
             第184段
           </div>
-          <h1 className="text-4xl md:text-6xl font-black mb-6 text-white leading-tight">
+          <h1 className="text-3xl md:text-5xl font-black mb-6 text-white leading-tight">
             あやしきもの
           </h1>
           <p className="text-xl text-white/80">
@@ -44,13 +44,13 @@ export function Dan184() {
       </section>
 
       {/* 原文 */}
-      <section className="py-8 px-6 sm:px-8 lg:px-12">
+      <section className="py-6 px-4 sm:px-6 lg:px-12">
         <div className="max-w-5xl mx-auto">
-          <h2 className="text-3xl font-bold mb-6 text-white flex items-center gap-3">
+          <h2 className="text-2xl md:text-3xl font-bold mb-6 text-white flex items-center gap-3">
             <BookOpen className="w-8 h-8 text-[#FFC2D1]" />
             原文
           </h2>
-          <div className="bg-[#2A3B5A] p-8 rounded-3xl border-2 border-white/20">
+          <div className="bg-[#2A3B5A] p-5 md:p-8 rounded-3xl border-2 border-white/20">
             <p className="text-white/90 text-lg leading-loose space-y-6 whitespace-pre-wrap">
               {`あやしきもの。下衆（げす）の家に、雪の降りたる。月のおし照りたる。
 
@@ -73,13 +73,13 @@ export function Dan184() {
       </section>
 
       {/* 現代語訳 */}
-      <section className="py-8 px-6 sm:px-8 lg:px-12">
+      <section className="py-6 px-4 sm:px-6 lg:px-12">
         <div className="max-w-5xl mx-auto">
-          <h2 className="text-3xl font-bold mb-6 text-white flex items-center gap-3">
+          <h2 className="text-2xl md:text-3xl font-bold mb-6 text-white flex items-center gap-3">
             <Sparkles className="w-8 h-8 text-[#FFE5A0]" />
             現代語訳
           </h2>
-          <div className="bg-gradient-to-br from-[#FFE5A0] to-[#FFC2D1] p-8 rounded-3xl border-4 border-white">
+          <div className="bg-gradient-to-br from-[#FFE5A0] to-[#FFC2D1] p-5 md:p-8 rounded-3xl border-4 border-white">
             <div className="text-[#1B2B44]/90 leading-relaxed space-y-6">
               <p>
                 <strong>身分が低く、見苦しいもの（あるいは不釣り合いなもの）。</strong>
@@ -114,30 +114,30 @@ export function Dan184() {
       </section>
 
       {/* 詳しい解説 */}
-      <section className="py-8 px-6 sm:px-8 lg:px-12">
+      <section className="py-6 px-4 sm:px-6 lg:px-12">
         <div className="max-w-5xl mx-auto">
-          <h2 className="text-3xl font-bold mb-6 text-white flex items-center gap-3">
+          <h2 className="text-2xl md:text-3xl font-bold mb-6 text-white flex items-center gap-3">
             <Brain className="w-8 h-8 text-[#C3B7F5]" />
             詳しい解説
           </h2>
           <div className="space-y-6">
-            <div className="bg-[#2A3B5A] p-8 rounded-3xl border-2 border-white/20">
+            <div className="bg-[#2A3B5A] p-5 md:p-8 rounded-3xl border-2 border-white/20">
               <h3 className="text-2xl font-bold text-[#FFC2D1] mb-4">✨ 貴族の特権意識と美学</h3>
-              <p className="text-lg text-white/90 leading-relaxed">
+              <p className="text-base md:text-lg text-white/90 leading-relaxed">
                 冒頭の「下衆の家に雪や月」という表現は、現代の感覚からすると少し残酷に聞こえるかもしれません。しかし清少納言にとって、<strong>「美しいものは、それにふさわしい場所（洗練された貴族の邸宅など）にあってこそ完成する」</strong>という徹底した美学がありました。ミスマッチを「あやし（見苦しい）」と感じる彼女の潔癖さがよく表れています。
               </p>
             </div>
 
-            <div className="bg-[#2A3B5A] p-8 rounded-3xl border-2 border-white/20">
+            <div className="bg-[#2A3B5A] p-5 md:p-8 rounded-3xl border-2 border-white/20">
               <h3 className="text-2xl font-bold text-[#B8F3D8] mb-4">📱 「既読スルー」への重ねての怒り</h3>
-              <p className="text-lg text-white/90 leading-relaxed">
+              <p className="text-base md:text-lg text-white/90 leading-relaxed">
                 第28段（にくきもの）や第179段（いみじきもの）でも登場した「返事をよこさない人」への怒りがここでも再登場します。彼女にとって、マナー違反は「憎い」だけでなく「見苦しく（あやし）」、「度を越して（いみじ）」いる許しがたい行為でした。
               </p>
             </div>
 
-            <div className="bg-[#2A3B5A] p-8 rounded-3xl border-2 border-white/20">
+            <div className="bg-[#2A3B5A] p-5 md:p-8 rounded-3xl border-2 border-white/20">
               <h3 className="text-2xl font-bold text-[#FFE5A0] mb-4">🏥 「病（やまひ）」への忌避感</h3>
-              <p className="text-lg text-white/90 leading-relaxed">
+              <p className="text-base md:text-lg text-white/90 leading-relaxed">
                 立派な人が病気で衰えていく姿を「あやし」とするのは、彼女が「若々しく、快活で、知的な状態」を至高の価値としていたからです。衰退していくものへの直感的な拒絶反応が読み取れます。
               </p>
             </div>
@@ -146,7 +146,7 @@ export function Dan184() {
       </section>
 
       {/* Navigation */}
-      <section className="py-8 px-6 sm:px-8 lg:px-12">
+      <section className="py-6 px-4 sm:px-6 lg:px-12">
         <div className="max-w-5xl mx-auto">
           <div className="flex flex-col sm:flex-row gap-4 justify-between">
             <Link

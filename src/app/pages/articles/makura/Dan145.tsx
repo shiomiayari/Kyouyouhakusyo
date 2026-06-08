@@ -16,7 +16,7 @@ export function Dan145() {
       </div>
 
       {/* Back Button */}
-      <section className="py-8 px-6 sm:px-8 lg:px-12">
+      <section className="py-6 px-4 sm:px-6 lg:px-12">
         <div className="max-w-5xl mx-auto">
           <Link
             to="/article/literature/makuranososhi"
@@ -29,12 +29,12 @@ export function Dan145() {
       </section>
 
       {/* Hero Section */}
-      <section className="py-8 px-6 sm:px-8 lg:px-12">
+      <section className="py-6 px-4 sm:px-6 lg:px-12">
         <div className="max-w-5xl mx-auto">
           <div className="inline-block px-4 py-2 bg-[#FFC2D1] text-[#1B2B44] rounded-full mb-6 font-bold border-2 border-white text-sm">
             第145段
           </div>
-          <h1 className="text-4xl md:text-6xl font-black mb-6 text-white leading-tight">
+          <h1 className="text-3xl md:text-5xl font-black mb-6 text-white leading-tight">
             うつくしきもの
           </h1>
           <p className="text-xl text-white/80">
@@ -44,13 +44,13 @@ export function Dan145() {
       </section>
 
       {/* 原文 */}
-      <section className="py-8 px-6 sm:px-8 lg:px-12">
+      <section className="py-6 px-4 sm:px-6 lg:px-12">
         <div className="max-w-5xl mx-auto">
-          <h2 className="text-3xl font-bold mb-6 text-white flex items-center gap-3">
+          <h2 className="text-2xl md:text-3xl font-bold mb-6 text-white flex items-center gap-3">
             <BookOpen className="w-8 h-8 text-[#FFC2D1]" />
             原文
           </h2>
-          <div className="bg-[#2A3B5A] p-8 rounded-3xl border-2 border-white/20">
+          <div className="bg-[#2A3B5A] p-5 md:p-8 rounded-3xl border-2 border-white/20">
             <p className="text-white/90 text-lg leading-loose space-y-6 whitespace-pre-wrap">
               {`うつくしきもの。瓜にかきたるちごの顔。
 
@@ -71,13 +71,13 @@ export function Dan145() {
       </section>
 
       {/* 現代語訳 */}
-      <section className="py-8 px-6 sm:px-8 lg:px-12">
+      <section className="py-6 px-4 sm:px-6 lg:px-12">
         <div className="max-w-5xl mx-auto">
-          <h2 className="text-3xl font-bold mb-6 text-white flex items-center gap-3">
+          <h2 className="text-2xl md:text-3xl font-bold mb-6 text-white flex items-center gap-3">
             <Sparkles className="w-8 h-8 text-[#FFE5A0]" />
             現代語訳
           </h2>
-          <div className="bg-gradient-to-br from-[#FFE5A0] to-[#FFC2D1] p-8 rounded-3xl border-4 border-white">
+          <div className="bg-gradient-to-br from-[#FFE5A0] to-[#FFC2D1] p-5 md:p-8 rounded-3xl border-4 border-white">
             <div className="text-[#1B2B44]/90 leading-relaxed space-y-6">
               <p>
                 <strong>かわいらしいもの。</strong>
@@ -112,37 +112,37 @@ export function Dan145() {
       </section>
 
       {/* 詳しい解説 */}
-      <section className="py-8 px-6 sm:px-8 lg:px-12">
+      <section className="py-6 px-4 sm:px-6 lg:px-12">
         <div className="max-w-5xl mx-auto">
-          <h2 className="text-3xl font-bold mb-6 text-white flex items-center gap-3">
+          <h2 className="text-2xl md:text-3xl font-bold mb-6 text-white flex items-center gap-3">
             <Brain className="w-8 h-8 text-[#C3B7F5]" />
             詳しい解説
           </h2>
           <div className="space-y-6">
-            <div className="bg-[#2A3B5A] p-8 rounded-3xl border-2 border-white/20">
+            <div className="bg-[#2A3B5A] p-5 md:p-8 rounded-3xl border-2 border-white/20">
               <h3 className="text-2xl font-bold text-[#FFC2D1] mb-4">💖 「小さいもの＝正義」という定義</h3>
-              <p className="text-lg text-white/90 leading-relaxed">
+              <p className="text-base md:text-lg text-white/90 leading-relaxed">
                 最後に言い切っている「何も何も、小さきものは、みなうつくし」というフレーズは、日本の「カワイイ文化」の原点とも言われています。大きく立派なものよりも、ミニチュアの世界や、儚いものに価値を見出す清少納言の感性が凝縮されています。
               </p>
             </div>
 
-            <div className="bg-[#2A3B5A] p-8 rounded-3xl border-2 border-white/20">
+            <div className="bg-[#2A3B5A] p-5 md:p-8 rounded-3xl border-2 border-white/20">
               <h3 className="text-2xl font-bold text-[#B8F3D8] mb-4">👶 「幼児」への細やかな観察眼</h3>
-              <p className="text-lg text-white/90 leading-relaxed">
+              <p className="text-base md:text-lg text-white/90 leading-relaxed">
                 チリを見つけて大人に見せるしぐさや、髪を払わずに首をかしげる様子など、実際に子供をじっと見守っていないと書けないような、リアリティ溢れる描写です。彼女が宮廷の喧騒の中でも、こうした「小さな命の輝き」を愛でていたことがわかります。
               </p>
             </div>
 
-            <div className="bg-[#2A3B5A] p-8 rounded-3xl border-2 border-white/20">
+            <div className="bg-[#2A3B5A] p-5 md:p-8 rounded-3xl border-2 border-white/20">
               <h3 className="text-2xl font-bold text-[#FFE5A0] mb-4">🏠 「おままごと」のような世界観</h3>
-              <p className="text-lg text-white/90 leading-relaxed">
+              <p className="text-base md:text-lg text-white/90 leading-relaxed">
                 雛人形の道具（ミニチュア家具）を愛でる感覚は、現代の私たちがシルバニアファミリーやカプセルトイ（ガチャガチャ）を「かわいい！」と喜ぶ感覚と全く同じです。
               </p>
             </div>
 
-            <div className="bg-[#2A3B5A] p-8 rounded-3xl border-2 border-white/20">
+            <div className="bg-[#2A3B5A] p-5 md:p-8 rounded-3xl border-2 border-white/20">
               <h3 className="text-2xl font-bold text-[#C3B7F5] mb-4">✨ 五感で楽しむ「うつくし」</h3>
-              <p className="text-lg text-white/90 leading-relaxed">
+              <p className="text-base md:text-lg text-white/90 leading-relaxed">
                 雀を呼ぶ音、チリをつまむ指先の感覚、池から上げた蓮の葉の質感。清少納言は、視覚だけでなく、動きや感触を含めた「生きている可愛さ」を全肯定しています。
               </p>
             </div>
@@ -151,7 +151,7 @@ export function Dan145() {
       </section>
 
       {/* Navigation */}
-      <section className="py-8 px-6 sm:px-8 lg:px-12">
+      <section className="py-6 px-4 sm:px-6 lg:px-12">
         <div className="max-w-5xl mx-auto">
           <div className="flex flex-col sm:flex-row gap-4 justify-between">
             <Link

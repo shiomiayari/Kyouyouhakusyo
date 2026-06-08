@@ -16,7 +16,7 @@ export function Dan22() {
       </div>
 
       {/* Back Button */}
-      <section className="py-8 px-6 sm:px-8 lg:px-12">
+      <section className="py-6 px-4 sm:px-6 lg:px-12">
         <div className="max-w-5xl mx-auto">
           <Link
             to="/article/literature/makuranososhi"
@@ -29,12 +29,12 @@ export function Dan22() {
       </section>
 
       {/* Hero Section */}
-      <section className="py-8 px-6 sm:px-8 lg:px-12">
+      <section className="py-6 px-4 sm:px-6 lg:px-12">
         <div className="max-w-5xl mx-auto">
           <div className="inline-block px-4 py-2 bg-[#C3B7F5] text-[#1B2B44] rounded-full mb-6 font-bold border-2 border-white text-sm">
             第22段
           </div>
-          <h1 className="text-4xl md:text-6xl font-black mb-6 text-white leading-tight">
+          <h1 className="text-3xl md:text-5xl font-black mb-6 text-white leading-tight">
             すさまじきもの
           </h1>
           <p className="text-xl text-white/80">
@@ -44,13 +44,13 @@ export function Dan22() {
       </section>
 
       {/* 原文 */}
-      <section className="py-8 px-6 sm:px-8 lg:px-12">
+      <section className="py-6 px-4 sm:px-6 lg:px-12">
         <div className="max-w-5xl mx-auto">
-          <h2 className="text-3xl font-bold mb-6 text-white flex items-center gap-3">
+          <h2 className="text-2xl md:text-3xl font-bold mb-6 text-white flex items-center gap-3">
             <BookOpen className="w-8 h-8 text-[#C3B7F5]" />
             原文
           </h2>
-          <div className="bg-[#2A3B5A] p-8 rounded-3xl border-2 border-white/20">
+          <div className="bg-[#2A3B5A] p-5 md:p-8 rounded-3xl border-2 border-white/20">
             <p className="text-white/90 text-lg leading-loose space-y-6 whitespace-pre-wrap">
               {`すさまじきもの。昼ほゆる犬。春の紅梅（かうばい）。
 
@@ -71,13 +71,13 @@ export function Dan22() {
       </section>
 
       {/* 現代語訳 */}
-      <section className="py-8 px-6 sm:px-8 lg:px-12">
+      <section className="py-6 px-4 sm:px-6 lg:px-12">
         <div className="max-w-5xl mx-auto">
-          <h2 className="text-3xl font-bold mb-6 text-white flex items-center gap-3">
+          <h2 className="text-2xl md:text-3xl font-bold mb-6 text-white flex items-center gap-3">
             <Sparkles className="w-8 h-8 text-[#B8F3D8]" />
             現代語訳
           </h2>
-          <div className="bg-gradient-to-br from-[#B3E5FC] to-[#B8F3D8] p-8 rounded-3xl border-4 border-white">
+          <div className="bg-gradient-to-br from-[#B3E5FC] to-[#B8F3D8] p-5 md:p-8 rounded-3xl border-4 border-white">
             <div className="text-[#1B2B44]/90 leading-relaxed space-y-6">
               <p>
                 <strong>興ざめなもの（ガッカリするもの）。</strong>
@@ -109,37 +109,37 @@ export function Dan22() {
       </section>
 
       {/* 詳しい解説 */}
-      <section className="py-8 px-6 sm:px-8 lg:px-12">
+      <section className="py-6 px-4 sm:px-6 lg:px-12">
         <div className="max-w-5xl mx-auto">
-          <h2 className="text-3xl font-bold mb-6 text-white flex items-center gap-3">
+          <h2 className="text-2xl md:text-3xl font-bold mb-6 text-white flex items-center gap-3">
             <Brain className="w-8 h-8 text-[#FFE5A0]" />
             詳しい解説
           </h2>
           <div className="space-y-6">
-            <div className="bg-[#2A3B5A] p-8 rounded-3xl border-2 border-white/20">
+            <div className="bg-[#2A3B5A] p-5 md:p-8 rounded-3xl border-2 border-white/20">
               <h3 className="text-2xl font-bold text-[#B3E5FC] mb-4">🌸 「季節外れ」への違和感</h3>
-              <p className="text-lg text-white/90 leading-relaxed">
+              <p className="text-base md:text-lg text-white/90 leading-relaxed">
                 「昼の犬」や「春の紅梅」など、本来あるべき時間や季節からズレているものに対して、彼女は「風情がない」とバッサリ切り捨てます。
               </p>
             </div>
 
-            <div className="bg-[#2A3B5A] p-8 rounded-3xl border-2 border-white/20">
+            <div className="bg-[#2A3B5A] p-5 md:p-8 rounded-3xl border-2 border-white/20">
               <h3 className="text-2xl font-bold text-[#B8F3D8] mb-4">💔 「期待」の落差</h3>
-              <p className="text-lg text-white/90 leading-relaxed">
+              <p className="text-base md:text-lg text-white/90 leading-relaxed">
                 第143段でも出てきた「待っている人違い」のエピソード。ここでも「心ときめき」が「すさまじ（ガッカリ）」に転じる残酷な瞬間を、ドラマチックに描写しています。
               </p>
             </div>
 
-            <div className="bg-[#2A3B5A] p-8 rounded-3xl border-2 border-white/20">
+            <div className="bg-[#2A3B5A] p-5 md:p-8 rounded-3xl border-2 border-white/20">
               <h3 className="text-2xl font-bold text-[#FFE5A0] mb-4">🏠 「除目」の敗者の哀愁</h3>
-              <p className="text-lg text-white/90 leading-relaxed">
+              <p className="text-base md:text-lg text-white/90 leading-relaxed">
                 この段の白眉は、出世争いに敗れた人の家の描写です。数日前まであんなに賑やかだったのに、結果が出た途端に誰も来なくなるという、権力の移ろいと人間の現金（げんなま）さを、車輪の跡という視覚的イメージで表現しています。
               </p>
             </div>
 
-            <div className="bg-[#2A3B5A] p-8 rounded-3xl border-2 border-white/20">
+            <div className="bg-[#2A3B5A] p-5 md:p-8 rounded-3xl border-2 border-white/20">
               <h3 className="text-2xl font-bold text-[#FFC2D1] mb-4">💤 「すれ違い」の虚しさ</h3>
-              <p className="text-lg text-white/90 leading-relaxed">
+              <p className="text-base md:text-lg text-white/90 leading-relaxed">
                 会いたいと思って訪ねたのに相手が寝ている。現代でいえば、楽しみにしていたデートで相手が遅刻してきたり、寝過ごしたりしている時の、あの冷めていく感情に近いものがあります。
               </p>
             </div>
@@ -148,7 +148,7 @@ export function Dan22() {
       </section>
 
       {/* Navigation */}
-      <section className="py-8 px-6 sm:px-8 lg:px-12">
+      <section className="py-6 px-4 sm:px-6 lg:px-12">
         <div className="max-w-5xl mx-auto">
           <div className="flex flex-col sm:flex-row gap-4 justify-between">
             <Link
