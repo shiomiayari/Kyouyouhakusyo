@@ -37,7 +37,7 @@ export function Dan301() {
           <h1 className="text-3xl md:text-5xl font-black mb-6 text-white leading-tight">
             五月ばかりに、信濃の国より
           </h1>
-          <p className="text-xl text-white/80">
+          <p className="text-base md:text-lg text-white/80">
             中宮定子と清少納言が交わす機知に富んだ「知のゲーム」。
           </p>
         </div>
@@ -46,7 +46,7 @@ export function Dan301() {
       {/* 原文 */}
       <section className="py-6 px-4 sm:px-6 lg:px-12">
         <div className="max-w-5xl mx-auto">
-          <h2 className="text-2xl md:text-3xl font-bold mb-6 text-white flex items-center gap-3">
+          <h2 className="text-xl md:text-3xl font-bold mb-6 text-white flex items-center gap-3">
             <BookOpen className="w-8 h-8 text-[#B3E5FC]" />
             原文
           </h2>
@@ -68,7 +68,7 @@ export function Dan301() {
       {/* 現代語訳 */}
       <section className="py-6 px-4 sm:px-6 lg:px-12">
         <div className="max-w-5xl mx-auto">
-          <h2 className="text-2xl md:text-3xl font-bold mb-6 text-white flex items-center gap-3">
+          <h2 className="text-xl md:text-3xl font-bold mb-6 text-white flex items-center gap-3">
             <Sparkles className="w-8 h-8 text-[#FFE5A0]" />
             現代語訳
           </h2>
@@ -100,27 +100,27 @@ export function Dan301() {
       {/* 詳しい解説 */}
       <section className="py-6 px-4 sm:px-6 lg:px-12">
         <div className="max-w-5xl mx-auto">
-          <h2 className="text-2xl md:text-3xl font-bold mb-6 text-white flex items-center gap-3">
+          <h2 className="text-xl md:text-3xl font-bold mb-6 text-white flex items-center gap-3">
             <Brain className="w-8 h-8 text-[#B8F3D8]" />
             詳しい解説
           </h2>
           <div className="space-y-6">
             <div className="bg-[#2A3B5A] p-5 md:p-8 rounded-3xl border-2 border-white/20">
-              <h3 className="text-2xl font-bold text-[#E1BEE7] mb-4">🌉 「木曽の懸橋」のダブルミーニング</h3>
+              <h3 className="text-xl md:text-2xl font-bold text-[#E1BEE7] mb-4">🌉 「木曽の懸橋」のダブルミーニング</h3>
               <p className="text-base md:text-lg text-white/90 leading-relaxed">
                 当時、信濃の「木曽の懸橋」は、断崖絶壁に架けられた非常に危険でスリリングな名所として知られていました。中宮定子は、届いた「櫛の箱（くしのけ）」と「懸橋（かけはし）」を言葉の響きや形状で掛け合わせ、知的でユーモラスな冗談を飛ばしたのです。
               </p>
             </div>
 
             <div className="bg-[#2A3B5A] p-5 md:p-8 rounded-3xl border-2 border-white/20">
-              <h3 className="text-2xl font-bold text-[#B8F3D8] mb-4">🧩 定子と少納言の「知のゲーム」</h3>
+              <h3 className="text-xl md:text-2xl font-bold text-[#B8F3D8] mb-4">🧩 定子と少納言の「知のゲーム」</h3>
               <p className="text-base md:text-lg text-white/90 leading-relaxed">
                 中宮定子が「これは懸橋よ」と振れば、少納言は即座にその意図を汲み取り、さらに「踏み（手紙／足で踏む）」という言葉を掛けた和歌を返します。第299段（香炉峰の雪）と同様、二人の間には高い教養を前提とした「言葉遊び」の文化が息づいていました。
               </p>
             </div>
 
             <div className="bg-[#2A3B5A] p-5 md:p-8 rounded-3xl border-2 border-white/20">
-              <h3 className="text-2xl font-bold text-[#FFC2D1] mb-4">🏔️ 「遠い国」への憧れ</h3>
+              <h3 className="text-xl md:text-2xl font-bold text-[#FFC2D1] mb-4">🏔️ 「遠い国」への憧れ</h3>
               <p className="text-base md:text-lg text-white/90 leading-relaxed">
                 都の人にとって信濃は果てしなく遠い異郷。そこから届いた美しい贈り物は、単なる「物」以上の、ロマンや物語を感じさせる特別な存在でした。
               </p>

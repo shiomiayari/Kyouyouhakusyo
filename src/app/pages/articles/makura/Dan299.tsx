@@ -37,7 +37,7 @@ export function Dan299() {
           <h1 className="text-3xl md:text-5xl font-black mb-6 text-white leading-tight">
             雪のいと高う降りたるを
           </h1>
-          <p className="text-xl text-white/80">
+          <p className="text-base md:text-lg text-white/80">
             中宮定子と清少納言の、言葉を超えた知的な「秘密の合言葉」。
           </p>
         </div>
@@ -46,7 +46,7 @@ export function Dan299() {
       {/* 原文 */}
       <section className="py-6 px-4 sm:px-6 lg:px-12">
         <div className="max-w-5xl mx-auto">
-          <h2 className="text-2xl md:text-3xl font-bold mb-6 text-white flex items-center gap-3">
+          <h2 className="text-xl md:text-3xl font-bold mb-6 text-white flex items-center gap-3">
             <BookOpen className="w-8 h-8 text-[#B3E5FC]" />
             原文
           </h2>
@@ -67,7 +67,7 @@ export function Dan299() {
       {/* 現代語訳 */}
       <section className="py-6 px-4 sm:px-6 lg:px-12">
         <div className="max-w-5xl mx-auto">
-          <h2 className="text-2xl md:text-3xl font-bold mb-6 text-white flex items-center gap-3">
+          <h2 className="text-xl md:text-3xl font-bold mb-6 text-white flex items-center gap-3">
             <Sparkles className="w-8 h-8 text-[#FFE5A0]" />
             現代語訳
           </h2>
@@ -95,13 +95,13 @@ export function Dan299() {
       {/* 詳しい解説 */}
       <section className="py-6 px-4 sm:px-6 lg:px-12">
         <div className="max-w-5xl mx-auto">
-          <h2 className="text-2xl md:text-3xl font-bold mb-6 text-white flex items-center gap-3">
+          <h2 className="text-xl md:text-3xl font-bold mb-6 text-white flex items-center gap-3">
             <Brain className="w-8 h-8 text-[#B8F3D8]" />
             解説：なぜ「カーテン（御簾）」を上げたのか？
           </h2>
           <div className="space-y-6">
             <div className="bg-[#2A3B5A] p-5 md:p-8 rounded-3xl border-2 border-white/20">
-              <h3 className="text-2xl font-bold text-[#E1BEE7] mb-4">📖 白楽天の漢詩の知識</h3>
+              <h3 className="text-xl md:text-2xl font-bold text-[#E1BEE7] mb-4">📖 白楽天の漢詩の知識</h3>
               <p className="text-base md:text-lg text-white/90 leading-relaxed">
                 この段には、当時の教養人なら誰もが知っていた白楽天（白居易）の漢詩の知識が隠されています。<br /><br />
                 <strong>元ネタの詩：</strong> 「香炉峰の雪は、簾（すだれ）を撥（かか）げて看（み）る」<br />
@@ -111,7 +111,7 @@ export function Dan299() {
             </div>
 
             <div className="bg-[#2A3B5A] p-5 md:p-8 rounded-3xl border-2 border-white/20">
-              <h3 className="text-2xl font-bold text-[#B8F3D8] mb-4">✨ ここが「エモい」ポイント</h3>
+              <h3 className="text-xl md:text-2xl font-bold text-[#B8F3D8] mb-4">✨ ここが「エモい」ポイント</h3>
               <p className="text-base md:text-lg text-white/90 leading-relaxed">
                 清少納言は、中宮定子が自分を試しているのではなく、<strong>「二人だけの秘密の合言葉」</strong>を楽しもうとしていることを瞬時に見抜きました。二人の高い知性と、言葉を超えた絆がこの短い文章に凝縮されています。
               </p>

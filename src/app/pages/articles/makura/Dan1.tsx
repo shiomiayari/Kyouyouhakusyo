@@ -17,7 +17,7 @@ export function Dan1() {
 
       {/* Back Button */}
       <section className="py-6 px-4 sm:px-6 lg:px-12">
-        <div className="max-w-5xl mx-auto">
+        <div className="max-w-5xl mx-auto max-w-full">
           <Link
             to="/article/literature/makuranososhi"
             className="inline-flex items-center gap-2 px-4 py-2 bg-[#2A3B5A] text-white rounded-xl hover:bg-[#3A4B6A] transition-all border-2 border-white/20"
@@ -37,7 +37,7 @@ export function Dan1() {
           <h1 className="text-3xl md:text-5xl font-black mb-6 text-white leading-tight">
             春はあけぼの
           </h1>
-          <p className="text-xl text-white/80">
+          <p className="text-base md:text-lg text-white/80">
             四季それぞれの「ベストタイム」を独自の美学で定義した超有名段
           </p>
         </div>
@@ -46,11 +46,11 @@ export function Dan1() {
       {/* 原文 (Vertical Text) */}
       <section className="py-6 px-4 sm:px-6 lg:px-12">
         <div className="max-w-5xl mx-auto">
-          <h2 className="text-2xl md:text-3xl font-bold mb-6 text-white flex items-center gap-3">
+          <h2 className="text-xl md:text-3xl font-bold mb-6 text-white flex items-center gap-3">
             <BookOpen className="w-8 h-8 text-[#B8F3D8]" />
             原文
           </h2>
-          <div className="bg-[#2A3B5A] p-5 md:p-8 rounded-3xl border-2 border-white/20 overflow-x-auto">
+          <div className="bg-[#2A3B5A] p-5 md:p-8 rounded-3xl border-2 border-white/20 overflow-x-auto w-full">
             <div className="flex flex-row-reverse gap-8 pb-4" style={{ minWidth: 'max-content' }}>
               <p
                 className="text-white text-xl md:text-2xl leading-loose"
@@ -321,12 +321,12 @@ export function Dan1() {
       {/* 現代語訳 */}
       <section className="py-6 px-4 sm:px-6 lg:px-12">
         <div className="max-w-5xl mx-auto">
-          <h2 className="text-2xl md:text-3xl font-bold mb-6 text-white flex items-center gap-3">
+          <h2 className="text-xl md:text-3xl font-bold mb-6 text-white flex items-center gap-3">
             <Sparkles className="w-8 h-8 text-[#FFE5A0]" />
             現代語訳
           </h2>
           <div className="bg-gradient-to-br from-[#FFE5A0] to-[#FFC2D1] p-5 md:p-8 rounded-3xl border-4 border-white">
-            <div className="text-[#1B2B44]/90 text-lg md:text-xl leading-relaxed space-y-4">
+            <div className="text-[#1B2B44]/90 text-base md:text-lg leading-relaxed space-y-4">
               <p>
                 <strong className="text-2xl">🌸 春</strong><br />
                 春は、夜明け前（あけぼの）が最高。だんだん白くなっていく山際の空が、少し明るくなって、紫がかった雲が細くたなびいているのが、すごくいい。
@@ -351,28 +351,28 @@ export function Dan1() {
       {/* 詳しい解説 */}
       <section className="py-6 px-4 sm:px-6 lg:px-12">
         <div className="max-w-5xl mx-auto">
-          <h2 className="text-2xl md:text-3xl font-bold mb-6 text-white flex items-center gap-3">
+          <h2 className="text-xl md:text-3xl font-bold mb-6 text-white flex items-center gap-3">
             <Brain className="w-8 h-8 text-[#C3B7F5]" />
             詳しい解説
           </h2>
           <div className="space-y-6">
             <div className="bg-[#2A3B5A] p-5 md:p-8 rounded-3xl border-2 border-white/20">
-              <h3 className="text-2xl font-bold text-[#FFE5A0] mb-4">📚 「をかし」の教科書</h3>
-              <p className="text-lg text-white/90 leading-relaxed">
+              <h3 className="text-xl md:text-2xl font-bold text-[#FFE5A0] mb-4">📚 「をかし」の教科書</h3>
+              <p className="text-sm md:text-base text-white/90 leading-relaxed">
                 この段は『枕草子』全体のトーンを決める重要な冒頭です。平安文学のキーワードである「もののあはれ（しみじみとした情趣）」に対し、清少納言は<strong className="text-[#FFE5A0]">「をかし（明るい知性、センスの良さ、興味深い）」</strong>という新しい価値観を提示しました。
               </p>
             </div>
 
             <div className="bg-[#2A3B5A] p-5 md:p-8 rounded-3xl border-2 border-white/20">
-              <h3 className="text-2xl font-bold text-[#B8F3D8] mb-4">🎬 動的な美しさ</h3>
-              <p className="text-lg text-white/90 leading-relaxed">
+              <h3 className="text-xl md:text-2xl font-bold text-[#B8F3D8] mb-4">🎬 動的な美しさ</h3>
+              <p className="text-sm md:text-base text-white/90 leading-relaxed">
                 静止画としての風景ではなく、雲が「たなびく」、蛍が「飛び交う」、カラスが「飛び急ぐ」、炭を「持って通る」といった、<strong className="text-[#B8F3D8]">動きのある瞬間</strong>を捉えているのが彼女の特徴です。
               </p>
             </div>
 
             <div className="bg-[#2A3B5A] p-5 md:p-8 rounded-3xl border-2 border-white/20">
-              <h3 className="text-2xl font-bold text-[#FFC2D1] mb-4">💬 「わろし」という毒舌</h3>
-              <p className="text-lg text-white/90 leading-relaxed">
+              <h3 className="text-xl md:text-2xl font-bold text-[#FFC2D1] mb-4">💬 「わろし」という毒舌</h3>
+              <p className="text-sm md:text-base text-white/90 leading-relaxed">
                 最後に「わろし（良くない、ダサい）」という言葉で締めている点に注目。ただ「綺麗だね」で終わらせず、自分の美学に反するもの（燃え尽きた炭の灰）をハッキリ否定するあたりに、<strong className="text-[#FFC2D1]">彼女の性格</strong>がよく表れています。
               </p>
             </div>
@@ -383,7 +383,7 @@ export function Dan1() {
       {/* 現代に活かせるポイント */}
       <section className="py-6 px-4 sm:px-6 lg:px-12">
         <div className="max-w-5xl mx-auto">
-          <h2 className="text-2xl md:text-3xl font-bold mb-6 text-white flex items-center gap-3">
+          <h2 className="text-xl md:text-3xl font-bold mb-6 text-white flex items-center gap-3">
             <Sparkles className="w-8 h-8 text-[#FFE5A0]" />
             現代に活かせるポイント
           </h2>
@@ -392,8 +392,8 @@ export function Dan1() {
               <div className="flex items-start gap-3">
                 <div className="text-2xl">💡</div>
                 <div>
-                  <h4 className="font-bold text-xl text-[#1B2B44] mb-2">自分の「好き」を言語化する力</h4>
-                  <p className="text-[#1B2B44]/80 leading-relaxed">
+                  <h4 className="font-bold text-lg md:text-xl text-[#1B2B44] mb-2">自分の「好き」を言語化する力</h4>
+                  <p className="text-sm md:text-base text-[#1B2B44]/80 leading-relaxed">
                     「春は夜明けが好き」「夏は夜が好き」と明確に言い切る清少納言。SNS時代の今、自分の価値観をはっきり示すことは、個性を発信する第一歩です。
                   </p>
                 </div>
@@ -401,8 +401,8 @@ export function Dan1() {
               <div className="flex items-start gap-3">
                 <div className="text-2xl">✨</div>
                 <div>
-                  <h4 className="font-bold text-xl text-[#1B2B44] mb-2">日常の中に「エモさ」を見つける視点</h4>
-                  <p className="text-[#1B2B44]/80 leading-relaxed">
+                  <h4 className="font-bold text-lg md:text-xl text-[#1B2B44] mb-2">日常の中に「エモさ」を見つける視点</h4>
+                  <p className="text-sm md:text-base text-[#1B2B44]/80 leading-relaxed">
                     特別なイベントではなく、朝の光や夜の虫の音など、毎日の中にある小さな美しさに気づく感性。これこそが、日々を豊かに生きる秘訣です。
                   </p>
                 </div>

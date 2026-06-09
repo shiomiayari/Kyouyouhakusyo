@@ -37,7 +37,7 @@ export function Dan37() {
                     <h1 className="text-3xl md:text-5xl font-black mb-6 text-white leading-tight">
                         木は
                     </h1>
-                    <p className="text-xl text-white/80">
+                    <p className="text-base md:text-lg text-white/80">
                         「顔がブサイク」なんて言わせない！梨の花を見直す超教養的視点
                     </p>
                 </div>
@@ -46,7 +46,7 @@ export function Dan37() {
             {/* 原文（一部抜粋） */}
             <section className="py-6 px-4 sm:px-6 lg:px-12">
                 <div className="max-w-5xl mx-auto">
-                    <h2 className="text-2xl md:text-3xl font-bold mb-6 text-white flex items-center gap-3">
+                    <h2 className="text-xl md:text-3xl font-bold mb-6 text-white flex items-center gap-3">
                         <BookOpen className="w-8 h-8 text-[#B8F3D8]" />
                         原文（一部抜粋）
                     </h2>
@@ -82,7 +82,7 @@ export function Dan37() {
             {/* 現代語訳 */}
             <section className="py-6 px-4 sm:px-6 lg:px-12">
                 <div className="max-w-5xl mx-auto">
-                    <h2 className="text-2xl md:text-3xl font-bold mb-6 text-white flex items-center gap-3">
+                    <h2 className="text-xl md:text-3xl font-bold mb-6 text-white flex items-center gap-3">
                         <Sparkles className="w-8 h-8 text-[#FFE5A0]" />
                         現代語訳
                     </h2>
@@ -119,27 +119,27 @@ export function Dan37() {
             {/* 詳しい解説 */}
             <section className="py-6 px-4 sm:px-6 lg:px-12">
                 <div className="max-w-5xl mx-auto">
-                    <h2 className="text-2xl md:text-3xl font-bold mb-6 text-white flex items-center gap-3">
+                    <h2 className="text-xl md:text-3xl font-bold mb-6 text-white flex items-center gap-3">
                         <Brain className="w-8 h-8 text-[#C3B7F5]" />
                         詳しい解説
                     </h2>
                     <div className="space-y-6">
                         <div className="bg-[#2A3B5A] p-5 md:p-8 rounded-3xl border-2 border-white/20">
-                            <h3 className="text-2xl font-bold text-[#FFE5A0] mb-4">⚖️ 「梨の花」逆転裁判</h3>
+                            <h3 className="text-xl md:text-2xl font-bold text-[#FFE5A0] mb-4">⚖️ 「梨の花」逆転裁判</h3>
                             <p className="text-base md:text-lg text-white/90 leading-relaxed">
                                 当時、梨の花は「白すぎて死装束みたい」「ブサイクの例え」と、宮廷では不人気でした。しかし清少納言は「白楽天の詩を知らないの？」と言わんばかりに、漢詩の教養を盾に梨の花の地位を爆上げさせます。彼女にとって、美しさは単なる見た目ではなく<strong className="text-[#FFE5A0]">「背後にある教養やストーリー（文脈）」とセット</strong>なのです。
                             </p>
                         </div>
 
                         <div className="bg-[#2A3B5A] p-5 md:p-8 rounded-3xl border-2 border-white/20">
-                            <h3 className="text-2xl font-bold text-[#FFC2D1] mb-4">🌳 桐の木への「多角的評価」</h3>
+                            <h3 className="text-xl md:text-2xl font-bold text-[#FFC2D1] mb-4">🌳 桐の木への「多角的評価」</h3>
                             <p className="text-base md:text-lg text-white/90 leading-relaxed">
                                 葉っぱの見た目が「キモい（むつかし）」と本音を漏らしつつも、鳳凰が止まるという伝説や、琴の材料になるという実用性・ステータスを総合して<strong className="text-[#FFC2D1]">「やっぱり最高」</strong>と結論づけます。この「欠点も認めた上での推し」という視点が、ただ褒めるだけじゃないリアリティを生んでいます。
                             </p>
                         </div>
 
                         <div className="bg-[#2A3B5A] p-5 md:p-8 rounded-3xl border-2 border-white/20">
-                            <h3 className="text-2xl font-bold text-[#B8F3D8] mb-4">🎨 色彩への鋭い反応</h3>
+                            <h3 className="text-xl md:text-2xl font-bold text-[#B8F3D8] mb-4">🎨 色彩への鋭い反応</h3>
                             <p className="text-base md:text-lg text-white/90 leading-relaxed">
                                 最後にサラッと褒められているユズリハの<strong className="text-[#B8F3D8]">「青い葉と赤い茎」という色のコントラスト</strong>に注目。清少納言の審美眼は、常にパッと目を引く色の組み合わせを探しており、色彩感覚の豊かさが伺えます。
                             </p>
@@ -151,7 +151,7 @@ export function Dan37() {
             {/* 現代に活かせるポイント */}
             <section className="py-6 px-4 sm:px-6 lg:px-12">
                 <div className="max-w-5xl mx-auto">
-                    <h2 className="text-2xl md:text-3xl font-bold mb-6 text-white flex items-center gap-3">
+                    <h2 className="text-xl md:text-3xl font-bold mb-6 text-white flex items-center gap-3">
                         <Sparkles className="w-8 h-8 text-[#FFE5A0]" />
                         現代に活かせるポイント
                     </h2>
@@ -161,7 +161,7 @@ export function Dan37() {
                                 <div className="text-2xl">💡</div>
                                 <div>
                                     <h4 className="font-bold text-lg md:text-xl text-[#1B2B44] mb-2">「文脈」を知れば、モノの価値は一変する</h4>
-                                    <p className="text-[#1B2B44]/80 leading-relaxed">
+                                    <p className="text-sm md:text-base text-[#1B2B44]/80 leading-relaxed">
                                         世間が「ダサい」「イケてない」と言っているものでも、その背景にある歴史や優れたエピソード（文脈）を知ることで評価は180度変わります。清少納言のように、<strong className="text-[#1B2B44]">周りの意見に流されず「自分の知識で再評価する力」</strong>は、現代の情報社会でも非常に強力な武器になります。
                                     </p>
                                 </div>

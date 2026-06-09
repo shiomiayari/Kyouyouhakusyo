@@ -37,7 +37,7 @@ export function Dan143() {
           <h1 className="text-3xl md:text-5xl font-black mb-6 text-white leading-tight">
             はしたなきもの
           </h1>
-          <p className="text-xl text-white/80">
+          <p className="text-base md:text-lg text-white/80">
             期待外れや勘違いがもたらす、いたたまれない「気まずさ」の数々。
           </p>
         </div>
@@ -46,7 +46,7 @@ export function Dan143() {
       {/* 原文 */}
       <section className="py-6 px-4 sm:px-6 lg:px-12">
         <div className="max-w-5xl mx-auto">
-          <h2 className="text-2xl md:text-3xl font-bold mb-6 text-white flex items-center gap-3">
+          <h2 className="text-xl md:text-3xl font-bold mb-6 text-white flex items-center gap-3">
             <BookOpen className="w-8 h-8 text-[#FFC2D1]" />
             原文
           </h2>
@@ -69,7 +69,7 @@ export function Dan143() {
       {/* 現代語訳 */}
       <section className="py-6 px-4 sm:px-6 lg:px-12">
         <div className="max-w-5xl mx-auto">
-          <h2 className="text-2xl md:text-3xl font-bold mb-6 text-white flex items-center gap-3">
+          <h2 className="text-xl md:text-3xl font-bold mb-6 text-white flex items-center gap-3">
             <Sparkles className="w-8 h-8 text-[#FFE5A0]" />
             現代語訳
           </h2>
@@ -101,34 +101,34 @@ export function Dan143() {
       {/* 詳しい解説 */}
       <section className="py-6 px-4 sm:px-6 lg:px-12">
         <div className="max-w-5xl mx-auto">
-          <h2 className="text-2xl md:text-3xl font-bold mb-6 text-white flex items-center gap-3">
+          <h2 className="text-xl md:text-3xl font-bold mb-6 text-white flex items-center gap-3">
             <Brain className="w-8 h-8 text-[#C3B7F5]" />
             詳しい解説
           </h2>
           <div className="space-y-6">
             <div className="bg-[#2A3B5A] p-5 md:p-8 rounded-3xl border-2 border-white/20">
-              <h3 className="text-2xl font-bold text-[#FFC2D1] mb-4">😶 「自意識」との戦い</h3>
+              <h3 className="text-xl md:text-2xl font-bold text-[#FFC2D1] mb-4">😶 「自意識」との戦い</h3>
               <p className="text-base md:text-lg text-white/90 leading-relaxed">
                 冒頭の「聞き間違い・勘違い」は、現代でも名前を呼ばれたと思って返事をしたのに、自分じゃなかった時のあの「穴があったら入りたい」感覚そのものです。清少納言はこうした、個人のプライドが揺らぐ瞬間を逃さず記録しています。
               </p>
             </div>
 
             <div className="bg-[#2A3B5A] p-5 md:p-8 rounded-3xl border-2 border-white/20">
-              <h3 className="text-2xl font-bold text-[#B8F3D8] mb-4">💬 「悪口」と「ニアミス」</h3>
+              <h3 className="text-xl md:text-2xl font-bold text-[#B8F3D8] mb-4">💬 「悪口」と「ニアミス」</h3>
               <p className="text-base md:text-lg text-white/90 leading-relaxed">
                 噂話をしている最中に本人が登場する気まずさ。これはSNSの「誤爆」や、陰口を言っているチャットに本人が招待されていた時のパニックに近いリアリティがあります。
               </p>
             </div>
 
             <div className="bg-[#2A3B5A] p-5 md:p-8 rounded-3xl border-2 border-white/20">
-              <h3 className="text-2xl font-bold text-[#FFE5A0] mb-4">🎓 「田舎者」と侮ったしっぺ返し</h3>
+              <h3 className="text-xl md:text-2xl font-bold text-[#FFE5A0] mb-4">🎓 「田舎者」と侮ったしっぺ返し</h3>
               <p className="text-base md:text-lg text-white/90 leading-relaxed">
                 「都の人間（自分たち）は教養がある」と信じている清少納言ですが、相手を侮って恥をかくパターンも「はしたなし（きまずい）」として挙げています。ここには彼女の「知性に対するフェアな視点」が隠れています。
               </p>
             </div>
 
             <div className="bg-[#2A3B5A] p-5 md:p-8 rounded-3xl border-2 border-white/20">
-              <h3 className="text-2xl font-bold text-[#C3B7F5] mb-4">🚪 「期待」と「現実」のギャップ</h3>
+              <h3 className="text-xl md:text-2xl font-bold text-[#C3B7F5] mb-4">🚪 「期待」と「現実」のギャップ</h3>
               <p className="text-base md:text-lg text-white/90 leading-relaxed">
                 最後の「待っている人」のエピソードは、現代なら「LINEの通知が来た！と思って飛びついたら、公式アカウントからの広告だった」時のガッカリ感に似ています。期待が大きければ大きいほど、その後の「はしたなさ（いたたまれなさ）」は増大するのです。
               </p>

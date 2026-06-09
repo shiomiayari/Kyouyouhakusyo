@@ -37,7 +37,7 @@ export function Dan42() {
                     <h1 className="text-3xl md:text-5xl font-black mb-6 text-white leading-tight">
                         虫は
                     </h1>
-                    <p className="text-xl text-white/80">
+                    <p className="text-base md:text-lg text-white/80">
                         鈴虫1位！蚊はボロクソ！虫の格付けランキング
                     </p>
                 </div>
@@ -46,7 +46,7 @@ export function Dan42() {
             {/* 原文（一部抜粋） */}
             <section className="py-6 px-4 sm:px-6 lg:px-12">
                 <div className="max-w-5xl mx-auto">
-                    <h2 className="text-2xl md:text-3xl font-bold mb-6 text-white flex items-center gap-3">
+                    <h2 className="text-xl md:text-3xl font-bold mb-6 text-white flex items-center gap-3">
                         <BookOpen className="w-8 h-8 text-[#B8F3D8]" />
                         原文（一部抜粋）
                     </h2>
@@ -88,7 +88,7 @@ export function Dan42() {
             {/* 現代語訳 */}
             <section className="py-6 px-4 sm:px-6 lg:px-12">
                 <div className="max-w-5xl mx-auto">
-                    <h2 className="text-2xl md:text-3xl font-bold mb-6 text-white flex items-center gap-3">
+                    <h2 className="text-xl md:text-3xl font-bold mb-6 text-white flex items-center gap-3">
                         <Sparkles className="w-8 h-8 text-[#FFE5A0]" />
                         現代語訳
                     </h2>
@@ -129,34 +129,34 @@ export function Dan42() {
             {/* 詳しい解説 */}
             <section className="py-6 px-4 sm:px-6 lg:px-12">
                 <div className="max-w-5xl mx-auto">
-                    <h2 className="text-2xl md:text-3xl font-bold mb-6 text-white flex items-center gap-3">
+                    <h2 className="text-xl md:text-3xl font-bold mb-6 text-white flex items-center gap-3">
                         <Brain className="w-8 h-8 text-[#C3B7F5]" />
                         詳しい解説
                     </h2>
                     <div className="space-y-6">
                         <div className="bg-[#2A3B5A] p-5 md:p-8 rounded-3xl border-2 border-white/20">
-                            <h3 className="text-2xl font-bold text-[#FFE5A0] mb-4">👂👁️ 「聴覚」と「視覚」のセレクト</h3>
+                            <h3 className="text-xl md:text-2xl font-bold text-[#FFE5A0] mb-4">👂👁️ 「聴覚」と「視覚」のセレクト</h3>
                             <p className="text-base md:text-lg text-white/90 leading-relaxed">
                                 鈴虫やヒグラシのように「声」を楽しむ虫と、蝶や蛍のように「姿」を楽しむ虫。清少納言は、その虫が持つ<strong className="text-[#FFE5A0]">「最高の見せ場」</strong>を瞬時に判断してリストアップしています。
                             </p>
                         </div>
 
                         <div className="bg-[#2A3B5A] p-5 md:p-8 rounded-3xl border-2 border-white/20">
-                            <h3 className="text-2xl font-bold text-[#FFC2D1] mb-4">🦟 蚊への「風」の描写</h3>
+                            <h3 className="text-xl md:text-2xl font-bold text-[#FFC2D1] mb-4">🦟 蚊への「風」の描写</h3>
                             <p className="text-base md:text-lg text-white/90 leading-relaxed">
                                 <strong className="text-[#FFC2D1]">「耳もとで鳴く」だけでなく、「小さな風が吹いてくる」という描写</strong>に注目。これは実際に静かな夜に蚊に悩まされた人でないと書けない、極めてリアルで繊細な不快感の表現です。
                             </p>
                         </div>
 
                         <div className="bg-[#2A3B5A] p-5 md:p-8 rounded-3xl border-2 border-white/20">
-                            <h3 className="text-2xl font-bold text-[#B3E5FC] mb-4">🐛 ワラジムシへの拒絶反応</h3>
+                            <h3 className="text-xl md:text-2xl font-bold text-[#B3E5FC] mb-4">🐛 ワラジムシへの拒絶反応</h3>
                             <p className="text-base md:text-lg text-white/90 leading-relaxed">
                                 <strong className="text-[#B3E5FC]">「壁にいるのさえ嫌なのに、近くに来るなんて！」</strong>という生理的な嫌悪感。平安時代も今も、虫に対する「好き嫌い」の感覚は驚くほど変わっていないことがわかります。
                             </p>
                         </div>
 
                         <div className="bg-[#2A3B5A] p-5 md:p-8 rounded-3xl border-2 border-white/20">
-                            <h3 className="text-2xl font-bold text-[#B8F3D8] mb-4">☔ 蛍の「雨の日」という新提案</h3>
+                            <h3 className="text-xl md:text-2xl font-bold text-[#B8F3D8] mb-4">☔ 蛍の「雨の日」という新提案</h3>
                             <p className="text-base md:text-lg text-white/90 leading-relaxed">
                                 <strong className="text-[#B8F3D8]">「雨が降る夜の蛍もいい」</strong>という視点は、彼女ならではの「をかし（発見）」です。晴れた夜の輝きだけでなく、雨に煙る中での淡い光に美しさを見出すあたり、さすがのセンスです。
                             </p>
@@ -168,7 +168,7 @@ export function Dan42() {
             {/* 現代に活かせるポイント */}
             <section className="py-6 px-4 sm:px-6 lg:px-12">
                 <div className="max-w-5xl mx-auto">
-                    <h2 className="text-2xl md:text-3xl font-bold mb-6 text-white flex items-center gap-3">
+                    <h2 className="text-xl md:text-3xl font-bold mb-6 text-white flex items-center gap-3">
                         <Sparkles className="w-8 h-8 text-[#FFE5A0]" />
                         現代に活かせるポイント
                     </h2>
@@ -178,7 +178,7 @@ export function Dan42() {
                                 <div className="text-2xl">🎭</div>
                                 <div>
                                     <h4 className="font-bold text-lg md:text-xl text-[#1B2B44] mb-2">好き嫌いをハッキリ言う誠実さ</h4>
-                                    <p className="text-[#1B2B44]/80 leading-relaxed">
+                                    <p className="text-sm md:text-base text-[#1B2B44]/80 leading-relaxed">
                                         清少納言は鈴虫を褒めるだけでなく、蚊やワラジムシを「嫌い」とハッキリ言います。全てを好きにならなくていい、という自分の感性に正直な姿勢は、現代のSNS疲れを考える上でも参考になります。
                                     </p>
                                 </div>

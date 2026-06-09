@@ -37,7 +37,7 @@ export function Dan63() {
           <h1 className="text-3xl md:text-5xl font-black mb-6 text-white leading-tight">
             節は
           </h1>
-          <p className="text-xl text-white/80">
+          <p className="text-base md:text-lg text-white/80">
             季節の行事を彩る、鮮やかな色彩と「祭りのあと」の美学。
           </p>
         </div>
@@ -46,7 +46,7 @@ export function Dan63() {
       {/* 原文 */}
       <section className="py-6 px-4 sm:px-6 lg:px-12">
         <div className="max-w-5xl mx-auto">
-          <h2 className="text-2xl md:text-3xl font-bold mb-6 text-white flex items-center gap-3">
+          <h2 className="text-xl md:text-3xl font-bold mb-6 text-white flex items-center gap-3">
             <BookOpen className="w-8 h-8 text-[#E1BEE7]" />
             原文
           </h2>
@@ -68,7 +68,7 @@ export function Dan63() {
       {/* 現代語訳 */}
       <section className="py-6 px-4 sm:px-6 lg:px-12">
         <div className="max-w-5xl mx-auto">
-          <h2 className="text-2xl md:text-3xl font-bold mb-6 text-white flex items-center gap-3">
+          <h2 className="text-xl md:text-3xl font-bold mb-6 text-white flex items-center gap-3">
             <Sparkles className="w-8 h-8 text-[#FFE5A0]" />
             現代語訳
           </h2>
@@ -96,27 +96,27 @@ export function Dan63() {
       {/* 詳しい解説 */}
       <section className="py-6 px-4 sm:px-6 lg:px-12">
         <div className="max-w-5xl mx-auto">
-          <h2 className="text-2xl md:text-3xl font-bold mb-6 text-white flex items-center gap-3">
+          <h2 className="text-xl md:text-3xl font-bold mb-6 text-white flex items-center gap-3">
             <Brain className="w-8 h-8 text-[#C3B7F5]" />
             詳しい解説
           </h2>
           <div className="space-y-6">
             <div className="bg-[#2A3B5A] p-5 md:p-8 rounded-3xl border-2 border-white/20">
-              <h3 className="text-2xl font-bold text-[#FFC2D1] mb-4">🎨 「色」のコントラスト</h3>
+              <h3 className="text-xl md:text-2xl font-bold text-[#FFC2D1] mb-4">🎨 「色」のコントラスト</h3>
               <p className="text-base md:text-lg text-white/90 leading-relaxed">
                 「菖蒲の青（緑）」と「物忌札の赤」。清少納言は、植物の自然な色に人工的な鮮やかな色を添えるセンスを「をかし」として絶賛しています。彼女の色彩感覚は常にビビッドです。
               </p>
             </div>
 
             <div className="bg-[#2A3B5A] p-5 md:p-8 rounded-3xl border-2 border-white/20">
-              <h3 className="text-2xl font-bold text-[#E1BEE7] mb-4">🌼 「着せ綿（きせわた）」の風流</h3>
+              <h3 className="text-xl md:text-2xl font-bold text-[#E1BEE7] mb-4">🌼 「着せ綿（きせわた）」の風流</h3>
               <p className="text-base md:text-lg text-white/90 leading-relaxed">
                 重陽の節句では、前夜に菊の花に綿を被せ、翌朝にその露と香りが染み込んだ綿で肌を拭うと長寿になると信じられていました。その「濡れた綿」に美を見出すあたり、非常に繊細な感性です。
               </p>
             </div>
 
             <div className="bg-[#2A3B5A] p-5 md:p-8 rounded-3xl border-2 border-white/20">
-              <h3 className="text-2xl font-bold text-[#B8F3D8] mb-4">🏮 「祭りのあと」の美学</h3>
+              <h3 className="text-xl md:text-2xl font-bold text-[#B8F3D8] mb-4">🏮 「祭りのあと」の美学</h3>
               <p className="text-base md:text-lg text-white/90 leading-relaxed">
                 最高潮に盛り上がっている瞬間だけでなく、すべてが終わったあとの静寂や名残惜しさに「あはれ」を感じる。この「動」から「静」への移り変わりを愛でるのが、清少納言の美学の深みです。
               </p>
