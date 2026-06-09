@@ -37,7 +37,7 @@ export function Dan2() {
           <h1 className="text-3xl md:text-5xl font-black mb-6 text-white leading-tight">
             ころは
           </h1>
-          <p className="text-xl text-white/80">
+          <p className="text-base md:text-lg text-white/80">
             季節のベストタイミング
           </p>
         </div>
@@ -46,7 +46,7 @@ export function Dan2() {
       {/* 原文 */}
       <section className="py-6 px-4 sm:px-6 lg:px-12">
         <div className="max-w-5xl mx-auto">
-          <h2 className="text-2xl md:text-3xl font-bold mb-6 text-white flex items-center gap-3">
+          <h2 className="text-xl md:text-3xl font-bold mb-6 text-white flex items-center gap-3">
             <BookOpen className="w-8 h-8 text-[#B8F3D8]" />
             原文
           </h2>
@@ -61,7 +61,7 @@ export function Dan2() {
       {/* 現代語訳 */}
       <section className="py-6 px-4 sm:px-6 lg:px-12">
         <div className="max-w-5xl mx-auto">
-          <h2 className="text-2xl md:text-3xl font-bold mb-6 text-white flex items-center gap-3">
+          <h2 className="text-xl md:text-3xl font-bold mb-6 text-white flex items-center gap-3">
             <Sparkles className="w-8 h-8 text-[#FFE5A0]" />
             現代語訳
           </h2>
@@ -76,20 +76,20 @@ export function Dan2() {
       {/* 詳しい解説 */}
       <section className="py-6 px-4 sm:px-6 lg:px-12">
         <div className="max-w-5xl mx-auto">
-          <h2 className="text-2xl md:text-3xl font-bold mb-6 text-white flex items-center gap-3">
+          <h2 className="text-xl md:text-3xl font-bold mb-6 text-white flex items-center gap-3">
             <Brain className="w-8 h-8 text-[#C3B7F5]" />
             詳しい解説
           </h2>
           <div className="space-y-6">
             <div className="bg-[#2A3B5A] p-5 md:p-8 rounded-3xl border-2 border-white/20">
-              <h3 className="text-2xl font-bold text-[#FFE5A0] mb-4">🎉 イベント大好き清少納言</h3>
+              <h3 className="text-xl md:text-2xl font-bold text-[#FFE5A0] mb-4">🎉 イベント大好き清少納言</h3>
               <p className="text-base md:text-lg text-white/90 leading-relaxed">
                 第1段が「自然の美」なら、第2段は「行事のワクワク感」です。彼女にとって季節とは、カレンダー上の数字ではなく、そこで行われる華やかなイベントや儀式とセットで楽しむものでした。
               </p>
             </div>
 
             <div className="bg-[#2A3B5A] p-5 md:p-8 rounded-3xl border-2 border-white/20">
-              <h3 className="text-2xl font-bold text-[#B8F3D8] mb-4">✨ 「はなほ」というこだわり</h3>
+              <h3 className="text-xl md:text-2xl font-bold text-[#B8F3D8] mb-4">✨ 「はなほ」というこだわり</h3>
               <p className="text-base md:text-lg text-white/90 leading-relaxed">
                 正月1日や九月9日に使われている<strong className="text-[#B8F3D8]">「はなほ（やはり、いっそう）」</strong>という言葉に、彼女の強いこだわりが見えます。「他の日もいいけど、やっぱりこの日が本番だよね！」という、イベント当日の高揚感を表現しています。
               </p>
@@ -101,7 +101,7 @@ export function Dan2() {
       {/* 現代に活かせるポイント */}
       <section className="py-6 px-4 sm:px-6 lg:px-12">
         <div className="max-w-5xl mx-auto">
-          <h2 className="text-2xl md:text-3xl font-bold mb-6 text-white flex items-center gap-3">
+          <h2 className="text-xl md:text-3xl font-bold mb-6 text-white flex items-center gap-3">
             <Sparkles className="w-8 h-8 text-[#FFE5A0]" />
             現代に活かせるポイント
           </h2>
@@ -111,7 +111,7 @@ export function Dan2() {
                 <div className="text-2xl">📅</div>
                 <div>
                   <h4 className="font-bold text-lg md:text-xl text-[#1B2B44] mb-2">季節の行事を楽しむ心</h4>
-                  <p className="text-[#1B2B44]/80 leading-relaxed">
+                  <p className="text-sm md:text-base text-[#1B2B44]/80 leading-relaxed">
                     清少納言のように、季節ごとの行事やイベントを「自分のベストタイミング」として楽しむ姿勢は、日常に彩りを添えます。正月、節分、七夕など、日本の暦の美しさを再発見してみましょう。
                   </p>
                 </div>

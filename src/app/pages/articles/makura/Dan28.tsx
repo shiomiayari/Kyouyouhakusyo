@@ -37,7 +37,7 @@ export function Dan28() {
           <h1 className="text-3xl md:text-5xl font-black mb-6 text-white leading-tight">
             にくきもの
           </h1>
-          <p className="text-xl text-white/80">
+          <p className="text-base md:text-lg text-white/80">
             人間の本性に迫る、リアルすぎる「嫌なやつ」の数々。
           </p>
         </div>
@@ -46,7 +46,7 @@ export function Dan28() {
       {/* 原文 */}
       <section className="py-6 px-4 sm:px-6 lg:px-12">
         <div className="max-w-5xl mx-auto">
-          <h2 className="text-2xl md:text-3xl font-bold mb-6 text-white flex items-center gap-3">
+          <h2 className="text-xl md:text-3xl font-bold mb-6 text-white flex items-center gap-3">
             <BookOpen className="w-8 h-8 text-[#FFC2D1]" />
             原文
           </h2>
@@ -87,7 +87,7 @@ export function Dan28() {
       {/* 現代語訳 */}
       <section className="py-6 px-4 sm:px-6 lg:px-12">
         <div className="max-w-5xl mx-auto">
-          <h2 className="text-2xl md:text-3xl font-bold mb-6 text-white flex items-center gap-3">
+          <h2 className="text-xl md:text-3xl font-bold mb-6 text-white flex items-center gap-3">
             <Sparkles className="w-8 h-8 text-[#FFE5A0]" />
             現代語訳
           </h2>
@@ -149,27 +149,27 @@ export function Dan28() {
       {/* 詳しい解説 */}
       <section className="py-6 px-4 sm:px-6 lg:px-12">
         <div className="max-w-5xl mx-auto">
-          <h2 className="text-2xl md:text-3xl font-bold mb-6 text-white flex items-center gap-3">
+          <h2 className="text-xl md:text-3xl font-bold mb-6 text-white flex items-center gap-3">
             <Brain className="w-8 h-8 text-[#C3B7F5]" />
             詳しい解説
           </h2>
           <div className="space-y-6">
             <div className="bg-[#2A3B5A] p-5 md:p-8 rounded-3xl border-2 border-white/20">
-              <h3 className="text-2xl font-bold text-[#FFC2D1] mb-4">💡 「知性」と「配慮」の欠如への怒り</h3>
+              <h3 className="text-xl md:text-2xl font-bold text-[#FFC2D1] mb-4">💡 「知性」と「配慮」の欠如への怒り</h3>
               <p className="text-base md:text-lg text-white/90 leading-relaxed">
                 清少納言が嫌うものの共通点は、相手の状況を察しない「想像力の欠如」です。急いでいる時の長話や、他人の話への割り込みなど、現代のコミュニケーションマナーにも通じる鋭い指摘が並びます。
               </p>
             </div>
 
             <div className="bg-[#2A3B5A] p-5 md:p-8 rounded-3xl border-2 border-white/20">
-              <h3 className="text-2xl font-bold text-[#B8F3D8] mb-4">👂 五感で感じる不快感</h3>
+              <h3 className="text-xl md:text-2xl font-bold text-[#B8F3D8] mb-4">👂 五感で感じる不快感</h3>
               <p className="text-base md:text-lg text-white/90 leading-relaxed">
                 蚊の羽音、車のきしみ、クシャミの後の呪文、さらには「ツバを吐く」といった生理的な嫌悪感をストレートに表現しています。こうした「本音」を隠さず書いたことが、1000年経っても色褪せないリアリティを生んでいます。
               </p>
             </div>
 
             <div className="bg-[#2A3B5A] p-5 md:p-8 rounded-3xl border-2 border-white/20">
-              <h3 className="text-2xl font-bold text-[#FFE5A0] mb-4">👁️ 男性への厳しい審美眼</h3>
+              <h3 className="text-xl md:text-2xl font-bold text-[#FFE5A0] mb-4">👁️ 男性への厳しい審美眼</h3>
               <p className="text-base md:text-lg text-white/90 leading-relaxed">
                 特に出産の場面での夫の態度は、現代でいう「ワンオペ育児」や「立ち会い出産での無関心」への怒りに近く、時代を超えて女性の共感を集めるポイントです。
               </p>

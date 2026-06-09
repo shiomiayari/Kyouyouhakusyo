@@ -37,7 +37,7 @@ export function Dan105() {
           <h1 className="text-3xl md:text-5xl font-black mb-6 text-white leading-tight">
             うらやましきもの
           </h1>
-          <p className="text-xl text-white/80">
+          <p className="text-base md:text-lg text-white/80">
             教養あふれる知的な姿や、情報のハブとなる人への強い憧れ。
           </p>
         </div>
@@ -46,7 +46,7 @@ export function Dan105() {
       {/* 原文 */}
       <section className="py-6 px-4 sm:px-6 lg:px-12">
         <div className="max-w-5xl mx-auto">
-          <h2 className="text-2xl md:text-3xl font-bold mb-6 text-white flex items-center gap-3">
+          <h2 className="text-xl md:text-3xl font-bold mb-6 text-white flex items-center gap-3">
             <BookOpen className="w-8 h-8 text-[#B8F3D8]" />
             原文
           </h2>
@@ -71,7 +71,7 @@ export function Dan105() {
       {/* 現代語訳 */}
       <section className="py-6 px-4 sm:px-6 lg:px-12">
         <div className="max-w-5xl mx-auto">
-          <h2 className="text-2xl md:text-3xl font-bold mb-6 text-white flex items-center gap-3">
+          <h2 className="text-xl md:text-3xl font-bold mb-6 text-white flex items-center gap-3">
             <Sparkles className="w-8 h-8 text-[#FFE5A0]" />
             現代語訳
           </h2>
@@ -106,34 +106,34 @@ export function Dan105() {
       {/* 詳しい解説 */}
       <section className="py-6 px-4 sm:px-6 lg:px-12">
         <div className="max-w-5xl mx-auto">
-          <h2 className="text-2xl md:text-3xl font-bold mb-6 text-white flex items-center gap-3">
+          <h2 className="text-xl md:text-3xl font-bold mb-6 text-white flex items-center gap-3">
             <Brain className="w-8 h-8 text-[#C3B7F5]" />
             詳しい解説
           </h2>
           <div className="space-y-6">
             <div className="bg-[#2A3B5A] p-5 md:p-8 rounded-3xl border-2 border-white/20">
-              <h3 className="text-2xl font-bold text-[#E1BEE7] mb-4">📚 「教養」への強い憧れ</h3>
+              <h3 className="text-xl md:text-2xl font-bold text-[#E1BEE7] mb-4">📚 「教養」への強い憧れ</h3>
               <p className="text-base md:text-lg text-white/90 leading-relaxed">
                 お経をスラスラ読めることや、本をたくさん持っていることを羨ましがるのは、清少納言が何よりも<strong>「知識」と「知性」</strong>に価値を置いていたからです。現代でいえば「語学が堪能な人」や「膨大な蔵書を持つ知識人」へのリスペクトに近い感覚です。
               </p>
             </div>
 
             <div className="bg-[#2A3B5A] p-5 md:p-8 rounded-3xl border-2 border-white/20">
-              <h3 className="text-2xl font-bold text-[#B8F3D8] mb-4">💬 「情報のハブ」への羨望</h3>
+              <h3 className="text-xl md:text-2xl font-bold text-[#B8F3D8] mb-4">💬 「情報のハブ」への羨望</h3>
               <p className="text-base md:text-lg text-white/90 leading-relaxed">
                 噂話の事情通を羨むのは、単なる野次馬根性ではありません。複雑な人間関係や宮廷の動静を的確に把握し、それを面白くアウトプットできる「情報の整理能力」に知性を感じているのです。
               </p>
             </div>
 
             <div className="bg-[#2A3B5A] p-5 md:p-8 rounded-3xl border-2 border-white/20">
-              <h3 className="text-2xl font-bold text-[#FFC2D1] mb-4">💌 「手紙」の美学</h3>
+              <h3 className="text-xl md:text-2xl font-bold text-[#FFC2D1] mb-4">💌 「手紙」の美学</h3>
               <p className="text-base md:text-lg text-white/90 leading-relaxed">
                 物忌みの最中に美しい手紙を書く。それは、時間に追われるのではなく、ゆったりとした時間の中で「優雅さ」を保っている証拠です。心の余裕がある暮らしぶりへの憧れが透けて見えます。
               </p>
             </div>
 
             <div className="bg-[#2A3B5A] p-5 md:p-8 rounded-3xl border-2 border-white/20">
-              <h3 className="text-2xl font-bold text-[#FFE5A0] mb-4">🤔 「理解できる人」への嫉妬</h3>
+              <h3 className="text-xl md:text-2xl font-bold text-[#FFE5A0] mb-4">🤔 「理解できる人」への嫉妬</h3>
               <p className="text-base md:text-lg text-white/90 leading-relaxed">
                 最後の一文、「自分にはわからないことを理解している人」を羨むのは、彼女の強い向上心の裏返しです。常に「もっと知りたい」「もっと分かりたい」と願う、彼女の知的な貪欲さが表れています。
               </p>

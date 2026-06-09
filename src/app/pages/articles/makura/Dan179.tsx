@@ -37,7 +37,7 @@ export function Dan179() {
           <h1 className="text-3xl md:text-5xl font-black mb-6 text-white leading-tight">
             いみじきもの
           </h1>
-          <p className="text-xl text-white/80">
+          <p className="text-base md:text-lg text-white/80">
             既読スルーへの激怒から夕日の美しさまで、メーターを振り切る感情の記録。
           </p>
         </div>
@@ -46,7 +46,7 @@ export function Dan179() {
       {/* 原文 */}
       <section className="py-6 px-4 sm:px-6 lg:px-12">
         <div className="max-w-5xl mx-auto">
-          <h2 className="text-2xl md:text-3xl font-bold mb-6 text-white flex items-center gap-3">
+          <h2 className="text-xl md:text-3xl font-bold mb-6 text-white flex items-center gap-3">
             <BookOpen className="w-8 h-8 text-[#FFC2D1]" />
             原文
           </h2>
@@ -75,7 +75,7 @@ export function Dan179() {
       {/* 現代語訳 */}
       <section className="py-6 px-4 sm:px-6 lg:px-12">
         <div className="max-w-5xl mx-auto">
-          <h2 className="text-2xl md:text-3xl font-bold mb-6 text-white flex items-center gap-3">
+          <h2 className="text-xl md:text-3xl font-bold mb-6 text-white flex items-center gap-3">
             <Sparkles className="w-8 h-8 text-[#FFE5A0]" />
             現代語訳
           </h2>
@@ -116,34 +116,34 @@ export function Dan179() {
       {/* 詳しい解説 */}
       <section className="py-6 px-4 sm:px-6 lg:px-12">
         <div className="max-w-5xl mx-auto">
-          <h2 className="text-2xl md:text-3xl font-bold mb-6 text-white flex items-center gap-3">
+          <h2 className="text-xl md:text-3xl font-bold mb-6 text-white flex items-center gap-3">
             <Brain className="w-8 h-8 text-[#C3B7F5]" />
             詳しい解説
           </h2>
           <div className="space-y-6">
             <div className="bg-[#2A3B5A] p-5 md:p-8 rounded-3xl border-2 border-white/20">
-              <h3 className="text-2xl font-bold text-[#FFC2D1] mb-4">📱 「既読スルー」への激怒</h3>
+              <h3 className="text-xl md:text-2xl font-bold text-[#FFC2D1] mb-4">📱 「既読スルー」への激怒</h3>
               <p className="text-base md:text-lg text-white/90 leading-relaxed">
                 第28段（にくきもの）や第22段（すさまじきもの）でも登場した「返事をよこさない人」。清少納言はこの不作法を「憎い」「興ざめ」だけでなく、「いみじ（度を越している）」とまで表現しており、彼女にとって最大のタブーであったことがわかります。
               </p>
             </div>
 
             <div className="bg-[#2A3B5A] p-5 md:p-8 rounded-3xl border-2 border-white/20">
-              <h3 className="text-2xl font-bold text-[#FFE5A0] mb-4">🌇 「夕日」の圧倒的な美</h3>
+              <h3 className="text-xl md:text-2xl font-bold text-[#FFE5A0] mb-4">🌇 「夕日」の圧倒的な美</h3>
               <p className="text-base md:text-lg text-white/90 leading-relaxed">
                 「いみじ」には感動の意味も含まれます。夕日の光が差し込む光景を、彼女は理屈抜きに「圧倒的だ」と感じていました。第1段の「夕日のさして、山の端いと近うなりたるに」という描写にも通じる感性です。
               </p>
             </div>
 
             <div className="bg-[#2A3B5A] p-5 md:p-8 rounded-3xl border-2 border-white/20">
-              <h3 className="text-2xl font-bold text-[#B8F3D8] mb-4">🗯️ 「スカッとする」のも「いみじ」</h3>
+              <h3 className="text-xl md:text-2xl font-bold text-[#B8F3D8] mb-4">🗯️ 「スカッとする」のも「いみじ」</h3>
               <p className="text-base md:text-lg text-white/90 leading-relaxed">
                 嫌いな相手に言い返してやった時の、あのメーターを振り切るようなスッキリ感。これも彼女にとっては、日常の平穏を突き抜ける「いみじき」瞬間でした。
               </p>
             </div>
 
             <div className="bg-[#2A3B5A] p-5 md:p-8 rounded-3xl border-2 border-white/20">
-              <h3 className="text-2xl font-bold text-[#C3B7F5] mb-4">🍼 「人の乳を飲む」の衝撃</h3>
+              <h3 className="text-xl md:text-2xl font-bold text-[#C3B7F5] mb-4">🍼 「人の乳を飲む」の衝撃</h3>
               <p className="text-base md:text-lg text-white/90 leading-relaxed">
                 これについては諸説ありますが、大人が母乳を薬や滋養強壮として飲む風習への、彼女らしい「うわっ、ありえない！」という潔癖なまでの驚きが込められていると言われています。
               </p>

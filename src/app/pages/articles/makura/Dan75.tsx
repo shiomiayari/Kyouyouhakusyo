@@ -37,7 +37,7 @@ export function Dan75() {
           <h1 className="text-3xl md:text-5xl font-black mb-6 text-white leading-tight">
             ありがたきもの
           </h1>
-          <p className="text-xl text-white/80">
+          <p className="text-base md:text-lg text-white/80">
             「完璧なものなんてない」という現実を突く、シビアで鋭い人間観察。
           </p>
         </div>
@@ -46,7 +46,7 @@ export function Dan75() {
       {/* 原文 */}
       <section className="py-6 px-4 sm:px-6 lg:px-12">
         <div className="max-w-5xl mx-auto">
-          <h2 className="text-2xl md:text-3xl font-bold mb-6 text-white flex items-center gap-3">
+          <h2 className="text-xl md:text-3xl font-bold mb-6 text-white flex items-center gap-3">
             <BookOpen className="w-8 h-8 text-[#FFE5A0]" />
             原文
           </h2>
@@ -73,7 +73,7 @@ export function Dan75() {
       {/* 現代語訳 */}
       <section className="py-6 px-4 sm:px-6 lg:px-12">
         <div className="max-w-5xl mx-auto">
-          <h2 className="text-2xl md:text-3xl font-bold mb-6 text-white flex items-center gap-3">
+          <h2 className="text-xl md:text-3xl font-bold mb-6 text-white flex items-center gap-3">
             <Sparkles className="w-8 h-8 text-[#B8F3D8]" />
             現代語訳
           </h2>
@@ -111,34 +111,34 @@ export function Dan75() {
       {/* 詳しい解説 */}
       <section className="py-6 px-4 sm:px-6 lg:px-12">
         <div className="max-w-5xl mx-auto">
-          <h2 className="text-2xl md:text-3xl font-bold mb-6 text-white flex items-center gap-3">
+          <h2 className="text-xl md:text-3xl font-bold mb-6 text-white flex items-center gap-3">
             <Brain className="w-8 h-8 text-[#C3B7F5]" />
             詳しい解説
           </h2>
           <div className="space-y-6">
             <div className="bg-[#2A3B5A] p-5 md:p-8 rounded-3xl border-2 border-white/20">
-              <h3 className="text-2xl font-bold text-[#FFE5A0] mb-4">🏠 「嫁姑問題」は永遠のテーマ</h3>
+              <h3 className="text-xl md:text-2xl font-bold text-[#FFE5A0] mb-4">🏠 「嫁姑問題」は永遠のテーマ</h3>
               <p className="text-base md:text-lg text-white/90 leading-relaxed">
                 冒頭に家族の人間関係を持ってくるあたり、清少納言のリアルな視点が光ります。「そんな円満な家庭、見たことないわ」という彼女の冷ややかなツッコミが聞こえてきそうです。
               </p>
             </div>
 
             <div className="bg-[#2A3B5A] p-5 md:p-8 rounded-3xl border-2 border-white/20">
-              <h3 className="text-2xl font-bold text-[#B8F3D8] mb-4">🔧 「道具」へのこだわり</h3>
+              <h3 className="text-xl md:text-2xl font-bold text-[#B8F3D8] mb-4">🔧 「道具」へのこだわり</h3>
               <p className="text-base md:text-lg text-white/90 leading-relaxed">
                 「毛の抜ける毛抜き」という非常に具体的な不満。彼女は身の回りの道具の「機能性」にも厳しく、現代でいう「使い勝手の悪いガジェット」へのストレスと同じ感覚を持っています。
               </p>
             </div>
 
             <div className="bg-[#2A3B5A] p-5 md:p-8 rounded-3xl border-2 border-white/20">
-              <h3 className="text-2xl font-bold text-[#FFC2D1] mb-4">🗣️ 「SNSの裏垢」のような心理</h3>
+              <h3 className="text-xl md:text-2xl font-bold text-[#FFC2D1] mb-4">🗣️ 「SNSの裏垢」のような心理</h3>
               <p className="text-base md:text-lg text-white/90 leading-relaxed">
                 「主人の悪口を言わない従者なんていない」と断言する潔さ。表面的には従順でも、裏では何を言っているか分からないという、人間の本質を突いています。
               </p>
             </div>
 
             <div className="bg-[#2A3B5A] p-5 md:p-8 rounded-3xl border-2 border-white/20">
-              <h3 className="text-2xl font-bold text-[#C3B7F5] mb-4">🙅‍♀️ 「完璧」の否定</h3>
+              <h3 className="text-xl md:text-2xl font-bold text-[#C3B7F5] mb-4">🙅‍♀️ 「完璧」の否定</h3>
               <p className="text-base md:text-lg text-white/90 leading-relaxed">
                 どんなに気をつけていても本を汚してしまうことや、どんなに美男美女でも欠点はあること、そして男女の仲の移ろいやすさ。清少納言は「完璧な理想」を並べることで、逆に<strong className="text-[#FFE5A0]">「不完全なのが人間だよね」</strong>という諦念と愛着を表現しているのです。
               </p>

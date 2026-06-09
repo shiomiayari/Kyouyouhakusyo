@@ -37,7 +37,7 @@ export function Dan84() {
           <h1 className="text-3xl md:text-5xl font-black mb-6 text-white leading-tight">
             心ときめきするもの
           </h1>
-          <p className="text-xl text-white/80">
+          <p className="text-base md:text-lg text-white/80">
             期待やセルフケアがもたらす、時代を超えた普遍的な「ときめき」。
           </p>
         </div>
@@ -46,7 +46,7 @@ export function Dan84() {
       {/* 原文 */}
       <section className="py-6 px-4 sm:px-6 lg:px-12">
         <div className="max-w-5xl mx-auto">
-          <h2 className="text-2xl md:text-3xl font-bold mb-6 text-white flex items-center gap-3">
+          <h2 className="text-xl md:text-3xl font-bold mb-6 text-white flex items-center gap-3">
             <BookOpen className="w-8 h-8 text-[#FFE5A0]" />
             原文
           </h2>
@@ -73,7 +73,7 @@ export function Dan84() {
       {/* 現代語訳 */}
       <section className="py-6 px-4 sm:px-6 lg:px-12">
         <div className="max-w-5xl mx-auto">
-          <h2 className="text-2xl md:text-3xl font-bold mb-6 text-white flex items-center gap-3">
+          <h2 className="text-xl md:text-3xl font-bold mb-6 text-white flex items-center gap-3">
             <Sparkles className="w-8 h-8 text-[#B8F3D8]" />
             現代語訳
           </h2>
@@ -114,34 +114,34 @@ export function Dan84() {
       {/* 詳しい解説 */}
       <section className="py-6 px-4 sm:px-6 lg:px-12">
         <div className="max-w-5xl mx-auto">
-          <h2 className="text-2xl md:text-3xl font-bold mb-6 text-white flex items-center gap-3">
+          <h2 className="text-xl md:text-3xl font-bold mb-6 text-white flex items-center gap-3">
             <Brain className="w-8 h-8 text-[#C3B7F5]" />
             詳しい解説
           </h2>
           <div className="space-y-6">
             <div className="bg-[#2A3B5A] p-5 md:p-8 rounded-3xl border-2 border-white/20">
-              <h3 className="text-2xl font-bold text-[#FFE5A0] mb-4">💅 「自分磨き」の喜び</h3>
+              <h3 className="text-xl md:text-2xl font-bold text-[#FFE5A0] mb-4">💅 「自分磨き」の喜び</h3>
               <p className="text-base md:text-lg text-white/90 leading-relaxed">
                 髪を洗い、お化粧をし、香を焚いた服を着る。誰に見せるためでもなく、自分自身の気分を高めるために装うことを「心のうちは、いとなまめかし（心の中はとても優雅だ）」と表現しています。現代でいう「セルフケア」や「お気に入りのルームウェア」で過ごす充足感と同じですね。
               </p>
             </div>
 
             <div className="bg-[#2A3B5A] p-5 md:p-8 rounded-3xl border-2 border-white/20">
-              <h3 className="text-2xl font-bold text-[#B8F3D8] mb-4">🪞 「生活の整え」への感性</h3>
+              <h3 className="text-xl md:text-2xl font-bold text-[#B8F3D8] mb-4">🪞 「生活の整え」への感性</h3>
               <p className="text-base md:text-lg text-white/90 leading-relaxed">
                 「曇った鏡を拭く」という一見地味な行為を「ときめき」に分類するあたり、清少納言の繊細さが光ります。視界がクリアになる瞬間の清々しさを、彼女は「心のときめき」として大切にしていました。
               </p>
             </div>
 
             <div className="bg-[#2A3B5A] p-5 md:p-8 rounded-3xl border-2 border-white/20">
-              <h3 className="text-2xl font-bold text-[#FFC2D1] mb-4">💓 「期待」というスパイス</h3>
+              <h3 className="text-xl md:text-2xl font-bold text-[#FFC2D1] mb-4">💓 「期待」というスパイス</h3>
               <p className="text-base md:text-lg text-white/90 leading-relaxed">
                 待っている人の足音だと思って雨風の音に敏感になる様子。スマホがない時代の、あの「通知を待つ」よりもずっと身体的で、切実なドキドキ感が伝わってきます。
               </p>
             </div>
 
             <div className="bg-[#2A3B5A] p-5 md:p-8 rounded-3xl border-2 border-white/20">
-              <h3 className="text-2xl font-bold text-[#C3B7F5] mb-4">🎁 「よき男」の登場</h3>
+              <h3 className="text-xl md:text-2xl font-bold text-[#C3B7F5] mb-4">🎁 「よき男」の登場</h3>
               <p className="text-base md:text-lg text-white/90 leading-relaxed">
                 平安時代の「車を止める」は、現代でいうなら「気になる人が家の前に車で迎えに来た」あるいは「サプライズで訪ねてきた」ようなシチュエーション。その緊張感と期待は、時代を超えた普遍的な「ときめき」です。
               </p>
