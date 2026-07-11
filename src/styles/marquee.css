@@ -1,0 +1,20 @@
+/* ページ横スクロール防止 */
+html, body {
+  overflow-x: hidden;
+  max-width: 100vw;
+}
+
+/* マーキー（横スクロール）アニメーション */
+@keyframes marquee {
+  0%   { transform: translateX(0); }
+  100% { transform: translateX(-33.333%); }
+}
+
+.marquee-track {
+  animation: marquee 28s linear infinite;
+}
+
+.marquee-track:hover {
+  animation-play-state: paused;
+}
+
