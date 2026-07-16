@@ -55,6 +55,32 @@ export function Sidebar() {
       id: 'music',
       name: 'クラシック音楽',
       icon: <Music className="w-5 h-5" />,
+      color: '#7FFFD4',
+      articles: [
+        { id: 'utsuronazyuzika', title: '虚ろな十字架/東野圭吾' },
+        { id: 'yougizyaxnokenshin', title: '容疑者Xの献身/東野圭吾' },
+        { id: 'goumantozenryou', title: '傲慢と善良/辻村深月' },
+        { id: 'kokuhaku', title: '告白/湊かなえ' },
+        { id: 'bosei', title: '母性/湊かなえ' },
+        { id: 'saturikuniitaruyamai', title: '殺戮に至る病/我孫子武丸' },
+        { id: 'seibo', title: '聖母/秋吉理香子' },
+        { id: 'ankokuzyoshi', title: '暗黒女子/秋吉理香子' },
+        { id: 'o-da-meidosatsuzinkurabu', title: 'オーダーメイド殺人倶楽部/辻村深月' },
+        { id: 'rapurasunomazyo', title: 'ラプラスの魔女/東野圭吾' },
+        { id: 'hakobune', title: '方舟/夕木春央' },
+        { id: 'zyukkai', title: '十戒/夕木春央' },
+        { id: 'mugennbana', title: '夢幻花/東野圭吾' },
+        { id: 'masukare-dohoteru', title: 'マスカレード・ホテル/東野圭吾' },
+        { id: 'ningyononemuruie', title: '人魚の眠る家/東野圭吾' },
+
+
+      ],
+    },
+
+    {
+      id: 'books',
+      name: '現代の書籍',
+      icon: <Music className="w-5 h-5" />,
       color: '#FFE5A0',
       articles: [
         { id: 'liebestraum', title: 'リスト：愛の夢' },
@@ -89,8 +115,8 @@ export function Sidebar() {
               <button
                 onClick={() => toggleCategory(category.id)}
                 className={`w-full flex items-center justify-between p-3 rounded-xl transition-all group ${expandedCategory === category.id
-                    ? 'bg-[#2A3B5A]'
-                    : 'hover:bg-[#2A3B5A]/50'
+                  ? 'bg-[#2A3B5A]'
+                  : 'hover:bg-[#2A3B5A]/50'
                   }`}
               >
                 <div className="flex items-center space-x-3">
@@ -117,8 +143,8 @@ export function Sidebar() {
                       key={article.id}
                       to={`/article/${category.id}/${article.id}`}
                       className={`block px-4 py-2 rounded-lg text-sm transition-all ${location.pathname === `/article/${category.id}/${article.id}`
-                          ? 'font-medium bg-[#2A3B5A]'
-                          : 'text-white/70 hover:text-white hover:bg-[#2A3B5A]/50'
+                        ? 'font-medium bg-[#2A3B5A]'
+                        : 'text-white/70 hover:text-white hover:bg-[#2A3B5A]/50'
                         }`}
                       style={
                         location.pathname === `/article/${category.id}/${article.id}`
