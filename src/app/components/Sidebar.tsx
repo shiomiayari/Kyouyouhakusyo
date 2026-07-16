@@ -72,6 +72,8 @@ export function Sidebar() {
         { id: 'mugennbana', title: '夢幻花/東野圭吾' },
         { id: 'masukare-dohoteru', title: 'マスカレード・ホテル/東野圭吾' },
         { id: 'ningyononemuruie', title: '人魚の眠る家/東野圭吾' },
+        { id: 'himawarinosakanainatu', title: '向日葵の咲かない夏/道尾秀介' },
+        { id: 'zyukkakukannnosatuzinn', title: '十角館の殺人/綾辻行人' },
 
 
       ],
