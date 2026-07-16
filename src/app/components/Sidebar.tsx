@@ -52,8 +52,8 @@ export function Sidebar() {
     },
 
     {
-      id: 'music',
-      name: 'クラシック音楽',
+      id: 'books',
+      name: '現代の書籍',
       icon: <Music className="w-5 h-5" />,
       color: '#7FFFD4',
       articles: [
@@ -80,8 +80,8 @@ export function Sidebar() {
     },
 
     {
-      id: 'books',
-      name: '現代の書籍',
+      id: 'music',
+      name: 'クラシック音楽',
       icon: <Music className="w-5 h-5" />,
       color: '#FFE5A0',
       articles: [
